@@ -1,0 +1,30 @@
+<image style="margin:5px; width:30px; height:30px" id='version_logo' title="click here to open the location of your Collector files">
+<script>
+var possible_versions = ["antelope","cat","cat","puppy"];
+
+version = possible_versions.filter(function(version){
+  if (document.URL.indexOf(version) !== -1){
+    return version;
+  }
+});
+
+$("#version_logo")[0].src   = "../logos/cat_white.png";
+
+var orig_filter = $("#version_logo").css("filter");
+$("#version_logo").on("load",function(){
+	$("#version_logo").css("filter",'grayscale(100%)');
+	setTimeout(function(){
+		setTimeout(function(){
+			setTimeout(function(){
+				$("#version_logo").css("filter",orig_filter);
+			}, 400);
+			$("#version_logo").css("filter",'grayscale(100%)');
+		}, 400);
+		$("#version_logo").css("filter",orig_filter);
+	}, 400);
+});
+
+$("#version_logo").on("click", function(){
+  Collector.electron.open_folder("");
+});
+</script>

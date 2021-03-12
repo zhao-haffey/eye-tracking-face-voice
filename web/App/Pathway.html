@@ -1,0 +1,247 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="../logos/cat.png"/>
+</head>
+
+<script src="libraries/jquery-3.3.1.min.js"></script>
+<script src="libraries/tweetnacl.js"></script>
+<script src="libraries/tweetnacl-utils.js"></script>
+<script src="libraries/crypto-js.min.js"></script>
+<script src="libraries/papaparse.4.3.6.min.js"></script>
+<script src="libraries/jquery-3.3.1.min.js"></script>
+<script src="libraries/popper.min.js"></script>
+<script src="libraries/bootbox.5.4.min.js"></script>
+
+<link rel="stylesheet" href="libraries/bootstrapCollector.css">
+<script src="libraries/bootstrap.4.0.min.js"></script>
+
+<script src="Code/Collector.js"></script>
+<script src="Code/OnlineTriggers.js"></script>
+<script src="Code/CollectorEncrypt.js"></script>
+<script src="Code/BrowserCheck.js"></script>
+
+<!--
+    Collector (Garcia, Kornell, Kerr, Blake & Haffey)
+    A program for running experiments on the web
+    Copyright 2012-2016 Mikey Garcia & Nate Kornell
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 3 as published by
+    the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+		Kitten/Cat release (2019-21) author: Dr. Anthony Haffey (team@someopen.solutions)
+-->
+
+
+
+<h1 id="pathway_header"></h1>
+<h2 class="danger">To avoid you needing to register with this website we store information on your local computer about what tasks you have done. If you would like to delete this information click on the following button:</h2>
+
+<button class="btn btn-primary" id="clear_all">Clear this information on your browser</button>
+
+<div id="pathway_list_div"></div>
+
+<script>
+var Pathway = {};
+
+$("#clear_all").on("click",function(){
+  delete(localStorage.completed_studies);
+  location.reload();
+});
+
+//solution to retrieve get values from url by weltraumpirat at https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript/5448635#5448635
+function get_gets() {
+  function transformToAssocArray( prmstr ) {
+    var params = {};
+    var prmarr = prmstr.split("&");
+    for ( var i = 0; i < prmarr.length; i++) {
+      var tmparr = prmarr[i].split("=");
+      params[tmparr[0]] = tmparr[1];
+    }
+    return params;
+  }
+  var prmstr = window.location.search.substr(1);
+  Pathway.get_vars = prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+
+  // maybe the following is left over from the simulator?
+  if(typeof(Pathway.get_vars["name"]) !== "undefined"){
+    exp_condition = Pathway.get_vars["name"];
+  } else {
+    exp_condition = "";
+  }
+  if(Pathway.get_vars.platform == "preview"){
+
+    online_data_obj.finished_and_stored = true;
+  }
+  $("#pathway_header").html(Pathway.get_vars.header);
+
+  /*
+  * load list of studies
+  */
+  switch(Pathway.get_vars.platform){
+    case "localhost":
+
+      var lazy_electron_wait = setInterval(function(){
+        if(typeof(Collector.electron) !== "undefined"){
+          clearInterval(lazy_electron_wait);
+          var pathway = JSON.parse(
+            Collector.electron.fs.read_file(
+              "Pathway",
+              Pathway.get_vars.pathway + ".json"
+            )
+          );
+
+
+          var pathway_list = '<div class="jumbotron jumbotron-fluid">' +
+            '<div class="container">' +
+              //'<h1 class="display-4">Task List</h1>' +
+              '<h4 class="text-danger">Please complete the tasks in the order they are listed.<br>You need to tick this list manually after each task</h4>' +
+              "<table>";
+          pathway.order.forEach(function(item,item_index){
+            pathway_list +=
+              '<tr>' +
+                '<td style="height:30px">' +
+                  '<div class="border border-danger" style="height:10px; width:1px; bottom:15px; position:relative;"></div>' +
+                  '<div class="border border-danger" style="height:1px; width:10px; bottom:5px; position:relative;"></div>' +
+                  '<div class="border border-danger" style="height:10px; width:1px;  bottom:0px; position:relative;"></div>' +
+                '</td>' +
+                '<td style="padding:5px;">' +
+                  '<span class="form-check">' +
+                    '<input class="form-check-input check_study" type="checkbox" value="' + item + '" id="study_check' + item_index + '">' +
+                    '<h4 class="text-primary">' +
+                      '<label class="form-check-label" for="study_check' +
+                        item_index + '">' +
+                        item +
+                      '</label>'+
+                    '</td>' +
+                    '<td style="padding:5px;">' +
+                      "<a href='RunStudy.html?location=" +
+                        item +
+                        "&platform=" +
+                        Pathway.get_vars.platform +
+                        "&name=" +
+                        pathway.items[item].name +
+                        "' target='_blank' class='btn btn-primary' style='width:100%'>" +
+                        item +
+                      "</a>";
+                    '</h4>' +
+                  '</span>' +
+                "</td>" +
+              "</tr>";
+          });
+          pathway_list += "</table></div></div>";
+          $("#pathway_list_div").html(pathway_list);
+
+          if(typeof(localStorage.completed_studies) == "undefined"){
+            localStorage.completed_studies = JSON.stringify([]);
+          }
+          var completed_studies = JSON.parse(localStorage.completed_studies);
+          pathway.order.forEach(function(item,item_number){
+            if(completed_studies.indexOf(item) !== -1){
+              $("#study_check" + item_number).prop("checked",true);
+            }
+          });
+
+
+
+
+          $(".check_study").on("click",function(){
+            var completed_studies = JSON.parse(localStorage.completed_studies);
+            if(completed_studies.indexOf(this.value) == -1){
+              completed_studies.push(this.value);
+            } else {
+              delete completed_studies[completed_studies.indexOf(this.value)];
+            }
+            localStorage.completed_studies = JSON.stringify(completed_studies);
+          });
+        }
+      },100);
+      break;
+    default:
+      $.get("../User/Pathway/" + Pathway.get_vars.pathway + ".json", function(pathway){
+
+
+        var pathway_list = '<div class="jumbotron jumbotron-fluid">' +
+          '<div class="container">' +
+            //'<h1 class="display-4">Task List</h1>' +
+            '<h4 class="text-danger">Please complete the tasks in the order they are listed.<br>You need to tick this list manually after each task</h4>' +
+            "<table>";
+        pathway.order.forEach(function(item,item_index){
+          pathway_list +=
+            '<tr>' +
+              '<td style="height:30px">' +
+                '<div class="border border-danger" style="height:10px; width:1px; bottom:15px; position:relative;"></div>' +
+                '<div class="border border-danger" style="height:1px; width:10px; bottom:5px; position:relative;"></div>' +
+                '<div class="border border-danger" style="height:10px; width:1px;  bottom:0px; position:relative;"></div>' +
+              '</td>' +
+              '<td style="padding:5px;">' +
+                '<span class="form-check">' +
+                  '<input class="form-check-input check_study" type="checkbox" value="' + item + '" id="study_check' + item_index + '">' +
+                  '<h4 class="text-primary">' +
+                    '<label class="form-check-label" for="study_check' +
+                      item_index + '">' +
+                      item +
+                    '</label>'+
+                  '</td>' +
+                  '<td style="padding:5px;">' +
+                    "<a href='RunStudy.html?location=" +
+                      item +
+                      "&platform=" +
+                      "github" +
+                      "&name=" +
+                      pathway.items[item].name +
+                      "' target='_blank' class='btn btn-primary' style='width:100%'>" +
+                      item +
+                    "</a>";
+                  '</h4>' +
+                '</span>' +
+              "</td>" +
+            "</tr>";
+        });
+        pathway_list += "</table></div></div>";
+        $("#pathway_list_div").html(pathway_list);
+
+        if(typeof(localStorage.completed_studies) == "undefined"){
+          localStorage.completed_studies = JSON.stringify([]);
+        }
+        var completed_studies = JSON.parse(localStorage.completed_studies);
+        pathway.order.forEach(function(item,item_number){
+          if(completed_studies.indexOf(item) !== -1){
+            $("#study_check" + item_number).prop("checked",true);
+          }
+        });
+
+
+
+
+        $(".check_study").on("click",function(){
+          var completed_studies = JSON.parse(localStorage.completed_studies);
+          if(completed_studies.indexOf(this.value) == -1){
+            completed_studies.push(this.value);
+          } else {
+            delete completed_studies[completed_studies.indexOf(this.value)];
+          }
+          localStorage.completed_studies = JSON.stringify(completed_studies);
+        });
+      });
+      break;
+  }
+}
+
+/*
+* Do everything above:
+*/
+get_gets();
+</script>

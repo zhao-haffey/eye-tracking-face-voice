@@ -1,0 +1,66 @@
+<!--
+    Collector (Garcia, Kornell, Kerr, Blake & Haffey)
+    A program for running experiments on the web
+    Copyright 2012-2016 Mikey Garcia & Nate Kornell
+
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 3 as published by
+    the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+		Kitten/Cat release (2019-2021) author: Dr. Anthony Haffey (team@someopen.solutions)
+-->
+<style>
+#github_dialog{
+  top:200px;
+}
+</style>
+
+<div class="modal" tabindex="-1" role="dialog" id="github_dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Synch with github repository</h5>
+        <button type="button" class="close" id="fadeout_github">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Put in the information below to allow you to update your online experiments</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend" style="width:130px">
+            <span class="input-group-text bg-primary text-white">Organization</span>
+          </div>
+          <select class="form-control" id="select_organization"></select>
+          <button class="btn btn-primary" id="add_organization_btn" style="margin-left:2px; margin-right:2px">Add</button>
+          <button class="btn btn-danger" id="delete_organization_btn">X</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend"  style="width:130px">
+            <span class="input-group-text bg-primary text-white">Repository</span>
+          </div>
+          <select class="form-control" id="select_repository"></select>
+          <button class="btn btn-primary" id="add_repository_btn" style="margin-left:2px; margin-right:2px">Add</button>
+          <button class="btn btn-danger" id="delete_repo_btn">X</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="add_token_btn">Add token</button>
+        <button type="button" class="btn btn-primary" id="pull_repo_btn">Pull</button>
+        <button type="button" class="btn btn-primary" id="push_repo_btn">Push</button>
+        <button type="button" class="btn btn-primary" id="view_repo_btn">View</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="github.js"></script>

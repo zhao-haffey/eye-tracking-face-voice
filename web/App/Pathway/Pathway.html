@@ -1,0 +1,297 @@
+<style>
+#pathway_interface{
+  display: none;
+}
+</style>
+<nav class="navbar navbar-primary bg-white fixed-top fixed-top-2">
+  <table style = "max-width:80%">
+    <tr>
+      <td>
+        <button class='btn btn-primary' type='button' id="new_pathway_button" title="This will create a new pathway of tasks/studies">New Pathway</button>
+      </td>
+      <td>
+        <select id='pathway_select' class="form-control" previousValue="">
+          <option disabled selected>Please select a pathway</option>
+        </select>
+      </td>
+      <td>
+        <button id='save_pathway_btn'   class='btn btn-primary'>Save</button>
+        <button id='rename_pathway_btn' class='btn btn-primary'>Rename</button>
+        <button id='delete_pathway_btn' class='btn btn-primary'>Delete</button>
+        <button id='run_pathway_btn'    class='btn btn-primary'>Run</button>
+      </td>
+    </tr>
+  </table>
+</nav>
+
+<div style="top:100px; position: absolute; left:20px" id="pathway_interface">
+  <div id="pathway_div"></div>
+  <button class='btn btn-danger' id="add_pathway_rule_btn">Add Rule</button>
+  <button class="btn btn-primary" id="add_pathway_study_btn">Add Item</button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="pathway_study_modal" tabindex="-1" role="dialog" aria-labelledby="pathway_study_modal_label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pathway_study_modal_label">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table>
+          <tr>
+            <td>
+              <div id="add_study_pathway_select_div"></div>
+            </td>
+            <td>
+              <button class="btn btn-primary" id="add_study_to_pathway_btn">Add</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/*
+* Functions
+*/
+function list_pathways(){
+  if(typeof(master_json.pathway_mgmt) == "undefined"){
+    master_json.pathway_mgmt = {};
+  }
+  console.dir("typeof(master_json.pathway_mgmt.pathways)");
+  console.dir(typeof(master_json.pathway_mgmt.pathways));
+  if(typeof(master_json.pathway_mgmt.pathways) == "undefined"){
+    master_json.pathway_mgmt.pathways = {};
+  }
+  var pathways = Object.keys(master_json.pathway_mgmt.pathways)
+      pathways = pathways.sort();
+      pathways.forEach(function(pathway){
+        $("#pathway_select").append(
+          $('<option>', {
+            text: pathway
+          })
+        );
+      });
+}
+
+function list_pathway_studies(){
+  var pathway_div_html = "<table>" +
+    "<tr>" +
+      "<td colspan=3><h3 class='text-primary'>Start</h3></td>" ;
+  var studies_list = master_json.pathway_mgmt.pathways[master_json.pathway_mgmt.current].order;
+  studies_list.forEach(function(study_item){
+    pathway_div_html += "<tr>" +
+      '<td style="height:30px">' +
+        '<div class="border border-primary" style="height:10px; width:1px; bottom:12px; position:relative;"></div>' +
+        '<div class="border border-primary" style="height:1px; width:10px; bottom:5px; position:relative;"></div>' +
+        '<div class="border border-primary" style="height:10px; width:1px;  bottom:0px; position:relative;"></div>' +
+      '</td>' +
+      "<td>" +
+        "<h3 class='text-primary'>" +
+          study_item +
+        "</h3>" +
+      "</td>" +
+      "<td>" +
+        "<button class='btn btn-danger remove_btn' value='" + study_item + "'>Remove</button>" +
+      "</td>" +
+      "<td>" +
+        "<button class='btn btn-primary item_before_btn' value='" + study_item + "'>Add Item Before</button>" +
+      "</td>" +
+      "<td>" +
+        "<button class='btn btn-primary item_after_btn' value='" + study_item + "'>Add Item After</button>" +
+      "</td>" +
+    "</tr>";
+  });
+  pathway_div_html += "<tr>" +
+      "<td colspan=3><h3 class='text-primary'>End</h3></td>" +
+    "<tr>" +
+  "</table>";
+  $("#pathway_div").html(pathway_div_html);
+
+  $(".item_after_btn").on("click", function(){
+    bootbox.alert("this will be added soon!");
+  });
+
+  $(".item_before_btn").on("click", function(){
+    bootbox.alert("this will be added soon!");
+  });
+
+  $(".remove_btn").on("click",function(){
+    var remove_value = this.value;
+    var new_order = [];
+    master_json
+      .pathway_mgmt
+      .pathways[master_json.pathway_mgmt.current].order.forEach(function(order_item){
+        if(order_item !== remove_value){
+          new_order.push(order_item);
+        }
+      });
+      master_json
+        .pathway_mgmt
+        .pathways[master_json.pathway_mgmt.current].order = new_order;
+    delete(
+      master_json
+       .pathway_mgmt
+       .pathways[master_json.pathway_mgmt.current]
+       .items[this.value]
+     );
+     list_pathway_studies();
+  });
+}
+
+/*
+* Triggers
+*/
+
+
+$("#add_pathway_study_btn").on("click", function(){
+  $("#pathway_study_modal").modal();
+});
+
+$("#add_study_to_pathway_btn").on("click", function(){
+  master_json.pathway_mgmt.pathways[master_json.pathway_mgmt.current].order.push(
+    $("#add_study_pathway_select").val()
+  );
+  var conditions_array = [];
+  var conditions_list = Collector.PapaParsed(master_json.exp_mgmt.experiments[
+    $("#add_study_pathway_select").val()
+  ].conditions).map(row => row.name);
+  conditions_list.forEach(function(item){
+    conditions_array.push({
+      text: item,
+      value: item
+    });
+  });
+  bootbox.prompt({
+    title: "What condition do you want to use?",
+    inputType: "select",
+    inputOptions: conditions_array,
+    value: conditions_array[0].value,
+    callback: function(this_condition){
+      master_json
+        .pathway_mgmt
+        .pathways[master_json.pathway_mgmt.current]
+        .items[$("#add_study_pathway_select").val()] = {
+          "name" : this_condition
+        }
+      list_pathway_studies();
+    }
+  });
+});
+
+
+
+
+$("#add_pathway_rule_btn").on("click", function(){
+  bootbox.alert("This functionality is not yet available. Ask Anthony for help with it if you're interested in using this.");
+});
+
+$("#new_pathway_button").on("click",function(){
+  bootbox.prompt("What would you like to call this new pathway?", function(new_pathway){
+    if(new_pathway){
+      if(typeof(master_json.pathway_mgmt) == "undefined"){
+        master_json.pathway_mgmt = {
+          current : "",
+          pathways  : {}
+        };
+      }
+      if(typeof(master_json.pathway_mgmt[new_pathway]) !== "undefined"){
+        bootbox.alert("The pathway <b>" + new_pathway + "</b> already exists. Please choose a different name");
+      } else {
+        master_json.pathway_mgmt.pathways[new_pathway] = {
+          "order" : [],
+          "items" : {}
+        };
+        $("#pathway_select").append($('<option>', {
+            text: new_pathway
+        }));
+        $("#pathway_select").val(new_pathway);
+        master_json.pathway_mgmt.current = new_pathway;
+      }
+      $("#pathway_interface").show();
+    }
+  });
+});
+
+$("#pathway_select").on("change", function(){
+  list_pathway_studies();
+  $("#pathway_interface").show();
+});
+
+$("#run_pathway_btn").on("click", function(){
+  var pathway = $("#pathway_select").val();
+
+  var pathway_url =  "https://" +
+                      github_json.organization +
+                      ".github.io/"                   +
+                      github_json.repository   + "/" +
+                      "App/Pathway.html"            + "?" +
+                      "pathway="                       +
+                      master_json.pathway_mgmt.current + "&" +
+                      "platform=online";
+
+  bootbox.dialog({
+    "title" : "How would you like run this pathway?",
+    "message": "Copy the below link for your participants (remember to push the changes to your repository and give it 5 minutes for the changes to come through)<input class='form-control' id='pathway_url' value='" + pathway_url + "'>",
+    "buttons": {
+      "Run": {
+        callback:function(){
+          var this_url = window.location.href.split("/" + Collector.version)[0] +
+                                                    "/" + Collector.version + "/";
+          window.open(
+            this_url  	+ "Pathway.html?" +
+              "pathway="   + master_json.pathway_mgmt.current + "&" +
+              "platform=localhost",
+            "_blank"
+          );
+        }
+      },
+      "Cancel": {
+
+      }
+    }
+  });
+});
+
+$("#save_pathway_btn").on("click", function(){
+  if($("#pathway_select").val() !== null){
+    switch(Collector.detect_context()){
+      case "localhost":
+        Collector.electron.fs.write_file(
+          "Pathway",
+          $("#pathway_select").val()
+                              .toLowerCase()
+                              .replace(".json","") + ".json",
+          JSON.stringify(
+            master_json.pathway_mgmt.pathways[
+              master_json.pathway_mgmt.current
+            ],
+            null,
+            2
+          )
+        );
+        Collector.electron.fs.write_file(
+          "",
+          "master.json",
+          JSON.stringify(
+            master_json,
+            null,
+            2
+          )
+        );
+        break;
+    };
+  }
+});
+</script>
