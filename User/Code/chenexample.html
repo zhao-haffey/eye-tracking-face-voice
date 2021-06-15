@@ -1,0 +1,38 @@
+<script src="libraries/jquery-3.6.0.min.js"></script>
+<video id="this_video" width="320" height="240" controls>
+  <source src="audio_and_video.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<video id="video_only" width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<audio id="this_audio" src="audio.wav"></audio>
+
+
+<button id="start_video">Start</button>
+
+<script>
+vid = document.getElementById("this_video");
+audio = document.getElementById("this_audio");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+
+$("#start_video").on("click", function(){
+  document.getElementById("video_only").play()
+  //playVid();
+  audio.play();
+});
+
+
+</script>

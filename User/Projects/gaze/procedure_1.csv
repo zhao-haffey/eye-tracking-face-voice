@@ -1,0 +1,4 @@
+item,code,max time,text,shuffle 1,
+2,instruct,user,start,off,
+2 to 4,instruct,user,{{cue}},trials,
+2,instruct,user,end,off,
