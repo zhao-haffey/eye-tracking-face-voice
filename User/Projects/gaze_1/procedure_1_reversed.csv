@@ -1,0 +1,20 @@
+item,survey,name,max time,text,shuffle 1,weight,freeview_image_file,code,calibration_skip,calibrations,design_type,calibration_skip*,image_height,image_width,save_script,stim_duration,trials,left_position,right_position,min_width,min_height,skip_instruct,backup_script_location,left_side,
+0,,DRINKERS ONLY,,"This study asks questions about your alcoholic drinking habits. Please ONLY press ""proceed"" if you drink alcohol",,,,instruct,,,,,,,,,,,,,,,,,
+0,info_jf1.csv,information,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,consent_jf1.csv,consent,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,,instruct,user,"<span style='font-size:20px'>Thank you for participating - you are about to start an eye-tracking task. <br><br>
+ In this task we will ask you to look at some dots to train the camera to know where your eyes are looking. <br><br>
+ After this we will present you with pairs of images. You can look wherever you like on the screen.
+ </span>",off,1,,instruct,,,,,,,,,,,,,,,,,
+0,,webgazer,user,"Please look at the cross.<br />A pair of images will follow. You are free <br />to look at either image.<br /><br />Do not move your head, <br />only use your eyes.",off,1,gaze_pairs_a_sn_r1.csv,webgazer_3,no,13,freeview,no,300px,400px,,5000,40,-300px,300px,1100px,400px,off,,image_1,
+0,,instruct,user,Please take a break before starting the second half of the eyetracking task.,off,1,,instruct,,,,,,,,,,,,,,,,,
+0,,webgazer,user,"Please look at the cross.<br />A pair of images will follow. You are free <br />to look at either image.<br /><br />Do not move your head, <br />only use your eyes.",off,1,gaze_pairs_a_sn_r2.csv,webgazer_3,no,13,freeview,no,300px,400px,,5000,40,-300px,300px,1100px,400px,off,,image_1,
+0,modified_childhood_experiences.csv,childhood_experiences,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,barratt-impulsiveness.csv,impulsiveness,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,pathological_narcissism.csv,narcissism,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,audit.csv,alcohol,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,social_media_disorder.csv,social_networking,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,phq_9_adjusted.csv,depression,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,erq.csv,emotions,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,debrief_jf1.csv,debrief,user,,off,1,,survey,,,,,,,,,,,,,,,,,
+0,sources_of_support_jf1.csv,support,user,,off,1,,survey,,,,,,,,,,,,,,,,,
