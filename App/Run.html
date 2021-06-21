@@ -1,0 +1,116 @@
+<!--
+    Collector (Garcia, Kornell, Kerr, Blake & Haffey)
+    A program for running experiments on the web
+    Copyright 2012-2016 Mikey Garcia & Nate Kornell
+
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 3 as published by
+    the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+		Kitten/Cat release (2019-21) author: Dr. Anthony Haffey (team@someopen.solutions)
+-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="image/x-icon" href="../logos/cat.png"/>
+</head>
+
+
+<script src="libraries/jquery-3.6.0.min.js"></script>
+<script src="libraries/tweetnacl.js"></script>
+<script src="libraries/tweetnacl-utils.js"></script>
+<script src="libraries/crypto-js.min.js"></script>
+<script src="libraries/papaparse.4.3.6.min.js"></script>
+<script src="libraries/jquery-3.6.0.min.js"></script>
+<script src="libraries/popper.min.js"></script>
+<script src="libraries/bootbox.5.4.min.js"></script>
+
+<link rel="stylesheet" href="libraries/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+<script src="libraries/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+
+<script src="libraries/collector/Collector.js"></script>
+<script src="libraries/collector/OnlineTriggers.js"></script>
+<script src="libraries/collector/CollectorEncrypt.js"></script>
+<script src="libraries/collector/BrowserCheck.js"></script>
+<script src="libraries/collector/MobileCheck.js"></script>
+
+<div id="welcome_html"></div>
+
+<script>
+$("#welcome_html").load("Welcome.html");
+</script>
+
+
+<style>
+.phase_iframe{
+  visibility:hidden;
+	overflow:hidden;
+	width:0%;
+	height:0%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#project_div{
+	display: none;
+	width  : 100%;
+	margin : auto;
+}
+#download_json{
+	color:green;
+}
+#post_welcome{
+	display:none;
+}
+</style>
+
+
+
+<div id="post_welcome">
+	<div class="progress" style="height: 1px; position:fixed;">
+		<div id="experiment_progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+	</div>
+
+	<div id="loading_div">Preparing encryption of data</div>
+	<div id="stim_progress" class="progress">
+		<div id="stim_listing" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+	</div>
+  <div id="beginning_checks" style="display:none">
+    External keyboards generally do not work. Please do not try to use an external keyboard.<br><br>
+		Sometimes it may take a page a while to load. Please wait, and <b>DO NOT REFRESH THE PAGE</b>.<br><br>
+		Please click "Understood" to show that you have understood these instructions. <br><br>
+		<input type="button" value="Understood" id="proc_button">
+	</div>
+  <div id = "calibrate_div"></div>
+	<div id="project_div" scrolling="no"></div>
+</div>
+<div id="participant_country"></div>
+<script src="iframe_library.js"></script>
+<script src="PhaseFunctions.js"></script>
+
+
+<!-- will look into making the following libraries local in the future -->
+
+<script src="libraries/ammap.js"></script>
+<script src="libraries/worldLow.js"></script>
+<script src="libraries/ammap_theme_light.js"></script>
+
+
+
+<input type="hidden" id="completion_code" name="completion_code"/>
+<input type="hidden" id="prehashed_code" name="prehashed_code"/>
+<script src="Run.js"></script>
+<script>
+Project.activate_pipe();
+</script>

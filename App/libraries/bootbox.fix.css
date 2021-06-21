@@ -1,0 +1,21 @@
+/*	fix to close button being messed up, by  Paweł Rymsza  on https://stackoverflow.com/questions/48529880/bootbox-dialog-modal-bootstrap-4
+*/
+.close{
+	position: absolute;
+	right: 10px;
+	background-color: transparent;
+	border-color: none;
+	font-size:25px;
+	color: white;
+	border-width: 0px;
+}
+.bootbox .modal-header{
+	display: block;
+}
+.bootbox-close-button{
+	position: absolute;
+	right: 10px;
+	background-color: transparent;
+	border-color: none;
+	border-width: 0px;
+}

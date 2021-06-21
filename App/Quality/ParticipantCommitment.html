@@ -1,0 +1,37 @@
+<!--
+  As suggested by Joe Forrest,
+
+  Based on Hibben, K. C., Felderer, B., & Conrad, F. G. (2020). Respondent commitment: applying techniques from face-to-face interviewing to online collection of employment data. International Journal of Social Research Methodology, 1-14.
+-->
+
+
+<h3 class="text-primary">I commit to the following <br><em>please select all that apply</em></h3>
+
+<label><input type='checkbox' class="participant_commitment" value="Reading all the questions carefully">Reading all the questions carefully</label><br>
+
+<label><input type='checkbox' class="participant_commitment" value="Trying to be as precise as possible with my answers">Trying to be as precise as possible with my answers</label><br>
+
+<label><input type='checkbox' class="participant_commitment" value="Answering honestly">Answering honestly</label><br>
+
+<label><input type='checkbox' class="participant_commitment" value="None of the above but I will proceed anyway">None of the above - but I will proceed anyway</label><br>
+
+<input type='hidden' name='participant_commitment' id='participant_commitment'/>
+
+<script>
+$(".participant_commitment").on("click", function(){
+  var commitment_value = $("#participant_commitment").val();
+  commitment_value.replace("; " + this.value,"");
+
+  if(this.checked == true){
+    commitment_value += "; " + this.value;
+  }
+  $("#participant_commitment").val(commitment_value);
+
+});
+$('.project_smoothness').on('click',function(){
+  $(".project_smoothness").prop("checked",false);
+  $(this).prop("checked",true);
+  $('#experiment_smoothness_val').val($(this).val());
+});
+</script>
+<button class='btn btn-primary' onclick='Phase.submit()'>Proceed</button>

@@ -1,0 +1,37 @@
+<style>
+#collector_trial_timer{
+  position: absolute;
+  right: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: #069;
+  border-style: solid;
+  margin: 5px;
+  opacity: 0;
+  width : 125px;
+}
+</style>
+<h1 id="collector_trial_timer" class="bg-white"></h1>
+
+<script>
+Phase.set_timer(function(){
+  setInterval(function(){
+    var milliseconds = parent.parent.Project.trial_timer.getTimeLeft();
+    var seconds = Math.floor(milliseconds/1000);
+    var minutes = Math.floor(seconds/60);
+    seconds = seconds % 60;
+    seconds = seconds.toLocaleString(
+      'en-US', {minimumIntegerDigits: 2, useGrouping:false}
+    );
+    minutes = minutes.toLocaleString(
+      'en-US', {minimumIntegerDigits: 2, useGrouping:false}
+    );
+    $('#collector_trial_timer').html(minutes + ':' + seconds);
+
+    $("#collector_trial_timer").animate({
+      "opacity" : "1"
+    });
+  },0)
+},0);
+</script>
