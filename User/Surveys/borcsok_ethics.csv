@@ -1,0 +1,112 @@
+item_name,text,Type,Answers,Values,Optional,side_by_side,question_width,
+Instructions1,"<h2>School of Psychology</h2>
+
+<h5>Earley Gate, <br>
+Whiteknights<br>
+PO Box 238, <br>
+Reading <br>
+RG6 6AL, <br>
+UK</h5>
+
+<h6>phone	+44 (0)118 378 8523</h6>
+<h6>fax	+44 (0)118 378 6715</h6>
+<br>
+
+<h3>Title of Study: Investigating attentional biases to neutral and pleasant images: An eye-tracking study</h3>
+
+
+<h3>Information & Consent Sheet</h3>
+
+<h3>Researchers: </h3>
+<table>
+  <tr>
+  
+    <td>
+      <b>Supervisors:</b>
+    </td>
+    <td>
+      <b>Email:</b>
+    </td>
+    <td>
+      <b>Phone:</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Dr Anthony Haffey      
+    </td>
+    <td>
+      Anthony.Haffey@reading.ac.uk
+    </td>
+    <td>
+      0118 378 8850
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Dr Lily Fitzgibbon
+    </td>
+    <td>
+      l.t.fitzgibbon@reading.ac.uk
+    </td>
+    <td>
+      0118 378 8850
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+		
+<table>
+  <tr>
+    <td>
+      <b>Experimenters</b>
+    </td>
+    <td>
+      <b>Email</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Rebecca Borcsok
+    </td>
+    <td>
+      r.borcsok@student.reading.ac.uk 
+    </td>
+  </tr>
+</table>
+<br>
+
+<p>
+You are being invited to take part in some research. Before you decide whether or not to participate, it is important for you to understand why the research is being conducted and what it will involve. Please read the following information carefully.  
+</p>
+
+
+<h4>What is the purpose of the research? </h4>
+<p>
+We are conducting research exploring eye movements when viewing neutral or pleasant images. The purpose of the study is to determine if individual differences influence attentional behaviour. Your participation in this study will require one 30-minute session.  
+</p>
+
+<h4>Who is carrying out the research? </h4>
+<p>The data are being collected by Rebecca Borcsok, under the supervision of Dr Anthony Haffey and Dr Lily Fitzgibbon, in the School of Psychology and Clinical Language Sciences at University of Reading. The research has been approved by the School and University ethics committees. </p>
+
+<h4>What happens if I agree to take part? </h4>
+<p>If you agree to take part in this research, you will be asked to take part in a task where you will view matched pairs of images, whilst your eye movements are recorded. You will also be asked to complete a video-game style task, which records your decision-making. After the two tasks, you will also be asked to complete some questionnaires, including some that ask about your alcohol and gambling behaviours. At the end of the study, you will be debriefed on the tasks you have completed and given further information on the aims of the study. </p>
+
+<h4>Are there any risks associated with taking part?</h4> 
+<p>One risk of taking part in this study is the issue of confidentiality. To ensure that information about your personal use of alcohol or gambling behaviour is known by to as few members of the research team as possible, this information will be held by Rebecca Borcsok only, until the study is complete. You will be identified by code only during the study, so you cannot be matched with information about alcohol use or gambling. After the study is complete, all identifying information will be removed, and only subject codes (and non-identifying information) would be matched to information about your alcohol use and gambling behaviour. </p>
+
+<h4>What will happen to the information I provide?</h4> 
+<p>Your data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to your name will be stored securely and separately from the data you provide us. All identifiable information collected for the project, such as the consent form, will be destroyed after a period of 60 months from the when the completion of the project has elapsed. </p>
+<p>An analysis of the information will form part of our report at the end of the study and may be presented to interested parties and published in scientific journals and related media.  Note that all information presented in any reports or publications will be anonymous and unidentifiable.</p>
+
+<h4>Is participation voluntary and what if I wish to later withdraw? </h4>
+<p>Taking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.</p>
+
+<h4>What if I have other questions? </h4>
+<p>If you have further questions about this study, please do not hesitate to contact the student experimenter or supervisors listed above.</p>",Instruct,,,,,,
+info_questions,"I confirm that I have read the information sheet for this study. I have had the opportunity to consider the information, ask questions and have had these answered satisfactorily.",likert,Agree,1,No,yes,80%
+info_confidential,I understand that all personal information will remain confidential to the Investigator and arrangements for the storage and eventual disposal of any identifiable material have been made clear to me.,likert,Agree,1,No,yes,80%,
+info_voluntary,I understand that participation in this study is voluntary and that I can withdraw at any time without having to give an explanation.,likert,Agree,1,No,yes,80%,
+Info_Accept,I am happy to proceed with my participation.,likert,Agree,1,No,yes,80%,
+,,,,,,,,

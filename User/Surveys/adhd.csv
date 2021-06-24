@@ -1,0 +1,15 @@
+item_name,text,type,answers,values,score:attention,score:hyperactivity,score:adhd_total,optional,btn_width,btn_width,
+Instructions1,"<span style='color:#006699'><span style='font-size:20px'>Many adults have been living with Adult Attention-Deficit/Hyperactivity Disorder (Adult ADHD) and
+don’t recognize it.Why? Because its symptoms are often mistaken for a stressful life. If you’ve felt
+this type of frustration most of your life, you may have Adult ADHD – a condition your doctor can
+help diagnose and treat.<br>
+<br>
+
+The following questionnaire can be used as a starting point to help you recognize the signs/symptoms of Adult ADHD but is not meant to replace consultation with a trained healthcare professional. An accurate diagnosis can only be made through a clinical evaluation. Regardless of the questionnaire results, if you have concerns about diagnosis and treatment of Adult ADHD, please discuss your concerns with your physician. </span></span>",instruct,,,,,,,,,
+adhd1,"How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,1,,1,No,100px,150px,
+adhd2,How often do you have difficulty getting things in order when you have to do a task that requires organization?,likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,1,,1,No,100px,150px,
+adhd3,How often do you have problems remembering appointments or obligations?,likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,1,,1,No,100px,150px,
+adhd4,"When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,1,,1,No,100px,150px,
+adhd5,How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?,likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,,1,1,No,100px,150px,
+adhd6,"How often do you feel overly active and compelled to do things, like you were driven by a motor?",likert,Never|Rarely|Sometimes|Often|Very Often,0|1|2|3|4,,1,1,No,100px,150px,
+,,,,,,,,,,,

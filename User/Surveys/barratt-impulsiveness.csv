@@ -1,0 +1,18 @@
+item_name,text,type,answers,values,optional,score:reappraisal,score:suppression,btn_width,side_text,
+gross_instructions,"We would like to ask you some questions about your emotional life, in particular, how
+you control (that is, regulate and manage) your emotions. The questions below involve
+two distinct aspects of your emotional life. One is your <b><u>emotional experience</u></b>, or what
+you feel like inside. The other is your <b><u>emotional expression</u></b>, or how you show your
+emotions in the way you talk, gesture, or behave. Although some of the following
+questions may seem similar to one another, they differ in important ways.",instruct,,,,,,,,
+Reappraisal1,"When I want to feel more positive emotion (such as joy or amusement), I change what I'm thinking about.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+Excessive_Suppression_1,I keep my emotions to myself.,likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,,1,50px,"strongly disagree|strongly agree ",
+Reappraisal_2,"When I want to feel less negative emotion (such as sadness or anger), I change what I'm thinking about.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+Excessive_Suppression_2,"When I am feeling positive emotions, I am careful not to express them.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,,1,50px,"strongly disagree|strongly agree ",
+Reappraisal_3,"When I'm faced with a stressful situation, I make myself think about it in a way that helps me stay calm.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+Excessive_Suppression_3,I control my emotions by not expressing them.,likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,,1,50px,"strongly disagree|strongly agree ",
+Reappraisal_4,"When I want to feel more positive emotion, I change the way I'm thinking about the situation.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+Reappraisal_5,I control my emotions by changing the way I think about the situation I'm in.,likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+Excessive_Suppression_4,"When I am feeling negative emotions, I make sure not to express them.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,,1,50px,"strongly disagree|strongly agree ",
+Reappraisal_6,"When I want to feel less negative emotion, I change the way I'm thinking about the situation.",likert,1|2|3|4|5|6|7,1|2|3|4|5|6|7,No,1,,50px,"strongly disagree|strongly agree ",
+,,,,,,,,,,

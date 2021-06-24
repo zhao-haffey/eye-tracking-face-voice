@@ -20,7 +20,7 @@
     "gaze_pairs_a_sn_r1.csv": "Task,Scrambled_Status,Name_1,Name_2,image_1,image_2,Random,Order,\r\nSocial Networking,Scrambled,Icon_1_Control_SN.png_Scrambled,Icon_1_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Icon_1_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Icon_1_Target_SN.png,0.898268979,80,\r\nAlcohol,Unscrambled,Unopened_3_Target_A.png,Unopened_3_Control_A.png,../User/Pictures/Alcohol/Unopened_3_Target_A.png,../User/Pictures/Alcohol/Unopened_3_Control_A.png,0.978351557,79,\r\nAlcohol,Scrambled,Poured_4_Control_A.png_Scrambled,Poured_4_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Poured_4_Control_A.png,../User/Pictures/Alcohol/Scrambled_Poured_4_Target_A.png,0.595716622,78,\r\nSocial Networking,Unscrambled,Misc_3_Control_SN.png,Misc_3_Target_SN.png,../User/Pictures/Social_Networking/Misc_3_Control_SN.png,../User/Pictures/Social_Networking/Misc_3_Target_SN.png,0.931397827,77,\r\nSocial Networking,Scrambled,Icon_3_Target_SN.png_Scrambled,Icon_3_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Icon_3_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Icon_3_Control_SN.png,0.829406677,76,\r\nAlcohol,Unscrambled,Unopened_5_Control_A.png,Unopened_5_Target_A.png,../User/Pictures/Alcohol/Unopened_5_Control_A.png,../User/Pictures/Alcohol/Unopened_5_Target_A.png,0.99735982,75,\r\nAlcohol,Scrambled,Location_2_Target_A.png_Scrambled,Location_2_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Location_2_Target_A.png,../User/Pictures/Alcohol/Scrambled_Location_2_Control_A.png,0.918020874,74,\r\nSocial Networking,Unscrambled,Website_3_Control_SN.png,Website_3_Target_SN.png,../User/Pictures/Social_Networking/Website_3_Control_SN.png,../User/Pictures/Social_Networking/Website_3_Target_SN.png,0.951300005,73,\r\nAlcohol,Scrambled,Location_3_Target_A.png_Scrambled,Location_3_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Location_3_Target_A.png,../User/Pictures/Alcohol/Scrambled_Location_3_Control_A.png,0.877658468,72,\r\nSocial Networking,Unscrambled,Website_1_Target_SN.png,Website_1_Control_SN.png,../User/Pictures/Social_Networking/Website_1_Target_SN.png,../User/Pictures/Social_Networking/Website_1_Control_SN.png,0.842458716,71,\r\nAlcohol,Scrambled,Unopened_3_Control_A.png_Scrambled,Unopened_3_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Unopened_3_Control_A.png,../User/Pictures/Alcohol/Scrambled_Unopened_3_Target_A.png,0.872274402,70,\r\nSocial Networking,Unscrambled,Misc_1_Control_SN.png,Misc_1_Target_SN.png,../User/Pictures/Social_Networking/Misc_1_Control_SN.png,../User/Pictures/Social_Networking/Misc_1_Target_SN.png,0.855958299,69,\r\nAlcohol,Scrambled,Poured_3_Target_A.png_Scrambled,Poured_3_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Poured_3_Target_A.png,../User/Pictures/Alcohol/Scrambled_Poured_3_Control_A.png,0.850599763,68,\r\nSocial Networking,Scrambled,Misc_3_Target_SN.png_Scrambled,Misc_3_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Misc_3_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Misc_3_Control_SN.png,0.847477665,67,\r\nAlcohol,Unscrambled,Social_1_Control_A.png,Social_1_Target_A.png,../User/Pictures/Alcohol/Social_1_Control_A.png,../User/Pictures/Alcohol/Social_1_Target_A.png,0.866652096,66,\r\nSocial Networking,Unscrambled,Icon_3_Target_SN.png,Icon_3_Control_SN.png,../User/Pictures/Social_Networking/Icon_3_Target_SN.png,../User/Pictures/Social_Networking/Icon_3_Control_SN.png,0.926202262,65,\r\nAlcohol,Scrambled,Location_5_Control_A.png_Scrambled,Location_5_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Location_5_Control_A.png,../User/Pictures/Alcohol/Scrambled_Location_5_Target_A.png,0.829134357,64,\r\nSocial Networking,Scrambled,Phone_3_Target_SN.png_Scrambled,Phone_3_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Phone_3_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Phone_3_Control_SN.png,0.723777123,63,\r\nAlcohol,Unscrambled,Unopened_4_Control_A.png,Unopened_4_Target_A.png,../User/Pictures/Alcohol/Unopened_4_Control_A.png,../User/Pictures/Alcohol/Unopened_4_Target_A.png,0.271173039,62,\r\nSocial Networking,Scrambled,Misc_5_Target_SN.png_Scrambled,Misc_5_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Misc_5_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Misc_5_Control_SN.png,0.735848671,61,\r\nSocial Networking,Scrambled,Website_3_Control_SN.png_Scrambled,Website_3_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Website_3_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Website_3_Target_SN.png,0.725385882,60,\r\nAlcohol,Unscrambled,Social_3_Control_A.png,Social_3_Target_A.png,../User/Pictures/Alcohol/Social_3_Control_A.png,../User/Pictures/Alcohol/Social_3_Target_A.png,0.810596627,59,\r\nSocial Networking,Unscrambled,Misc_5_Target_SN.png,Misc_5_Control_SN.png,../User/Pictures/Social_Networking/Misc_5_Target_SN.png,../User/Pictures/Social_Networking/Misc_5_Control_SN.png,0.723434536,58,\r\nAlcohol,Scrambled,Poured_5_Target_A.png_Scrambled,Poured_5_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Poured_5_Target_A.png,../User/Pictures/Alcohol/Scrambled_Poured_5_Control_A.png,0.717288937,57,\r\nSocial Networking,Scrambled,Website_2_Control_SN.png_Scrambled,Website_2_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Website_2_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Website_2_Target_SN.png,0.710318634,56,\r\nAlcohol,Unscrambled,Poured_2_Target_A.png,Poured_2_Control_A.png,../User/Pictures/Alcohol/Poured_2_Target_A.png,../User/Pictures/Alcohol/Poured_2_Control_A.png,0.680065572,55,\r\nSocial Networking,Unscrambled,Phone_1_Control_SN.png,Phone_1_Target_SN.png,../User/Pictures/Social_Networking/Phone_1_Control_SN.png,../User/Pictures/Social_Networking/Phone_1_Target_SN.png,0.660614333,54,\r\nAlcohol,Scrambled,Social_1_Target_A.png_Scrambled,Social_1_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Social_1_Target_A.png,../User/Pictures/Alcohol/Scrambled_Social_1_Control_A.png,0.628481382,53,\r\nSocial Networking,Unscrambled,Misc_4_Target_SN.png,Misc_4_Control_SN.png,../User/Pictures/Social_Networking/Misc_4_Target_SN.png,../User/Pictures/Social_Networking/Misc_4_Control_SN.png,0.628398416,52,\r\nSocial Networking,Scrambled,Misc_4_Control_SN.png_Scrambled,Misc_4_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Misc_4_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Misc_4_Target_SN.png,0.598850504,51,\r\nAlcohol,Unscrambled,Social_5_Control_A.png,Social_5_Target_A.png,../User/Pictures/Alcohol/Social_5_Control_A.png,../User/Pictures/Alcohol/Social_5_Target_A.png,0.953775654,50,\r\nSocial Networking,Scrambled,Icon_5_Target_SN.png_Scrambled,Icon_5_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Icon_5_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Icon_5_Control_SN.png,0.539776064,49,\r\nAlcohol,Scrambled,Social_2_Target_A.png_Scrambled,Social_2_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Social_2_Target_A.png,../User/Pictures/Alcohol/Scrambled_Social_2_Control_A.png,0.537373383,48,\r\nSocial Networking,Unscrambled,Icon_4_Control_SN.png,Icon_4_Target_SN.png,../User/Pictures/Social_Networking/Icon_4_Control_SN.png,../User/Pictures/Social_Networking/Icon_4_Target_SN.png,0.535022228,47,\r\nSocial Networking,Scrambled,Icon_2_Target_SN.png_Scrambled,Icon_2_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Icon_2_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Icon_2_Control_SN.png,0.506442548,46,\r\nAlcohol,Scrambled,Unopened_2_Control_A.png_Scrambled,Unopened_2_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Unopened_2_Control_A.png,../User/Pictures/Alcohol/Scrambled_Unopened_2_Target_A.png,0.806233903,45,\r\nSocial Networking,Unscrambled,Website_5_Target_SN.png,Website_5_Control_SN.png,../User/Pictures/Social_Networking/Website_5_Target_SN.png,../User/Pictures/Social_Networking/Website_5_Control_SN.png,0.523180373,44,\r\nAlcohol,Scrambled,Unopened_5_Control_A.png_Scrambled,Unopened_5_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Unopened_5_Control_A.png,../User/Pictures/Alcohol/Scrambled_Unopened_5_Target_A.png,0.335038776,43,\r\nAlcohol,Unscrambled,Location_3_Target_A.png,Location_3_Control_A.png,../User/Pictures/Alcohol/Location_3_Target_A.png,../User/Pictures/Alcohol/Location_3_Control_A.png,0.464347302,42,\r\nSocial Networking,Scrambled,Website_5_Control_SN.png_Scrambled,Website_5_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Website_5_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Website_5_Target_SN.png,0.455249287,41,\r\n,,,,,,,,",
     "gaze_pairs_a_sn_r2.csv": "Task,Scrambled_Status,Name_1,Name_2,image_1,image_2,Random,Order,\r\nSocial Networking,Unscrambled,Icon_5_Control_SN.png,Icon_5_Target_SN.png,../User/Pictures/Social_Networking/Icon_5_Control_SN.png,../User/Pictures/Social_Networking/Icon_5_Target_SN.png,0.444728684,40,\r\nAlcohol,Scrambled,Unopened_1_Control_A.png_Scrambled,Unopened_1_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Unopened_1_Control_A.png,../User/Pictures/Alcohol/Scrambled_Unopened_1_Target_A.png,0.441516365,39,\r\nAlcohol,Unscrambled,Social_2_Target_A.png,Social_2_Control_A.png,../User/Pictures/Alcohol/Social_2_Target_A.png,../User/Pictures/Alcohol/Social_2_Control_A.png,0.429374099,38,\r\nSocial Networking,Scrambled,Phone_2_Control_SN.png_Scrambled,Phone_2_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Phone_2_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Phone_2_Target_SN.png,0.393425932,37,\r\nAlcohol,Unscrambled,Social_4_Control_A.png,Social_4_Target_A.png,../User/Pictures/Alcohol/Social_4_Control_A.png,../User/Pictures/Alcohol/Social_4_Target_A.png,0.385903059,36,\r\nSocial Networking,Scrambled,Icon_4_Target_SN.png_Scrambled,Icon_4_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Icon_4_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Icon_4_Control_SN.png,0.382404996,35,\r\nAlcohol,Scrambled,Poured_2_Control_A.png_Scrambled,Poured_2_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Poured_2_Control_A.png,../User/Pictures/Alcohol/Scrambled_Poured_2_Target_A.png,0.301361585,34,\r\nSocial Networking,Unscrambled,Phone_4_Target_SN.png,Phone_4_Control_SN.png,../User/Pictures/Social_Networking/Phone_4_Target_SN.png,../User/Pictures/Social_Networking/Phone_4_Control_SN.png,0.345668856,33,\r\nAlcohol,Unscrambled,Unopened_2_Control_A.png,Unopened_2_Target_A.png,../User/Pictures/Alcohol/Unopened_2_Control_A.png,../User/Pictures/Alcohol/Unopened_2_Target_A.png,0.345508537,32,\r\nAlcohol,Scrambled,Poured_1_Target_A.png_Scrambled,Poured_1_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Poured_1_Target_A.png,../User/Pictures/Alcohol/Scrambled_Poured_1_Control_A.png,0.242266058,31,\r\nSocial Networking,Unscrambled,Icon_2_Control_SN.png,Icon_2_Target_SN.png,../User/Pictures/Social_Networking/Icon_2_Control_SN.png,../User/Pictures/Social_Networking/Icon_2_Target_SN.png,0.466167962,30,\r\nSocial Networking,Scrambled,Phone_5_Target_SN.png_Scrambled,Phone_5_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Phone_5_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Phone_5_Control_SN.png,0.334481584,29,\r\nAlcohol,Unscrambled,Location_5_Target_A.png,Location_5_Control_A.png,../User/Pictures/Alcohol/Location_5_Target_A.png,../User/Pictures/Alcohol/Location_5_Control_A.png,0.317240541,28,\r\nSocial Networking,Unscrambled,Icon_1_Control_SN.png,Icon_1_Target_SN.png,../User/Pictures/Social_Networking/Icon_1_Control_SN.png,../User/Pictures/Social_Networking/Icon_1_Target_SN.png,0.316011621,27,\r\nAlcohol,Scrambled,Social_3_Target_A.png_Scrambled,Social_3_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Social_3_Target_A.png,../User/Pictures/Alcohol/Scrambled_Social_3_Control_A.png,0.302605896,26,\r\nSocial Networking,Unscrambled,Phone_3_Target_SN.png,Phone_3_Control_SN.png,../User/Pictures/Social_Networking/Phone_3_Target_SN.png,../User/Pictures/Social_Networking/Phone_3_Control_SN.png,0.519917895,25,\r\nAlcohol,Unscrambled,Poured_4_Control_A.png,Poured_4_Target_A.png,../User/Pictures/Alcohol/Poured_4_Control_A.png,../User/Pictures/Alcohol/Poured_4_Target_A.png,0.275252268,24,\r\nSocial Networking,Scrambled,Website_4_Control_SN.png_Scrambled,Website_4_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Website_4_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Website_4_Target_SN.png,0.361046363,23,\r\nSocial Networking,Unscrambled,Phone_2_Target_SN.png,Phone_2_Control_SN.png,../User/Pictures/Social_Networking/Phone_2_Target_SN.png,../User/Pictures/Social_Networking/Phone_2_Control_SN.png,0.245434122,22,\r\nAlcohol,Unscrambled,Poured_5_Target_A.png,Poured_5_Control_A.png,../User/Pictures/Alcohol/Poured_5_Target_A.png,../User/Pictures/Alcohol/Poured_5_Control_A.png,0.345222042,21,\r\nAlcohol,Scrambled,Unopened_4_Control_A.png_Scrambled,Unopened_4_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Unopened_4_Control_A.png,../User/Pictures/Alcohol/Scrambled_Unopened_4_Target_A.png,0.241421912,20,\r\nSocial Networking,Scrambled,Misc_1_Control_SN.png_Scrambled,Misc_1_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Misc_1_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Misc_1_Target_SN.png,0.233790555,19,\r\nSocial Networking,Unscrambled,Misc_2_Target_SN.png,Misc_2_Control_SN.png,../User/Pictures/Social_Networking/Misc_2_Target_SN.png,../User/Pictures/Social_Networking/Misc_2_Control_SN.png,0.227995904,18,\r\nAlcohol,Unscrambled,Location_1_Control_A.png,Location_1_Target_A.png,../User/Pictures/Alcohol/Location_1_Control_A.png,../User/Pictures/Alcohol/Location_1_Target_A.png,0.198334642,17,\r\nSocial Networking,Scrambled,Website_1_Target_SN.png_Scrambled,Website_1_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Website_1_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Website_1_Control_SN.png,0.027358379,16,\r\nAlcohol,Unscrambled,Location_2_Control_A.png,Location_2_Target_A.png,../User/Pictures/Alcohol/Location_2_Control_A.png,../User/Pictures/Alcohol/Location_2_Target_A.png,0.166810372,15,\r\nSocial Networking,Unscrambled,Phone_5_Target_SN.png,Phone_5_Control_SN.png,../User/Pictures/Social_Networking/Phone_5_Target_SN.png,../User/Pictures/Social_Networking/Phone_5_Control_SN.png,0.156125875,14,\r\nAlcohol,Scrambled,Location_1_Control_A.png_Scrambled,Location_1_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Location_1_Control_A.png,../User/Pictures/Alcohol/Scrambled_Location_1_Target_A.png,0.188646983,13,\r\nSocial Networking,Scrambled,Misc_2_Target_SN.png_Scrambled,Misc_2_Control_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Misc_2_Target_SN.png,../User/Pictures/Social_Networking/Scrambled_Misc_2_Control_SN.png,0.101954374,12,\r\nAlcohol,Unscrambled,Poured_3_Control_A.png,Poured_3_Target_A.png,../User/Pictures/Alcohol/Poured_3_Control_A.png,../User/Pictures/Alcohol/Poured_3_Target_A.png,0.068205754,11,\r\nAlcohol,Scrambled,Social_5_Target_A.png_Scrambled,Social_5_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Social_5_Target_A.png,../User/Pictures/Alcohol/Scrambled_Social_5_Control_A.png,0.09636974,10,\r\nSocial Networking,Unscrambled,Website_4_Target_SN.png,Website_4_Control_SN.png,../User/Pictures/Social_Networking/Website_4_Target_SN.png,../User/Pictures/Social_Networking/Website_4_Control_SN.png,0.070975165,9,\r\nAlcohol,Scrambled,Social_4_Control_A.png_Scrambled,Social_4_Target_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Social_4_Control_A.png,../User/Pictures/Alcohol/Scrambled_Social_4_Target_A.png,0.100927609,8,\r\nAlcohol,Unscrambled,Location_4_Target_A.png,Location_4_Control_A.png,../User/Pictures/Alcohol/Location_4_Target_A.png,../User/Pictures/Alcohol/Location_4_Control_A.png,0.066166088,7,\r\nSocial Networking,Scrambled,Phone_4_Control_SN.png_Scrambled,Phone_4_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Phone_4_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Phone_4_Target_SN.png,0.063335041,6,\r\nAlcohol,Unscrambled,Poured_1_Target_A.png,Poured_1_Control_A.png,../User/Pictures/Alcohol/Poured_1_Target_A.png,../User/Pictures/Alcohol/Poured_1_Control_A.png,0.059379086,5,\r\nSocial Networking,Scrambled,Phone_1_Control_SN.png_Scrambled,Phone_1_Target_SN.png_Scrambled,../User/Pictures/Social_Networking/Scrambled_Phone_1_Control_SN.png,../User/Pictures/Social_Networking/Scrambled_Phone_1_Target_SN.png,0.030445671,4,\r\nAlcohol,Unscrambled,Unopened_1_Control_A.png,Unopened_1_Target_A.png,../User/Pictures/Alcohol/Unopened_1_Control_A.png,../User/Pictures/Alcohol/Unopened_1_Target_A.png,0.119666411,3,\r\nSocial Networking,Unscrambled,Website_2_Target_SN.png,Website_2_Control_SN.png,../User/Pictures/Social_Networking/Website_2_Target_SN.png,../User/Pictures/Social_Networking/Website_2_Control_SN.png,0.026990945,2,\r\nAlcohol,Scrambled,Location_4_Target_A.png_Scrambled,Location_4_Control_A.png_Scrambled,../User/Pictures/Alcohol/Scrambled_Location_4_Target_A.png,../User/Pictures/Alcohol/Scrambled_Location_4_Control_A.png,0.023865481,1,\r\n,,,,,,,,"
   },
-  "public_key": "KZNtA6JPT8JahkCVzbRhIip3eCvlK3NteKecGAHtqlc=",
+  "public_key": "vaghQCCYyZm2suWPmrtcil5o8EkTocmbidgBmMZCYzg=",
   "surveys": {
     "borcsok_ethics.csv": [
       [
@@ -109,17 +109,17 @@
         "values",
         "optional",
         "side_by_side",
-        null
+        ""
       ],
       [
         "Instructions1",
-        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<h2>University of Reading</h2><br>\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\n<h2>PARTICIPANT INFORMATION SHEET </h2>\n\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n    <tr>\n    <td>Anthony Haffey</td>\n    <td>anthony.haffey@reading.ac.uk</td>\n    <td>-01183788523-</td>\n  </tr>\n  <tr>\n    <td>Chen Zhao</td>\n    <td>c.zhao5@reading.ac.uk</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Nicholas Hedger</td>\n    <td>n.hedger@reading.ac.uk</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td>Joe Forrest</td>\n    <td>j.forrest@reading.ac.uk</td>\n    <td></td>\n  </tr>\n</table>\n\nWe would be grateful if you could assist us by participating in our online study. <br>\n<br>\n<b> What is the study investigating? </b> <br>\nWe are investigating behaviour related to addiction. In this research you will complete questionnaires, some of which relate to depression, addiction, alcohol, social networking and difficult experiences from childhood, and an eye-tracking task when viewing pairs of images including images involving alcohol and social networking. The eye-tracking will just use the web-camera on your device and does not require wearing any device. The task tends to work much better on laptops than desktops with mounted cameras so we would recommend continuing or restarting the task on a laptop. The purpose of the study is to determine if individual differences influence attentional behaviour. Your participation in this study will require one 30-minute session.  \n<br><br>\n<b> What data be stored? </b> <br>\nWe will use your webcam to track where you are looking during the eye tracking task. You do not need any specialist equipment for this task - just a webcam. Furthermore, and most importantly, we will not record any videos or pictures, but only the co-ordinates of where we think you are looking. We will also store your questionnaire results.<br>\n<br>\n<b> How will my data be stored? </b> <br>\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Data collected from this study will be preserved and made publicly available in anonymised form, so that data can be re-used by others. No video will be collected or stored, your webcam will only be used to estimate where you are looking on the screen.<br>\n<br>\n<b>Are there any risks associated with taking part?</b><br>Some of the questionnaires may include material of a sensitive nature. Thus, the study may include a mild risk of anxiety, sadness or other emotional reactions. <br>\n<br>\n<b> Do I have to take part? </b> <br>\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. <br>\n<br>\n<b> Will I be compensated?</b><br>\n <H1>You will receive 0.5 credits through SONA.</H1><br>\n<br>\nThis application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct <H1>([SREC OR UREC NUMBER])</H1>.<br>\n<br>\nIf you have any questions or concerns about the research, please feel free to contact Joe Forrest or Anthony Haffey using the details above.<br>\n<br>\nThank you for your help.",
+        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\r\nWhiteknights<br>\r\nReading RG6 6AL</div>\r\n<h2>University of Reading</h2><br>\r\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\r\n<h2>PARTICIPANT INFORMATION SHEET </h2>\r\n\r\n<br>\r\n<table class=\"table\">\r\n  <tr>\r\n    <td><b>Investigator(s):</b></td>\r\n    <td><b>Email:</b></td>\r\n    <td><b>Telephone:</b></td>\r\n  </tr>\r\n    <tr>\r\n    <td>Anthony Haffey</td>\r\n    <td>anthony.haffey@reading.ac.uk</td>\r\n    <td>-01183788523-</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Chen Zhao</td>\r\n    <td>c.zhao5@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n<tr>\r\n    <td>Nicholas Hedger</td>\r\n    <td>n.hedger@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n  <tr>\r\n    <td><b>Researcher(s):</b></td>\r\n  </tr>\r\n  <tr>\r\n    <td>Joe Forrest</td>\r\n    <td>j.forrest@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n</table>\r\n\r\nWe would be grateful if you could assist us by participating in our online study. <br>\r\n<br>\r\n<b> What is the study investigating? </b> <br>\r\nWe are investigating behaviour related to addiction. In this research you will complete questionnaires, some of which relate to depression, addiction, alcohol, social networking and difficult experiences from childhood, and an eye-tracking task when viewing pairs of images including images involving alcohol and social networking. The eye-tracking will just use the web-camera on your device and does not require wearing any device. The task tends to work much better on laptops than desktops with mounted cameras so we would recommend continuing or restarting the task on a laptop. The purpose of the study is to determine if individual differences influence attentional behaviour. Your participation in this study will require one 30-minute session.  \r\n<br><br>\r\n<b> What data be stored? </b> <br>\r\nWe will use your webcam to track where you are looking during the eye tracking task. You do not need any specialist equipment for this task - just a webcam. Furthermore, and most importantly, we will not record any videos or pictures, but only the co-ordinates of where we think you are looking. We will also store your questionnaire results.<br>\r\n<br>\r\n<b> How will my data be stored? </b> <br>\r\nYour data will be kept confidential and securely stored, with only an anonymous number identifying it. Data collected from this study will be preserved and made publicly available in anonymised form, so that data can be re-used by others. No video will be collected or stored, your webcam will only be used to estimate where you are looking on the screen.<br>\r\n<br>\r\n<b>Are there any risks associated with taking part?</b><br>Some of the questionnaires may include material of a sensitive nature. Thus, the study may include a mild risk of anxiety, sadness or other emotional reactions. <br>\r\n<br>\r\n<b> Do I have to take part? </b> <br>\r\nTaking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. <br>\r\n<br>\r\n<b> Will I be compensated?</b><br>\r\n <H1>You will receive 0.5 credits through SONA.</H1><br>\r\n<br>\r\nThis application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct <H1>([SREC OR UREC NUMBER])</H1>.<br>\r\n<br>\r\nIf you have any questions or concerns about the research, please feel free to contact Joe Forrest or Anthony Haffey using the details above.<br>\r\n<br>\r\nThank you for your help.",
         "instruct",
         "",
         "",
         "",
         "",
-        null
+        ""
       ],
       [
         "",
@@ -140,7 +140,7 @@
       ],
       [
         "Instructions1",
-        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div><h2>University of Reading</h2><br>\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study </h2> <br>\n<h2>Consent Form</h1>\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n  <tr>\n    <td>Anthony Haffey</td>\n    <td>anthony.haffey@reading.ac.uk</td>\n    <td>-0118 378 8850-</td>\n  </tr>\n  <tr>\n    <td>Chen Zhao</td>\n    <td>c.zhao5@reading.ac.uk</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Nicholas Hedger</td>\n    <td>n.hedger@reading.ac.uk</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td>Joe Forrest</td>\n    <td>j.forrest@reading.ac.uk</td>\n    <td></td>\n  </tr>\n</table>",
+        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\r\nWhiteknights<br>\r\nReading RG6 6AL</div><h2>University of Reading</h2><br>\r\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study </h2> <br>\r\n<h2>Consent Form</h1>\r\n<br>\r\n<table class=\"table\">\r\n  <tr>\r\n    <td><b>Investigator(s):</b></td>\r\n    <td><b>Email:</b></td>\r\n    <td><b>Telephone:</b></td>\r\n  </tr>\r\n  <tr>\r\n    <td>Anthony Haffey</td>\r\n    <td>anthony.haffey@reading.ac.uk</td>\r\n    <td>-0118 378 8850-</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Chen Zhao</td>\r\n    <td>c.zhao5@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n<tr>\r\n    <td>Nicholas Hedger</td>\r\n    <td>n.hedger@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n  <tr>\r\n    <td><b>Researcher(s):</b></td>\r\n  </tr>\r\n  <tr>\r\n    <td>Joe Forrest</td>\r\n    <td>j.forrest@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n</table>",
         "instruct",
         "",
         "",
@@ -169,7 +169,7 @@
         "No",
         "yes",
         "70%",
-        null
+        ""
       ],
       [
         "uor_consent_3",
@@ -223,13 +223,13 @@
         "type",
         "answers",
         "values",
-        "score: mce_total",
+        "score:adverse_ce_total",
         "optional",
         "btn_width",
         "logic",
         "checkbox_",
         "other",
-        null
+        ""
       ],
       [
         "Instructions1",
@@ -241,65 +241,65 @@
         "",
         "",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_1",
-        "1. Did a parent or other adult in the household often or very oftenâ¦<br> Swear at you, insult you, put you down, or humiliate you? Or <br> Act in a way that made you afraid that you might be physically hurt?",
+        "1. Did a parent or other adult in the household often or very often…<br> Swear at you, insult you, put you down, or humiliate you? Or <br> Act in a way that made you afraid that you might be physically hurt?",
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_2",
-        "2. Did a parent or other adult in the household often or very oftenâ¦ <br> Push, grab, slap or throw something at you? Or <br> Ever hit you so hard that you had marks or were injured?",
+        "2. Did a parent or other adult in the household often or very often… <br> Push, grab, slap or throw something at you? Or <br> Ever hit you so hard that you had marks or were injured?",
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_3",
-        "3. Did you often or very often feel thatâ¦<br> No one in your family loved you or thought you were important or special? Or Your family didn't look out for each other, feel close to each other, or support each other?",
+        "3. Did you often or very often feel that…<br> No one in your family loved you or thought you were important or special? Or Your family didn't look out for each other, feel close to each other, or support each other?",
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_4",
-        "4. Did you often or very often feel thatâ¦ <br> You didn't have enough to eat, had to wear dirty clothes, and had no one to protect you? Or <br> Your parents were too drunk or high to take care of you or take you to the doctor if you needed it?",
+        "4. Did you often or very often feel that… <br> You didn't have enough to eat, had to wear dirty clothes, and had no one to protect you? Or <br> Your parents were too drunk or high to take care of you or take you to the doctor if you needed it?",
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_5",
@@ -307,13 +307,13 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_6",
@@ -321,27 +321,27 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "LOGIC REQUIRED",
         "use checkbox",
-        null,
-        null
+        "",
+        ""
       ],
       [
         "mce_6a",
         "If yes to above, Which members of your household drank too much?",
         "checkbox",
         "Parent|Sibling|Aunt/Uncle|Grandparent",
-        "0|1|2|3|4",
-        "0|1|2|3|4",
+        "Parent|Sibling|Aunt/Uncle|Grandparent",
+        "",
         "Yes",
         "",
         "",
         "",
         "yes",
-        null
+        ""
       ],
       [
         "mce_7",
@@ -349,27 +349,27 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "LOGIC REQUIRED",
         "use checkbox",
-        null,
-        null
+        "",
+        ""
       ],
       [
         "mce_7a",
         "If yes to above, Which members of your household did street drugs?",
         "checkbox",
         "Parent|Sibling|Aunt/Uncle|Grandparent",
-        "0|1|2|3|4",
-        "0|1|2|3|4",
+        "Parent|Sibling|Aunt/Uncle|Grandparent",
+        "",
         "Yes",
         "",
         "",
         "",
         "yes",
-        null
+        ""
       ],
       [
         "mce_8",
@@ -377,13 +377,13 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_9",
@@ -391,13 +391,13 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
         "mce_10",
@@ -405,27 +405,27 @@
         "likert",
         "Never True|Rarely True|Sometimes True|Often True|Very Often True",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
         "",
-        null,
-        null,
-        null
+        "",
+        "",
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "barratt-impulsiveness.csv": [
@@ -435,16 +435,16 @@
         "type",
         "answers",
         "values",
-        "score:barratt_total",
         "optional",
+        "score:reappraisal",
+        "score:suppression",
         "btn_width",
-        "reversed?",
-        "btn_width",
-        null
+        "side_text",
+        ""
       ],
       [
-        "Instructions1",
-        "<span style='color:#006699'><span style='font-size:20px'>For the following items, please reply with 1 (rarely/never), 2 (occasionally), 3 (often) or 4 (almost always/always) </span></span>",
+        "gross_instructions",
+        "We would like to ask you some questions about your emotional life, in particular, how\r\nyou control (that is, regulate and manage) your emotions. The questions below involve\r\ntwo distinct aspects of your emotional life. One is your <b><u>emotional experience</u></b>, or what\r\nyou feel like inside. The other is your <b><u>emotional expression</u></b>, or how you show your\r\nemotions in the way you talk, gesture, or behave. Although some of the following\r\nquestions may seem similar to one another, they differ in important ways.",
         "instruct",
         "",
         "",
@@ -453,124 +453,150 @@
         "",
         "",
         "",
-        null
+        ""
       ],
       [
-        "barratt1",
-        "1. I plan tasks carefully",
+        "Reappraisal1",
+        "When I want to feel more positive emotion (such as joy or amusement), I change what I'm thinking about.",
         "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
-        "r1",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
         "No",
-        "100px",
-        "Reversed",
-        "150px",
-        null
-      ],
-      [
-        "barratt2",
-        "2. I do things without thinking",
-        "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
         "1",
-        "No",
-        "100px",
         "",
-        "150px",
-        null
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
       ],
       [
-        "barratt3",
-        "3. I donât âpay attentionâ",
+        "Excessive_Suppression_1",
+        "I keep my emotions to myself.",
         "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "",
         "1",
-        "No",
-        "100px",
-        "",
-        "150px",
-        null
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
       ],
       [
-        "barratt4",
-        "4. I am self-controlled",
+        "Reappraisal_2",
+        "When I want to feel less negative emotion (such as sadness or anger), I change what I'm thinking about.",
         "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
-        "r1",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
         "No",
-        "100px",
-        "Reversed",
-        "150px",
-        null
-      ],
-      [
-        "barratt5",
-        "5. I concentrate easily",
-        "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
-        "r1",
-        "No",
-        "100px",
-        "Reversed",
-        "150px",
-        null
-      ],
-      [
-        "barratt6",
-        "6. I am a careful thinker",
-        "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
-        "r1",
-        "No",
-        "100px",
-        "Reversed",
-        "150px",
-        null
-      ],
-      [
-        "barratt7",
-        "7. I say things without thinking",
-        "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
         "1",
-        "No",
-        "100px",
         "",
-        "150px",
-        null
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
       ],
       [
-        "barratt8",
-        "8. I act on the spur of the moment",
+        "Excessive_Suppression_2",
+        "When I am feeling positive emotions, I am careful not to express them.",
         "likert",
-        "Rarely/Never|Occasionally|Often|Almost always/Always",
-        "1|2|3|4",
-        "1",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
         "No",
-        "100px",
         "",
-        "150px",
-        null
+        "1",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "Reappraisal_3",
+        "When I'm faced with a stressful situation, I make myself think about it in a way that helps me stay calm.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "1",
+        "",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "Excessive_Suppression_3",
+        "I control my emotions by not expressing them.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "",
+        "1",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "Reappraisal_4",
+        "When I want to feel more positive emotion, I change the way I'm thinking about the situation.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "1",
+        "",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "Reappraisal_5",
+        "I control my emotions by changing the way I think about the situation I'm in.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "1",
+        "",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "Excessive_Suppression_4",
+        "When I am feeling negative emotions, I make sure not to express them.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "",
+        "1",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "Reappraisal_6",
+        "When I want to feel less negative emotion, I change the way I'm thinking about the situation.",
+        "likert",
+        "1|2|3|4|5|6|7",
+        "1|2|3|4|5|6|7",
+        "No",
+        "1",
+        "",
+        "50px",
+        "strongly disagree|strongly agree ",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "pathological_narcissism.csv": [
@@ -580,11 +606,12 @@
         "type",
         "answers",
         "values",
-        "score: mce_total",
+        "score:grandiose_total",
+        "score:vulnerable",
         "optional",
         "btn_width",
         "side_text",
-        null
+        ""
       ],
       [
         "Instructions1",
@@ -596,7 +623,8 @@
         "",
         "",
         "",
-        null
+        "",
+        ""
       ],
       [
         "pni1",
@@ -604,23 +632,25 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni2",
-        "2. When people donât notice me, I start to feel bad about myself.",
+        "2. When people don’t notice me, I start to feel bad about myself.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni3",
@@ -628,11 +658,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni4",
@@ -640,11 +671,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni5",
@@ -652,11 +684,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni6",
@@ -664,47 +697,51 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni7",
-        "7. Sometimes I avoid people because Iâm concerned that theyâll disappoint me.",
+        "7. Sometimes I avoid people because I’m concerned that they’ll disappoint me.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni8",
-        "8. I typically get very angry when Iâm unable to get what I want from others.",
+        "8. I typically get very angry when I’m unable to get what I want from others.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni9",
-        "9. When others donât meet my expectations, I often feel ashamed about what I wanted.",
+        "9. When others don’t meet my expectations, I often feel ashamed about what I wanted.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni10",
@@ -712,11 +749,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni11",
@@ -724,11 +762,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni12",
@@ -736,11 +775,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni13",
@@ -748,47 +788,51 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni14",
-        "14. Sometimes I avoid people because Iâm afraid they wonât do what I want them to do.",
+        "14. Sometimes I avoid people because I’m afraid they won’t do what I want them to do.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni15",
-        "15. Itâs hard to show others the weaknesses I feel inside.",
+        "15. It’s hard to show others the weaknesses I feel inside.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni16",
-        "16. Itâs hard to feel good about myself unless I know other people admire me.",
+        "16. It’s hard to feel good about myself unless I know other people admire me.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni17",
@@ -796,11 +840,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni18",
@@ -808,11 +853,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni19",
@@ -820,47 +866,51 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni20",
-        "20. Sometimes I avoid people because Iâm concerned they wonât acknowledge what I do for them.",
+        "20. Sometimes I avoid people because I’m concerned they won’t acknowledge what I do for them.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni21",
-        "21. Itâs hard for me to feel good about myself unless I know other people like me.",
+        "21. It’s hard for me to feel good about myself unless I know other people like me.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni22",
-        "22. It irritates me when people donât notice how good a person I am.",
+        "22. It irritates me when people don’t notice how good a person I am.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni23",
@@ -868,11 +918,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni24",
@@ -880,11 +931,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni25",
@@ -892,11 +944,12 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni26",
@@ -904,23 +957,25 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "1",
+        "",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni27",
-        "27. I canât stand relying on other people because it makes me feel weak.",
+        "27. I can’t stand relying on other people because it makes me feel weak.",
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
         "pni28",
@@ -928,23 +983,25 @@
         "likert",
         "0|1|2|3|4|5",
         "0|1|2|3|4|5",
-        "0|1|2|3|4|5",
+        "",
+        "1",
         "No",
         "50px",
         "Not at all like me|Very much like me",
-        null
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "audit.csv": [
@@ -954,10 +1011,10 @@
         "type",
         "answers",
         "values",
-        "score: mce_total",
+        "score:audit",
         "optional",
         "btn_width",
-        null
+        ""
       ],
       [
         "Instructions1",
@@ -968,7 +1025,7 @@
         "",
         "",
         "",
-        null
+        ""
       ],
       [
         "audit1",
@@ -976,10 +1033,10 @@
         "likert",
         "Never|Monthly or less|Two to four times a month|Two to three times a week|Four or more times a week",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit2",
@@ -987,10 +1044,10 @@
         "likert",
         "1 or 2|3 or 4|5 or 6|7 to 9|10 or more",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit3",
@@ -998,10 +1055,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit4",
@@ -1009,10 +1066,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit5",
@@ -1020,10 +1077,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit6",
@@ -1031,10 +1088,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit7",
@@ -1042,10 +1099,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit8",
@@ -1053,10 +1110,10 @@
         "likert",
         "Never|Less than monthly|Monthly|Weekly|Daily or almost daily",
         "0|1|2|3|4",
-        "0|1|2|3|4",
+        "1",
         "No",
         "100px",
-        null
+        ""
       ],
       [
         "audit9",
@@ -1064,10 +1121,10 @@
         "likert",
         "No|Yes, but not in the last year|Yes, during the last year",
         "0|2|4",
-        "0|2|4",
+        "1",
         "No",
         "166px",
-        null
+        ""
       ],
       [
         "audit10",
@@ -1075,21 +1132,21 @@
         "likert",
         "No|Yes, but not in the last year|Yes, during the last year",
         "0|2|4",
-        "0|2|4",
+        "1",
         "No",
         "166px",
-        null
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "social_media_disorder.csv": [
@@ -1099,12 +1156,14 @@
         "type",
         "answers",
         "values",
-        "score: mce_total",
+        "score:social_media_disorder",
+        "score:platforms",
+        "score:wake_up_time",
         "optional",
         "btn_width",
         "original value",
         "other",
-        null
+        ""
       ],
       [
         "Instructions1",
@@ -1117,7 +1176,9 @@
         "",
         "",
         "",
-        null
+        "",
+        "",
+        ""
       ],
       [
         "sm1",
@@ -1125,12 +1186,14 @@
         "checkbox",
         "Facebook|Instagram|Snapchat|Tiktok|Twitter|None",
         "1|2|3|4|5|6",
-        "1|2|3|4|5|6",
+        "",
+        "1",
+        "",
         "No",
         "",
         "",
         "yes",
-        null
+        ""
       ],
       [
         "sm2",
@@ -1138,16 +1201,18 @@
         "checkbox",
         "Facebook|Instagram|Snapchat|Tiktok|Twitter|None",
         "1|2|3|4|5|6",
-        "1|2|3|4|5|6",
+        "",
+        "1",
+        "",
         "No",
         "",
         "",
         "yes",
-        null
+        ""
       ],
       [
         "Instructions2",
-        "<span style='color:#006699'><span style='font-size:20px'>During the past year, have you â¦ </span></span>",
+        "<span style='color:#006699'><span style='font-size:20px'>During the past year, have you … </span></span>",
         "instruct",
         "",
         "",
@@ -1156,358 +1221,414 @@
         "",
         "",
         "",
-        null
+        "",
+        "",
+        ""
       ],
       [
         "recoded1",
-        "â¦ regularly neglected other activities (e.g. hobbies, sport) because you wanted to use social media?",
+        "… regularly neglected other activities (e.g. hobbies, sport) because you wanted to use social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn24",
         "",
-        null
+        ""
       ],
       [
         "recoded2",
-        "â¦ often found it difficult not to look at messages on social media when you were doing something else (e.g. school work)?",
+        "… often found it difficult not to look at messages on social media when you were doing something else (e.g. school work)?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn1",
         "",
-        null
+        ""
       ],
       [
         "recoded3",
-        "â¦ often used social media so you didn't have to think about unpleasant things?",
+        "… often used social media so you didn't have to think about unpleasant things?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn14",
         "",
-        null
+        ""
       ],
       [
         "recoded4",
-        "â¦ often felt tense or restless if you weren't able to look at your messages on social media?",
+        "… often felt tense or restless if you weren't able to look at your messages on social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn7",
         "",
-        null
+        ""
       ],
       [
         "recoded5",
-        "â¦ tried to spend less time on social media, but failed?",
+        "… tried to spend less time on social media, but failed?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn11",
         "",
-        null
+        ""
       ],
       [
         "recoded6",
-        "â¦ felt the need to check messages on social media more and more often?",
+        "… felt the need to check messages on social media more and more often?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn5",
         "",
-        null
+        ""
       ],
       [
         "recoded7",
-        "â¦ tried to reduce your use of social media, but failed?",
+        "… tried to reduce your use of social media, but failed?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn10",
         "",
-        null
+        ""
       ],
       [
         "recoded8",
-        "â¦ often sat waiting until something happens on social media again?",
+        "… often sat waiting until something happens on social media again?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn3",
         "",
-        null
+        ""
       ],
       [
         "recoded9",
-        "â¦ regularly lied to your parents or friends about the amount of time you spend on social media?",
+        "… regularly lied to your parents or friends about the amount of time you spend on social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn19",
         "",
-        null
+        ""
       ],
       [
         "recoded10",
-        "â¦ regularly felt angry or frustrated if you weren't able to use social media?",
+        "… regularly felt angry or frustrated if you weren't able to use social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn8",
         "",
-        null
+        ""
       ],
       [
         "recoded11",
-        "â¦ often used social media secretly?",
+        "… often used social media secretly?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn21",
         "",
-        null
+        ""
       ],
       [
         "recoded12",
-        "â¦ been unable to stop using social media, even though others told you that you really should?",
+        "… been unable to stop using social media, even though others told you that you really should?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn12",
         "",
-        null
+        ""
       ],
       [
         "recoded13",
-        "â¦ regularly had no interest in hobbies or other activities because you would rather use social media?",
+        "… regularly had no interest in hobbies or other activities because you would rather use social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn23",
         "",
-        null
+        ""
       ],
       [
         "recoded14",
-        "â¦ often felt bad when you could not use social media?",
+        "… often felt bad when you could not use social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn9",
         "",
-        null
+        ""
       ],
       [
         "recoded15",
-        "â¦ often used social media to escape from negative feelings?",
+        "… often used social media to escape from negative feelings?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn15",
         "",
-        null
+        ""
       ],
       [
         "recoded16",
-        "â¦ had serious conflict with your parent(s) and sibling(s) because of your social media use?",
+        "… had serious conflict with your parent(s) and sibling(s) because of your social media use?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn26",
         "",
-        null
+        ""
       ],
       [
         "recoded17",
-        "â¦ had serious problems at school or at work because you were spending too much time on social media?",
+        "… had serious problems at school or at work because you were spending too much time on social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn25",
         "",
-        null
+        ""
       ],
       [
         "recoded18",
-        "â¦ regularly found that you can't think of anything else but the moment that you will be able to use social media again?",
+        "… regularly found that you can't think of anything else but the moment that you will be able to use social media again?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn2",
         "",
-        null
+        ""
       ],
       [
         "recoded19",
-        "â¦ regularly had arguments with others because of your social media use?",
+        "… regularly had arguments with others because of your social media use?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn18",
         "",
-        null
+        ""
       ],
       [
         "recoded20",
-        "â¦jeopardised or lost an important friendship or relationship because you were spending too much time on social media?",
+        "…jeopardised or lost an important friendship or relationship because you were spending too much time on social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn27",
         "",
-        null
+        ""
       ],
       [
         "recoded21",
-        "â¦ regularly felt dissatisfied because you wanted to spend more time on social media?",
+        "… regularly felt dissatisfied because you wanted to spend more time on social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn6",
         "",
-        null
+        ""
       ],
       [
         "recoded22",
-        "â¦ regularly used social media to take your mind off your problems?",
+        "… regularly used social media to take your mind off your problems?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn13",
         "",
-        null
+        ""
       ],
       [
         "recoded23",
-        "â¦ regularly not had enough sleep because you were using social media too late at night?",
+        "… regularly not had enough sleep because you were using social media too late at night?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn17",
         "",
-        null
+        ""
       ],
       [
         "recoded24",
-        "â¦ regularly devoted no attention to people around you (e.g. family or friends) because you were using social media?",
+        "… regularly devoted no attention to people around you (e.g. family or friends) because you were using social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn22",
         "",
-        null
+        ""
       ],
       [
         "recoded25",
-        "â¦ felt the need to use social media more and more often?",
+        "… felt the need to use social media more and more often?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn4",
         "",
-        null
+        ""
       ],
       [
         "recoded26",
-        "â¦ regularly hidden your social media use from others?",
+        "… regularly hidden your social media use from others?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn20",
         "",
-        null
+        ""
       ],
       [
         "recoded27",
-        "â¦ often not paid attention at school, while doing homework or at work because you were using social media?",
+        "… often not paid attention at school, while doing homework or at work because you were using social media?",
         "likert",
         "Yes|No",
         "1|0",
-        "0|1",
+        "1",
+        "",
+        "",
         "No",
         "100px",
         "sn16",
         "",
-        null
+        ""
       ],
       [
         "recoded28",
@@ -1516,24 +1637,28 @@
         "",
         "",
         "",
+        "",
+        "1",
         "No",
         "",
         "sn28",
-        null,
-        null
+        "",
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "phq9.csv": [
@@ -1802,21 +1927,21 @@
         "values",
         "optional",
         "side_by_side",
-        null
+        ""
       ],
       [
         "Instructions1",
-        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<h2>University of Reading</h2><br>\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\n<h2>Debrief </h2>\n\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n    <tr>\n    <td>Anthony Haffey</td>\n    <td>anthony.haffey@reading.ac.uk</td>\n    <td>-01183788523-</td>\n  </tr>\n  <tr>\n    <td>Chen Zhao</td>\n    <td>c.zhao5@reading.ac.uk</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Nicholas Hedger</td>\n    <td>n.hedger@reading.ac.uk</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td>Joe Forrest</td>\n    <td>j.forrest@reading.ac.uk</td>\n    <td></td>\n  </tr>\n</table>\n\nThank you for participating in our study. <br>\nWe were interested in examining how self-reported social networking, alcohol addiction and other personality traits predict which images you looked longer at.\nWe are interested in whether you looked longer at images associated with addictive stimuli, i.e. alcohol or social networking, compared to visually similar images.<br><br>\nFollowing this debrief, we would like to remind you that you are free to withdraw your data at any time without needing to provide a reason. \nIf you feel any adverse effects from the study in general, you can contact the principle supervisor Dr Anthony Haffey or the postgraduate researcher, \nJoseph Forrest, via the contact information provided on this debrief sheet.<br><br>\nIf you still have concerns, sources of support will also be provided on the next page.",
+        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\r\nWhiteknights<br>\r\nReading RG6 6AL</div>\r\n<h2>University of Reading</h2><br>\r\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\r\n<h2>Debrief </h2>\r\n\r\n<br>\r\n<table class=\"table\">\r\n  <tr>\r\n    <td><b>Investigator(s):</b></td>\r\n    <td><b>Email:</b></td>\r\n    <td><b>Telephone:</b></td>\r\n  </tr>\r\n    <tr>\r\n    <td>Anthony Haffey</td>\r\n    <td>anthony.haffey@reading.ac.uk</td>\r\n    <td>-01183788523-</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Chen Zhao</td>\r\n    <td>c.zhao5@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n<tr>\r\n    <td>Nicholas Hedger</td>\r\n    <td>n.hedger@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n  <tr>\r\n    <td><b>Researcher(s):</b></td>\r\n  </tr>\r\n  <tr>\r\n    <td>Joe Forrest</td>\r\n    <td>j.forrest@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n</table>\r\n\r\nThank you for participating in our study. <br>\r\nWe were interested in examining how self-reported social networking, alcohol addiction and other personality traits predict which images you looked longer at.\r\nWe are interested in whether you looked longer at images associated with addictive stimuli, i.e. alcohol or social networking, compared to visually similar images.<br><br>\r\nFollowing this debrief, we would like to remind you that you are free to withdraw your data at any time without needing to provide a reason. \r\nIf you feel any adverse effects from the study in general, you can contact the principle supervisor Dr Anthony Haffey or the postgraduate researcher, \r\nJoseph Forrest, via the contact information provided on this debrief sheet.<br><br>\r\nIf you still have concerns, sources of support will also be provided on the next page.",
         "instruct",
         "",
         "",
         "",
         "",
-        null
+        ""
       ],
       [
         "",
-        null
+        ""
       ]
     ],
     "sources_of_support_jf1.csv": [
@@ -1828,21 +1953,21 @@
         "values",
         "optional",
         "side_by_side",
-        null
+        ""
       ],
       [
         "Instructions1",
-        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\nWhiteknights<br>\nReading RG6 6AL</div>\n<h2>University of Reading</h2><br>\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\n<h2>Debrief </h2>\n\n<br>\n<table class=\"table\">\n  <tr>\n    <td><b>Investigator(s):</b></td>\n    <td><b>Email:</b></td>\n    <td><b>Telephone:</b></td>\n  </tr>\n    <tr>\n    <td>Anthony Haffey</td>\n    <td>anthony.haffey@reading.ac.uk</td>\n    <td>-01183788523-</td>\n  </tr>\n  <tr>\n    <td>Chen Zhao</td>\n    <td>c.zhao5@reading.ac.uk</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Nicholas Hedger</td>\n    <td>n.hedger@reading.ac.uk</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Researcher(s):</b></td>\n  </tr>\n  <tr>\n    <td>Joe Forrest</td>\n    <td>j.forrest@reading.ac.uk</td>\n    <td></td>\n  </tr>\n</table>\nIf you feel affected by the issues raised in the study, and your concerns about these issues remain after you have completed the session, you can contact the researchers listed above. However, there are other external sources of support that should be able to address your concerns, as listed:\n<br><br>\n<ul style=\"list-style-type:disc\">\n         <li>NHS online: www.NHS.uk if you are concerned about your alcohol and/or social networking behaviours \n</li>\n         <li>Mind: www.mind.org.uk if you wish to seek mental health support on alcohol and/or social networking behaviour\n</li>\n         <li>University of Reding Counselling Services: http://www.reading.ac.uk/internal/staffportal/SASstaff/SASwellbeing  provides 24/7 online support for students. You can also use this website to book an appointment to meet with a counsellor, if you prefer. \n</li>\n<li>Your General Practitioner (GP): https://www.nhs.uk/using-the-nhs/nhs-services/gps/gp-online-services  you can book an appointment online to meet with your GP, if you wish to seek help around alcohol and/or gambling behaviour. \n</li>\n      </ul>",
+        "<div align=\"right\">School of Psychology and Clinical Language Sciences<br>\r\nWhiteknights<br>\r\nReading RG6 6AL</div>\r\n<h2>University of Reading</h2><br>\r\n<h2>Title of Study: Investigating attentional biases to neutral and pleasant images 2: An eye-tracking study</h2><br>\r\n<h2>Debrief </h2>\r\n\r\n<br>\r\n<table class=\"table\">\r\n  <tr>\r\n    <td><b>Investigator(s):</b></td>\r\n    <td><b>Email:</b></td>\r\n    <td><b>Telephone:</b></td>\r\n  </tr>\r\n    <tr>\r\n    <td>Anthony Haffey</td>\r\n    <td>anthony.haffey@reading.ac.uk</td>\r\n    <td>-01183788523-</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Chen Zhao</td>\r\n    <td>c.zhao5@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n<tr>\r\n    <td>Nicholas Hedger</td>\r\n    <td>n.hedger@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n  <tr>\r\n    <td><b>Researcher(s):</b></td>\r\n  </tr>\r\n  <tr>\r\n    <td>Joe Forrest</td>\r\n    <td>j.forrest@reading.ac.uk</td>\r\n    <td></td>\r\n  </tr>\r\n</table>\r\nIf you feel affected by the issues raised in the study, and your concerns about these issues remain after you have completed the session, you can contact the researchers listed above. However, there are other external sources of support that should be able to address your concerns, as listed:\r\n<br><br>\r\n<ul style=\"list-style-type:disc\">\r\n         <li>NHS online: www.NHS.uk if you are concerned about your alcohol and/or social networking behaviours \r\n</li>\r\n         <li>Mind: www.mind.org.uk if you wish to seek mental health support on alcohol and/or social networking behaviour\r\n</li>\r\n         <li>University of Reding Counselling Services: http://www.reading.ac.uk/internal/staffportal/SASstaff/SASwellbeing  provides 24/7 online support for students. You can also use this website to book an appointment to meet with a counsellor, if you prefer. \r\n</li>\r\n<li>Your General Practitioner (GP): https://www.nhs.uk/using-the-nhs/nhs-services/gps/gp-online-services  you can book an appointment online to meet with your GP, if you wish to seek help around alcohol and/or gambling behaviour. \r\n</li>\r\n      </ul>",
         "instruct",
         "",
         "",
         "",
         "",
-        null
+        ""
       ],
       [
         "",
-        null
+        ""
       ]
     ],
     "erq.csv": [
@@ -1853,15 +1978,15 @@
         "answers",
         "values",
         "optional",
-        "score:  reappraisal",
-        "score: suppression",
+        "score:reappraisal",
+        "score:suppression",
         "btn_width",
         "side_text",
-        null
+        ""
       ],
       [
         "gross_instructions",
-        "We would like to ask you some questions about your emotional life, in particular, how\nyou control (that is, regulate and manage) your emotions. The questions below involve\ntwo distinct aspects of your emotional life. One is your <b><u>emotional experience</u></b>, or what\nyou feel like inside. The other is your <b><u>emotional expression</u></b>, or how you show your\nemotions in the way you talk, gesture, or behave. Although some of the following\nquestions may seem similar to one another, they differ in important ways.",
+        "We would like to ask you some questions about your emotional life, in particular, how\r\nyou control (that is, regulate and manage) your emotions. The questions below involve\r\ntwo distinct aspects of your emotional life. One is your <b><u>emotional experience</u></b>, or what\r\nyou feel like inside. The other is your <b><u>emotional expression</u></b>, or how you show your\r\nemotions in the way you talk, gesture, or behave. Although some of the following\r\nquestions may seem similar to one another, they differ in important ways.",
         "instruct",
         "",
         "",
@@ -1870,7 +1995,7 @@
         "",
         "",
         "",
-        null
+        ""
       ],
       [
         "Reappraisal1",
@@ -1883,7 +2008,7 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Excessive_Suppression_1",
@@ -1896,7 +2021,7 @@
         "1",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Reappraisal_2",
@@ -1909,7 +2034,7 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Excessive_Suppression_2",
@@ -1922,7 +2047,7 @@
         "1",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Reappraisal_3",
@@ -1935,7 +2060,7 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Excessive_Suppression_3",
@@ -1948,7 +2073,7 @@
         "1",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Reappraisal_4",
@@ -1961,7 +2086,7 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Reappraisal_5",
@@ -1974,7 +2099,7 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Excessive_Suppression_4",
@@ -1987,7 +2112,7 @@
         "1",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
         "Reappraisal_6",
@@ -2000,20 +2125,20 @@
         "",
         "50px",
         "strongly disagree|strongly agree ",
-        null
+        ""
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ],
     "phq_9_adjusted.csv": [
@@ -2023,7 +2148,7 @@
         "type",
         "answers",
         "values",
-        "score: mce_total",
+        "score:phq9",
         "optional",
         "btn_width",
         ""
@@ -2045,7 +2170,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2056,7 +2181,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2067,7 +2192,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2078,7 +2203,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2089,7 +2214,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2100,7 +2225,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2111,7 +2236,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2122,7 +2247,7 @@
         "likert",
         " Not at all|Several days|More than half the days|Nearly every day",
         "0|1|2|3",
-        "0|1|2|3",
+        "1",
         "No",
         "100px",
         ""
@@ -2136,7 +2261,7 @@
         "",
         "",
         "",
-        null
+        ""
       ]
     ]
   },
