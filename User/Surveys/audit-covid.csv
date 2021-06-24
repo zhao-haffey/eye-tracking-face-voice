@@ -1,4 +1,4 @@
-item_name,text,type,answers,values,score: mce_total,optional,btn_width,
+item_name,text,type,answers,values,score:mce_total,optional,btn_width,
 Instructions1,"<span style='color:#006699'><span style='font-size:20px'><b> INSTRUCTIONS </b> <br> For this set of questions, please answer based on how much you drank <b> before the first lockdown (i.e. before March 2020)</b><br><br>Consider a drink to be one shot of spirit (25ml), half a pint of beer/cider (284ml) or a small glass of wine (125ml) </span></span>",instruct,,,,,,
 audit1,1. How often did you have a drink containing alcohol?,likert,Never|Monthly or less|Two to four times a month|Two to three times a week|Four or more times a week,0|1|2|3|4,0|1|2|3|4,No,100px,
 audit2,2. How many drinks containing alcohol did you have on a typical day when you are drinking?,likert,1 or 2|3 or 4|5 or 6|7 to 9|10 or more,0|1|2|3|4,0|1|2|3|4,No,100px,
