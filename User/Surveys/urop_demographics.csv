@@ -1,10 +1,18 @@
-item_name,text,type,answers,optional,values,side_by_side,btn_width,
-Gender,Gender,likert,Male|Female|Other,No,,yes,100px,
-Age,Age,number,,No,,,,
-Education,"Education (which level are you currently in, or is the highest you've completed)",dropdown,"Some high school| High school graduate| Some college, no degree| Associate's degree| Bachelor's degree|Graduate degree (Master's, Doctorate, etc.)",No,,,,
-English_Fluency,Do you speak English fluently?,likert,Yes|No,No,,yes,200px,
-English_Age,"At what age did you start learning English? (write ""0"" if from birth)",number,,No,,,,
-Country,What is your country of residence?,text,,No,,,,
-Handedness,What is your preferred hand?,likert,Left|Right|Both,No,,yes,100px,
-ethnicity,If you would like to please state your ethnicity,text,,Yes,,,,
-,
+item_name,text,type,answers,optional,values,side_by_side,btn_width
+Gender,Gender,likert,Male|Female|Other,No,,yes,100px
+Age,Age,number,,No,,,
+Date_of_birth,Date of birth,text,,No,,,
+Education,"Education (which level are you currently in, or is the highest you've completed)",dropdown,"Some high school| High school graduate| Some college, no degree| Associate's degree| Bachelor's degree|Graduate degree (Master's, Doctorate, etc.)",No,,,
+Country,What is your country of residence?,text,,No,,,
+ethnicity,If you would like to please state your ethnicity,text,,Yes,,,
+English_Fluency,Do you speak English fluently?,likert,Yes|No,No,,yes,200px
+English_Age,"At what age did you start learning English? (write ""0"" if from birth)",number,,No,,,
+Native_language,What is your native language(s)? (Please feel free to list more than one answer),dropdown,British English |Other (please specify),No,,,
+Most_used_language,What language do you use the most now?,dropdown,British English |Other (please specify),No,,,
+Age_started_language,"At what age did you start using this language most? (write ""0"" if from birth)",number,,No,,,
+Tone_languages,"Can you understand or speak any tone languages (e.g. Mandarin, Cantonese, Thai, Vietnamese)?",dropdown,No|Yes (please specify),No,,,
+Handedness,What is your preferred hand?,likert,Left|Right|Both,No,,yes,100px
+Clinical_diagnosis,Do you have a clinical diagnosis of any of the following conditions? (Please select any that apply),,Autism spectrum disorder (ASD)|Dyslexia|Attention-deficit disorder (ADD)/Attention deficit hyperactivity disorder (ADHD)|Depression|Anxiety|Another mental health condition|A chronic physical health condition|None of the above,No,,,
+Hearing_disorders,"As far as you know, do you have/have you had any hearing disorders (e.g. hearing loss)?",dropdown,Yes|No,No,,yes,200px
+Absolute_pitch,Do you have absolute pitch (or perfect pitch; the ability to identify a musical note without a reference tone)?,likert,Yes|No,No,,yes,200px
+Music_training,"How many years of formal music training (on a musical instrument including voice) have you had? Please list your years of experience on all instruments and voice, e.g., piano, 10 years; voice, 2 years and 10 months.",text,,No,,,
