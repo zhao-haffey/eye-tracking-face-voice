@@ -6020,7 +6020,7 @@
         [
           "Gender",
           "Gender",
-          "likert",
+          "radio",
           "Male|Female|Other",
           "No",
           "",
@@ -6070,22 +6070,9 @@
           null
         ],
         [
-          "ethnicity",
-          "If you would like to please state your ethnicity",
-          "text",
-          "",
-          "Yes",
-          "",
-          "",
-          "",
-          "",
-          "75%",
-          null
-        ],
-        [
           "English_Fluency",
           "Do you speak English fluently?",
-          "likert",
+          "radio",
           "Yes|No",
           "No",
           "",
@@ -6163,7 +6150,7 @@
         [
           "Handedness",
           "What is your preferred hand?",
-          "likert",
+          "radio",
           "Left|Right|Both",
           "No",
           "",
@@ -6176,7 +6163,7 @@
         [
           "Clinical_diagnosis",
           "Do you have a clinical diagnosis of any of the following conditions? (Please select any that apply)",
-          "dropdown",
+          "checkbox",
           "Autism spectrum disorder (ASD)|Dyslexia|Attention-deficit disorder (ADD)/Attention deficit hyperactivity disorder (ADHD)|Depression|Anxiety|Another mental health condition|A chronic physical health condition|None of the above",
           "No",
           "",
@@ -6202,7 +6189,7 @@
         [
           "Absolute_pitch",
           "Do you have absolute pitch (or perfect pitch; the ability to identify a musical note without a reference tone)?",
-          "likert",
+          "radio",
           "Yes|No",
           "No",
           "",
@@ -9691,7 +9678,7 @@
             [
               "Gender",
               "Gender",
-              "likert",
+              "radio",
               "Male|Female|Other",
               "No",
               "",
@@ -9741,22 +9728,9 @@
               null
             ],
             [
-              "ethnicity",
-              "If you would like to please state your ethnicity",
-              "text",
-              "",
-              "Yes",
-              "",
-              "",
-              "",
-              "",
-              "75%",
-              null
-            ],
-            [
               "English_Fluency",
               "Do you speak English fluently?",
-              "likert",
+              "radio",
               "Yes|No",
               "No",
               "",
@@ -9834,7 +9808,7 @@
             [
               "Handedness",
               "What is your preferred hand?",
-              "likert",
+              "radio",
               "Left|Right|Both",
               "No",
               "",
@@ -9847,7 +9821,7 @@
             [
               "Clinical_diagnosis",
               "Do you have a clinical diagnosis of any of the following conditions? (Please select any that apply)",
-              "dropdown",
+              "checkbox",
               "Autism spectrum disorder (ASD)|Dyslexia|Attention-deficit disorder (ADD)/Attention deficit hyperactivity disorder (ADHD)|Depression|Anxiety|Another mental health condition|A chronic physical health condition|None of the above",
               "No",
               "",
@@ -9873,7 +9847,7 @@
             [
               "Absolute_pitch",
               "Do you have absolute pitch (or perfect pitch; the ability to identify a musical note without a reference tone)?",
-              "likert",
+              "radio",
               "Yes|No",
               "No",
               "",
