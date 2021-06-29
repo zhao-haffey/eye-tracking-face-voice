@@ -1,7 +1,7 @@
 item_name,text,type,answers,values,score:panas_tot,score:pos_aff,score:neg_aff,optional,btn_width,
-Instructions1,"<span style='color:#006699'><span style='font-size:20px'>Choose one response that best describes how strongly each item applies to how you are <b><u>feeling now</u></b>:<br>
+Instructions1,"<span style='color:#006699'><span style='font-size:20px'>Choose one response that best describes how strongly each item applies to how you felt during the<b><u>first month of lockdown</u></b>:<br>
 <br>
-Right now, I feel...</span></span>",instruct,,,,,,,,
+During the first month of lock down, I felt...</span></span>",instruct,,,,,,,,
 PANAS1,Interested,likert,Very slightly or not at all|A little|Moderately|Quite abit| Extremely,1|2|3|4|5,1,1,,No,100px,
 PANAS2,Distressed,likert,Very slightly or not at all|A little|Moderately|Quite abit| Extremely,1|2|3|4|5,r1,,r1,No,100px,
 PANAS3,Excited,likert,Very slightly or not at all|A little|Moderately|Quite abit| Extremely,1|2|3|4|5,1,1,,No,100px,

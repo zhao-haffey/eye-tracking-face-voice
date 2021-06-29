@@ -7,7 +7,7 @@
     "stimuli_1.csv": "cue,answer,\r\nA,Apple,\r\nB,Banana,\r\n,,"
   },
   "location": "zhao-haffey/eye-tracking-face-voice/survey_pilot",
-  "public_key": "eTSuDmx24TXwcur2109+7BoncC3pIdpT+/1Oshs5yX4=",
+  "public_key": "KwGOHFF/Olmi+ZSqx3NR+dA1t3+PoAzLJmRLKWAhoS0=",
   "surveys": {
     "autism_quotient.csv": [
       [
@@ -1314,7 +1314,7 @@
       ],
       [
         "Instructions1",
-        "<span style='color:#006699'><span style='font-size:20px'>Choose one response that best describes how strongly each item applies to how you are feeling <b><u>right now</u></b>:<br>\n<br>\nRight now, I feel...</span></span>",
+        "<span style='color:#006699'><span style='font-size:20px'>Choose one response that best describes how strongly each item applies to how you have felt in the <b><u>past week</u></b>:<br>\n<br>\nDuring the past week, I have felt ...</span></span>",
         "instruct",
         "",
         "",
