@@ -1,0 +1,8 @@
+item_name,text,type,answers,optional,values,side_by_side,btn_width,
+info_read,"I have read the Information Sheet and Informed Consent document and understand what the study involves. ",checkbox,Yes,No,,,,
+participation_agreed,"I agree that the research project named above has been explained to me to my satisfaction and I agree to take part in this study. ",checkbox,Yes,No,,,,
+withdrawl_understood,"I understand that if I decide at any time that I no longer wish to take part in this study, I can notify the researchers involved and withdraw immediately. ",checkbox,Yes,No,,,,
+info_consent,I consent to the processing of my non-personally identifiable information for the purposes of this research study.,checkbox,Yes,No,,,,
+use_of_data,"I agree that my anonymous research data may be used by other researchers. This data will be anonymised to maintain confidentiality. ",checkbox,Yes,No,,,,
+audio_recording,"I understand that parts of my participation may be audio recorded, which I will be notified prior to recording, and I consent to use of this material as part of the project.",checkbox,Yes,No,,,,
+,,,,,,,,
