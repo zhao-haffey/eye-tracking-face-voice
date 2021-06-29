@@ -1,13 +1,13 @@
 {
   "all_procs": {
-    "procedure_1.csv": "item,code,max time,text,shuffle 1,survey,\r\n0,survey,user,This is the start of a new experiment.,off,autism_quotient.csv,\r\n0,survey,user,This is the start of a new experiment.,off,panas.csv,\r\n0,survey,user,This is the start of a new experiment.,off,urop_demographics.csv,"
+    "procedure_1.csv": "item,code,max time,text,shuffle 1,survey,\r\n0,survey,user,This is the start of a new experiment.,off,autism_quotient.csv,\r\n0,survey,user,This is the start of a new experiment.,off,urop_panas.csv,\r\n0,survey,user,This is the start of a new experiment.,off,urop_demographics.csv,"
   },
   "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
   "all_stims": {
     "stimuli_1.csv": "cue,answer,\r\nA,Apple,\r\nB,Banana,\r\n,,"
   },
   "location": "zhao-haffey/eye-tracking-face-voice/survey_pilot",
-  "public_key": "jrmVXoT5qgZ+F/pbU8Q1hMr3vzEF5bw5jLFNQ+ECGmU=",
+  "public_key": "eTSuDmx24TXwcur2109+7BoncC3pIdpT+/1Oshs5yX4=",
   "surveys": {
     "autism_quotient.csv": [
       [
@@ -1107,7 +1107,7 @@
         "btn_width",
         "other",
         "question_width",
-        null
+        ""
       ],
       [
         "Gender",
@@ -1120,7 +1120,7 @@
         "100px",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Age",
@@ -1133,7 +1133,7 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Education",
@@ -1146,7 +1146,7 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Country",
@@ -1159,7 +1159,7 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "English_Fluency",
@@ -1172,7 +1172,7 @@
         "200px",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "English_Age",
@@ -1185,33 +1185,20 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Native_language",
-        "What is your native language(s)? (Please feel free to list more than one answer)",
-        "dropdown",
-        "British English |Other (please specify)",
+        "What is your native language(s)? (If 'other' please specify)",
+        "checkbox",
+        "British English",
         "No",
         "",
         "",
         "",
-        "",
+        "yes",
         "75%",
-        null
-      ],
-      [
-        "Most_used_language",
-        "What language do you use the most now?",
-        "dropdown",
-        "British English |Other (please specify)",
-        "No",
-        "",
-        "",
-        "",
-        "",
-        "75%",
-        null
+        ""
       ],
       [
         "Age_started_language",
@@ -1224,20 +1211,20 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Tone_languages",
-        "Can you understand or speak any tone languages (e.g. Mandarin, Cantonese, Thai, Vietnamese)?",
+        "Can you understand or speak any tone languages (e.g. Mandarin, Thai)? If 'yes' please specify",
         "checkbox",
-        "No|Yes (please specify)",
+        "No|Yes",
         "No",
         "",
         "",
         "",
         "yes",
         "75%",
-        null
+        ""
       ],
       [
         "Handedness",
@@ -1250,20 +1237,20 @@
         "100px",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Clinical_diagnosis",
         "Do you have a clinical diagnosis of any of the following conditions? (Please select any that apply)",
         "checkbox",
-        "Autism spectrum disorder (ASD)|Dyslexia|Attention-deficit disorder (ADD)/Attention deficit hyperactivity disorder (ADHD)|Depression|Anxiety|Another mental health condition|A chronic physical health condition|None of the above",
+        "Autism spectrum disorder (ASD)|Dyslexia|Attention-deficit disorder (ADD)/ Attention deficit hyperactivity disorder (ADHD)|Depression|Anxiety|Another mental health condition|A chronic physical health condition|None of the above",
         "No",
         "",
         "",
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Hearing_disorders",
@@ -1276,7 +1263,7 @@
         "200px",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Absolute_pitch",
@@ -1289,11 +1276,11 @@
         "200px",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "Music_training",
-        "How many years of formal music training (on a musical instrument including voice) have you had? Please list your years of experience on all instruments and voice, e.g., piano, 10 years; voice, 2 years and 10 months.",
+        "How many years of formal music training (on a musical instrument including voice) have you had? Please list your years of experience, e.g., piano, 10 years; voice, 2 years",
         "text",
         "",
         "No",
@@ -1302,13 +1289,314 @@
         "",
         "",
         "75%",
-        null
+        ""
       ],
       [
         "",
         "",
-        null,
-        null
+        "",
+        ""
+      ]
+    ],
+    "urop_panas.csv": [
+      [
+        "item_name",
+        "text",
+        "type",
+        "answers",
+        "values",
+        "score:panas_tot",
+        "score:pos_aff",
+        "score:neg_aff",
+        "optional",
+        "btn_width",
+        ""
+      ],
+      [
+        "Instructions1",
+        "<span style='color:#006699'><span style='font-size:20px'>Choose one response that best describes how strongly each item applies to how you are feeling <b><u>right now</u></b>:<br>\n<br>\nRight now, I feel...</span></span>",
+        "instruct",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "PANAS1",
+        "Interested",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS2",
+        "Distressed",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS3",
+        "Excited",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS4",
+        "Upset",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS5",
+        "Strong",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS6",
+        "Guilty",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS7",
+        "Scared",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS8",
+        "Hostile",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS9",
+        "Enthusiastic",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS10",
+        "Proud",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS11",
+        "Irritable",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS12",
+        "Alert",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS13",
+        "Ashamed",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS14",
+        "Inspired",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS15",
+        "Nervous",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS16",
+        "Determined",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS17",
+        "Attentive",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS18",
+        "Jittery",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS19",
+        "Active",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "1",
+        "1",
+        "",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "PANAS20",
+        "Afraid",
+        "likert",
+        "Very slightly or not at all|A little|Moderately|Quite abit| Extremely",
+        "1|2|3|4|5",
+        "r1",
+        "",
+        "r1",
+        "No",
+        "100px",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     ]
   },
