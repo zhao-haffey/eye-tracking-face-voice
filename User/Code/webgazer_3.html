@@ -17,7 +17,7 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
     <script src="libraries/webgazer/js/simpleheat.js"></script>
 </head>
 <style>
-.stimuli_img{
+.stimuli_img, .stimuli_video{
   object-fit: fill;
   margin:auto;
   top:0;
@@ -109,8 +109,6 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
   <div id="stimuli_fixation" class="stimuli">+</div>
   <div id="stimuli_prime" class="stimuli"></div>
   <div id="stimuli_target" class="stimuli">X</div>
-  <img id="stimuli_img_left" class="stimuli stimuli_img"/>
-  <img id="stimuli_img_right" class="stimuli stimuli_img"/>
   <div id="instruction_message"></div>
 
   <div id="message">
@@ -623,28 +621,6 @@ function calibrate() {
         }
       ]);
      
-     
-     
-     
-      /*
-      the original code focusing on percentages
-     
-      calibration.points = shuffle([
-          {x: "20%", y: "20%"},
-          {x: "50%", y: "20%"},
-          {x: "80%", y: "20%"},
-          {x: "20%", y: "50%"},
-          {x: "50%", y: "50%"},
-          {x: "80%", y: "50%"},
-          {x: "20%", y: "80%"},
-          {x: "50%", y: "80%"},
-          {x: "80%", y: "80%"},
-          {x: "35%", y: "35%"},
-          {x: "65%", y: "35%"},
-          {x: "35%", y: "65%"},
-          {x: "65%", y: "65%"}
-      ]);
-      */
     }
     var p = calibration.points.pop();
     $c.css({
@@ -777,20 +753,6 @@ function validate() {
           y: mid_screen_y + min_height/2 * .9
         },
       ]);
-   
-   
-   
-      /*
-      original validation positions
-     
-      validation.points = shuffle([
-          {x: "20%", y: "20%"},
-          {x: "80%", y: "20%"},
-          {x: "50%", y: "50%"},
-          {x: "20%", y: "80%"},
-          {x: "80%", y: "80%"}
-                                    ]);
-      */
     }
     var vp = validation.points.pop();
     $c.css({
@@ -1021,15 +983,8 @@ function sendData() {
             Papa.unparse(data[trial_no].raw)
           );
                                      
-          /*
-         
-          error above
-         
-          */
                                      
-                                     
-                                     
-           parent.parent.online_save(parent.parent.Project.get_vars.location,
+          parent.parent.online_save(parent.parent.Project.get_vars.location,
                     parent.parent.$("#participant_code").val() +
                       gaze_phase +
                       "-" +
@@ -1389,7 +1344,10 @@ function stimuliStart() {
       
       //all_fixation_rts.push;
       
-      $("img").show();
+      $(".stimuli_img").show();
+      $(".stimuli_video").show();
+      $("video").trigger("play");
+      $("audio").trigger("play");
       setTimeout(function(){
         status = 'stimulus_offset'; 
         endTrial();
@@ -1399,31 +1357,15 @@ function stimuliStart() {
   }
  
   document.body.style.cursor = 'none';
-  
-
   stimuli_set = tFreeview.stimuli.shift();
-  console.log("stimuli_set");
-  console.log(stimuli_set);
-
-
- 
+  
   /*
   * separate stimuli
   */
   audio_set = Object.keys(stimuli_set).filter(column => column.indexOf("audio_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
   image_set = Object.keys(stimuli_set).filter(column => column.indexOf("image_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
   video_set = Object.keys(stimuli_set).filter(column => column.indexOf("video_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
- 
-  console.log("audio_set");
-  console.log(audio_set);
   
-  console.log("image_set");
-  console.log(image_set);
- 
-  console.log("video_set");
-  console.log(video_set);
- 
- 
   /*
   * draw audio stimuli
   */
@@ -1434,7 +1376,7 @@ function stimuliStart() {
         this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
                  .prop("id", item + "_element");
     $("#stimuli_div").append(this_item);
-    $("#" + item + "_element").on("load",function(){
+    $("#" + item + "_element").on("canplay canplaythrough",function(){
       stimuli_src_loaded = stimuli_src_loaded + 1;
       if(stimuli_src_loaded == stimuli_src_length){
         stimuli_loaded();
@@ -1449,14 +1391,14 @@ function stimuliStart() {
   image_set.forEach(function(item){
     var this_item = $("<img>");
         this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
-                 .addClass("stimuli")
-                 .addClass("stimuli_img")
-                 .css("margin-left",   stimuli_set[item + "_x"])
-                 .css("top",    stimuli_set[item + "_y"])
-                 .css("width",  stimuli_set[item + "_width"])
-                 .css("height", stimuli_set[item + "_height"])
-                 .css("display", "none")
-                 .prop("id", item + "_element");
+          .addClass("stimuli")
+          .addClass("stimuli_img")
+          .css("margin-left",   stimuli_set[item + "_x"])
+          .css("top",    stimuli_set[item + "_y"])
+          .css("width",  stimuli_set[item + "_width"])
+          .css("height", stimuli_set[item + "_height"])
+          .css("display", "none")
+          .prop("id", item + "_element");
     $("#stimuli_div").append(this_item);
     $("#" + item + "_element").on("load",function(){
       stimuli_src_loaded = stimuli_src_loaded + 1;
@@ -1469,7 +1411,40 @@ function stimuliStart() {
   /*
   * draw videos
   */
+  /*
   
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  */
+  
+  video_set.forEach(function(item){
+    var this_item = $("<video>");
+    var this_source = $("<source>");
+        this_source.prop("src", home_dir + stimuli_set[item].replace("../User","/User"));
+    
+        this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
+          .addClass("stimuli")
+          .addClass("stimuli_video")
+          .css("margin-left",   stimuli_set[item + "_x"])
+          .css("top",    stimuli_set[item + "_y"])
+          .css("width",  stimuli_set[item + "_width"])
+          .css("height", stimuli_set[item + "_height"])
+          .css("display", "none")
+          .prop("id", item + "_element");
+    this_item.append(this_source);
+    $("#stimuli_div").append(this_item);
+    console.log("howdy");
+    $("#" + item + "_element").on("loadstart",function(){
+      console.log("hardy");
+      stimuli_src_loaded = stimuli_src_loaded + 1;
+      if(stimuli_src_loaded == stimuli_src_length){
+        stimuli_loaded();
+      }
+    });
+  });
   
   
   
