@@ -880,6 +880,7 @@ function startTrial() {
 var heat;
 function endTrial() {
   console.log("ending trial");
+  $("#stimuli_div").html("");
   clearTimeout(t);
   cam.recording = 0;
   webgazer.pause();
@@ -1322,7 +1323,23 @@ if(typeof(parent.parent.project_json.all_stims[image_file]) !== "undefined"){
   });
 }
 
-images_loaded = 0;
+
+stimuli_src_loaded = 0;
+var stimuli_src_length;
+
+/*
+* Some code to make this work on installed version of Collector
+*/
+switch(parent.parent.Project.get_vars.platform){
+  case "preview":
+  case "localhost":
+    org_repo = parent.parent.project_json.location.split("/");
+    home_dir = parent.parent.Collector.electron.git.locate_repo({
+      org: org_repo[0],
+      repo: org_repo[1]
+    });
+    break;
+}
 
 function stimuliStart() {
   gaze_phase = "stimuli";
@@ -1406,25 +1423,12 @@ function stimuliStart() {
   console.log("video_set");
   console.log(video_set);
  
-  /*
-  * Some code to make this work on installed version of Collector
-  */
-  switch(parent.parent.Project.get_vars.platform){
-    case "preview":
-    case "localhost":
-      org_repo = parent.parent.project_json.location.split("/");
-      home_dir = parent.parent.Collector.electron.git.locate_repo({
-        org: org_repo[0],
-        repo: org_repo[1]
-      });
-      break;
-  }
  
   /*
   * draw audio stimuli
   */
-  var stimuli_src_loaded = 0;
-  var stimuli_src_length = audio_set.length + image_set.length + video_set.length;
+  stimuli_src_loaded = 0;
+  stimuli_src_length = audio_set.length + image_set.length + video_set.length;
   audio_set.forEach(function(item){
     var this_item = $("<audio>");
         this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
