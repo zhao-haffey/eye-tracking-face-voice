@@ -24,4 +24,4 @@ var libraries = '<meta http-equiv="Cache-Control" content="no-cache, no-store, m
 		'<link rel="stylesheet" href="libraries/bootstrapCollector.css">' +
 		'<scr' + 'ipt src="libraries/bootstrap.5.0.1.min.js"></scr' + 'ipt>'+
     '<scr' + 'ipt src="libraries/bootbox.5.4.min.js"></scr' + 'ipt>'+
-		'<scr' + 'ipt src="libraries/papaparse.4.3.6.min.js"></scr' + 'ipt>';
+		'<scr' + 'ipt src="libraries/papaparse.min.js"></scr' + 'ipt>';

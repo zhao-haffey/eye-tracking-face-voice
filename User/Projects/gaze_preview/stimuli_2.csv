@@ -1,0 +1,4 @@
+calibrations,freeview_image_file,design_type,calibration_skip,image_height,image_width,save_script,stim_duration,trials,left_side,trial_order,left_position,right_position,min_width,min_height,skip_instruct,
+13,gaze_pairs2.csv,freeview,no,300px,400px,https://script.google.com/macros/s/AKfycbz8s-Ty59dFHWc_Cl2JMcB8x3rCyC8bz6QErXICOTEE1uv2bl0/exec,5000,20,counterbalance,random,-300px,300px,1100px,400px,off,
+13,gaze_pairs1.csv,freeview,no,300px,400px,https://script.google.com/macros/s/AKfycbz8s-Ty59dFHWc_Cl2JMcB8x3rCyC8bz6QErXICOTEE1uv2bl0/exec,5000,20,counterbalance,random,-300px,300px,1100px,400px,off,
+,,,,,,,,,,,,,,,,

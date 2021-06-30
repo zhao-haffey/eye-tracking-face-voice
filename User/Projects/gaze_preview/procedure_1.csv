@@ -1,0 +1,13 @@
+item,survey,max time,text,shuffle 1,code,webgazer_settings,calibrations,calibration_skip,design_type,image_file,trials,min_width,min_height,skip_instruct,stim_duration,left_side,
+0,,user,"Please look at the cross.<br />A video will follow MORE INSTRUCTIONS HERE, look at the code column in the procedure sheet to make these instructions.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,"{
+  calibrations: ""13"",
+  calibration_skip: ""no"",
+  design_type: ""pursuit"",
+  image_file: ""gaze_pairs_a_sn_1.csv"",
+  trials: ""40"",
+  min_width: ""1100px"",
+  min_height: ""400px"",
+  skip_instruct: ""off"",
+  stim_duration: 5000,
+  left_side: ""image_1""
+}",13,no,stimuli,gaze_pairs_a_sn.csv,40,1100px,400px,off,5000,image_1,

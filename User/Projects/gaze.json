@@ -1,17 +1,17 @@
 {
   "all_procs": {
-    "procedure_1.csv": "item,code,max time,text,shuffle 1,\r\n2,instruct,user,start,off,\r\n2 to 4,instruct,user,{{cue}},trials,\r\n2,instruct,user,end,off,"
+    "procedure_1.csv": "item,code,max time,text,shuffle 1,\r\n2,instruct,user,start test,off,\r\n2 to 4,instruct,user,{{cue}},trials,\r\n2,instruct,user,end,off,"
   },
   "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
   "all_stims": {
     "stimuli_1.csv": "cue,answer,\r\n2,Apple,\r\n3,Banana,\r\n4,,\r\n,,"
   },
   "location": "zhao-haffey/eye-tracking-face-voice/gaze",
-  "public_key": "sN/aYxgNNPk4cf0Y8UnXjiSKZEmIPqgJH4D/2JiufRo=",
+  "public_key": "3ChTnQQ5ZIx0GmOxRB3829cK3J+1ghXbwz+nqWUPlyo=",
   "surveys": {},
   "trialtypes": {},
   "code": {
-    "instruct": "<!--\n/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)\n    A program for running experiments on the web\n    Copyright 2012-2016 Mikey Garcia & Nate Kornell\n\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License version 3 as published by\n    the Free Software Foundation.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>\n \t\t\n\t\tKitten/Cat release (2019-2021) author: Dr. Anthony Haffey (team@someopen.solutions)\t\t\n*/\n-->\n<style>\n#instruct_text{\n  margin:auto;\n  width:500px;\n  padding:50px;\n  max-height:600px;\n  text-align: center;  \n}\n#proceed_button{\n  position:absolute;\n  right: 20px;\n}\n#trial_contents{\n  position: absolute;\n  top:0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin:auto;\n  width:600;\n  height:600;\n}\n</style>\n<div id=\"trial_contents\">\n  <div id=\"instruct_text\">{{text}}</div>\n  <div>\n    <button class=\"btn btn-primary\" id=\"proceed_button\" onclick=\"Phase.submit()\">Proceed</button>\n  </div>\n</div>"
+    "instruct": "<!--\r\n/*  Collector (Garcia, Kornell, Kerr, Blake & Haffey)\r\n    A program for running experiments on the web\r\n    Copyright 2012-2016 Mikey Garcia & Nate Kornell\r\n\r\n\r\n    This program is free software: you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License version 3 as published by\r\n    the Free Software Foundation.\r\n\r\n    This program is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with this program.  If not, see <http://www.gnu.org/licenses/>\r\n \t\t\r\n\t\tKitten/Cat release (2019-2021) author: Dr. Anthony Haffey (team@someopen.solutions)\t\t\r\n*/\r\n-->\r\n<style>\r\n#instruct_text{\r\n  margin:auto;\r\n  width:500px;\r\n  padding:50px;\r\n  max-height:600px;\r\n  text-align: center;  \r\n}\r\n#proceed_button{\r\n  position:absolute;\r\n  right: 20px;\r\n}\r\n#trial_contents{\r\n  position: absolute;\r\n  top:0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  margin:auto;\r\n  width:600;\r\n  height:600;\r\n}\r\n</style>\r\n<div id=\"trial_contents\">\r\n  <div id=\"instruct_text\">{{text}}</div>\r\n  <div>\r\n    <button class=\"btn btn-primary\" id=\"proceed_button\" onclick=\"Phase.submit()\">Proceed</button>\r\n  </div>\r\n</div>"
   },
   "procs_csv": {},
   "stims_csv": {}

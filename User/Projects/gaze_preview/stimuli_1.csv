@@ -1,0 +1,4 @@
+calibrations,design_type,calibration_skip,image_height,image_width,save_script,stim_duration,trials,left_side,trial_order,left_position,right_position,min_width,min_height,skip_instruct,backup_script_location,
+13,freeview,no,300px,400px,https://script.google.com/macros/s/AKfycbzwj1yzprDALwIAP0LFwFD-LeBEb3e9w28YVKj4veWavrjsu55n/exec,5000,20,counterbalance,random,-300px,300px,1100px,400px,off,https://script.google.com/macros/s/AKfycbz8s-Ty59dFHWc_Cl2JMcB8x3rCyC8bz6QErXICOTEE1uv2bl0/exec,
+13,freeview,no,300px,400px,https://script.google.com/macros/s/AKfycbzwj1yzprDALwIAP0LFwFD-LeBEb3e9w28YVKj4veWavrjsu55n/exec,5000,20,counterbalance,random,-300px,300px,1100px,400px,off,https://script.google.com/macros/s/AKfycbz8s-Ty59dFHWc_Cl2JMcB8x3rCyC8bz6QErXICOTEE1uv2bl0/exec,
+,,,,,,,,,,,,,,,,
