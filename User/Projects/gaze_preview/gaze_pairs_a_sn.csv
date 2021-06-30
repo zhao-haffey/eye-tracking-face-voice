@@ -1,5 +1,6 @@
 Task,Scrambled_Status,Name_1,Name_2,image_1,image_2,image_1_height,image_2_height,image_1_width,image_2_width,duration,image_1_x,image_2_x,image_1_y,image_2_y,
 Alcohol,Unscrambled,Unopened_1_Target_A.png,Unopened_1_Control_A.png,../User/Pictures/Alcohol/Unopened_1_Target_A.png,../User/Pictures/Alcohol/Unopened_1_Control_A.png,300,300,400,400,5000,-300,300,0,0,
+Alcohol,Unscrambled,Unopened_1_Target_A.png,Unopened_1_Control_A.png,../User/Pictures/Alcohol/Unopened_1_Target_A.png,../User/Pictures/Alcohol/Unopened_1_Control_A.png,300,300,400,400,5000,-300,300,0,0,
 Alcohol,Unscrambled,Unopened_2_Target_A.png,Unopened_2_Control_A.png,../User/Pictures/Alcohol/Unopened_2_Target_A.png,../User/Pictures/Alcohol/Unopened_2_Control_A.png,300,300,400,400,5000,-300,300,0,0,
 Alcohol,Unscrambled,Unopened_3_Target_A.png,Unopened_3_Control_A.png,../User/Pictures/Alcohol/Unopened_3_Target_A.png,../User/Pictures/Alcohol/Unopened_3_Control_A.png,300,300,400,400,5000,-300,300,0,0,
 Alcohol,Unscrambled,Unopened_4_Target_A.png,Unopened_4_Control_A.png,../User/Pictures/Alcohol/Unopened_4_Target_A.png,../User/Pictures/Alcohol/Unopened_4_Control_A.png,300,300,400,400,5000,-300,300,0,0,

@@ -126,11 +126,9 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
 </html>
 <script>
 
-
-
-//////////////////////
-// Borcsok variables
-//////////////////////
+/*
+* Haffey variables
+*/
 
 var all_fixation_rts = [];
 
@@ -171,9 +169,9 @@ Phase.set_timer(function(){
 },0);
 
 
-//////////////////////
-// default settings //
-//////////////////////
+/*
+* default settings
+*/
 
 var calibrations     = "{{calibrations}}";
 var image_file       = "{{image_file}}"; 
@@ -325,7 +323,7 @@ eyetrack_designs = {
 }
 
 if("{{skip_instruct}}" == "on"){
-  eyetrack_designs.freeview.instruction_duration = 0;
+  eyetrack_designs.stimuli.instruction_duration = 0;
 }
 
 
@@ -855,16 +853,17 @@ function endValidation() {
  ************************************/
 var t_trial_start;
 function prepareTrial() {
-    status = "prepare";
-    $('.stimuli').hide();
-    data_current = {
-        'type': 'trial',
-        'block': block_no,
-        'trial': trial_no,
-        'raw': []
-    };
-    webgazer.resume();
-    startTrial();
+  console.log("reached here");
+  status = "prepare";
+  $('.stimuli').hide();
+  data_current = {
+      'type': 'trial',
+      'block': block_no,
+      'trial': trial_no,
+      'raw': []
+  };
+  webgazer.resume();
+  startTrial();
 }
 
 
@@ -880,6 +879,7 @@ function startTrial() {
 
 var heat;
 function endTrial() {
+  console.log("ending trial");
   clearTimeout(t);
   cam.recording = 0;
   webgazer.pause();
@@ -889,8 +889,10 @@ function endTrial() {
   saveData();
 
   if (trial_no < design.blocks[block_no].trials) {
+    console.log("about to prepareTrial?");
     setTimeout("prepareTrial();", design.blocks[block_no].iti);
   } else {
+    console.log("not about to prepareTrial?");
     block_no++;
     if (block_no < design.blocks.length) {
       window.localStorage.clear();
@@ -1368,23 +1370,14 @@ function stimuliStart() {
     }, 2000);
     setTimeout(function(){
       
-      all_fixation_rts.push
+      //all_fixation_rts.push;
       
       $("img").show();
-      setTimeout("status = 'stimulus_offset'; endTrial();", stim_duration);
+      setTimeout(function(){
+        status = 'stimulus_offset'; 
+        endTrial();
+      },stim_duration);
       
-      /*
-      freeviewShow();
-      
-      function freeviewShow() {
-        status = 'stimulus_onset';
-        $('#stimuli_img_left').show();
-        $('#stimuli_img_right').show();
-        
-      }
-
-      
-      */
     },2500);
   }
  
@@ -1452,6 +1445,7 @@ function stimuliStart() {
   image_set.forEach(function(item){
     var this_item = $("<img>");
         this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
+                 .addClass("stimuli")
                  .addClass("stimuli_img")
                  .css("margin-left",   stimuli_set[item + "_x"])
                  .css("top",    stimuli_set[item + "_y"])
