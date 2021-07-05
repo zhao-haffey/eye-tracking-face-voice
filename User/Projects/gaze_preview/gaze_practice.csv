@@ -1,26 +1,196 @@
-trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,video_1_height,video_1_width,stim_duration,video_1_x,video_1_y,text,text_x,text_y,text_onset,text_duration,keys,
-1,M21,Angry,Speech,Dog,High,../User/Stimuli/V_M21_A_Sp_D_N1.mp4,../User/Stimuli/A_M21_A_Sp_D_-5.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-2,M21,Happy,Speech,Kid,No,../User/Stimuli/V_W14_A_So_K_N1.mp4,../User/Stimuli/A_W14_A_So_K.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-3,F14,Fearful,Speech,Kid,High,../User/Stimuli/V_M21_F_So_D_N1.mp4,../User/Stimuli/A_M21_F_So_D.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-4,M21,Fearful,Song,Dog,No,../User/Stimuli/V_W14_F_Sp_K_N1.mp4,../User/Stimuli/A_W14_F_Sp_K_-5.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-5,F14,Angry,Song,Kid,No,../User/Stimuli/V_M21_H_Sp_K_N1.mp4,../User/Stimuli/A_M21_H_Sp_K.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-6,M21,Neutral,Song,Kid,High,../User/Stimuli/V_W14_H_So_D_N1.mp4,../User/Stimuli/A_W14_H_So_D_-5.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-7,F14,Happy,Song,Dog,High,../User/Stimuli/V_M21_N_So_K_N1.mp4,../User/Stimuli/A_M21_N_So_K_-5.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-8,F14,Neutral,Speech,Dog,No,../User/Stimuli/V_W14_N_Sp_D_N1.mp4,../User/Stimuli/A_W14_N_Sp_D.wav,590,885,5000,0,0,"<h5>Please only use your free hand to select the emotions as follows:</h5>
-<h5>C = angry | V = fear | B = happy | N = neutral</h5>
-",0,0,4000,5000,cvbn,
-,,,,,,,,,,,,,,,,,,,
+trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1,keys_1,video_1.src,audio_1.src,elements,
+1,M21,Angry,Speech,Dog,High,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_M21_A_Sp_D_N1.mp4,../User/Stimuli/A_M21_A_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
+2,M21,Happy,Speech,Kid,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_W14_A_So_K_N1.mp4,../User/Stimuli/A_W14_A_So_K.wav,"video_1,audio_1,text_1,keys_1",
+3,F14,Fearful,Speech,Kid,High,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_M21_F_So_D_N1.mp4,../User/Stimuli/A_M21_F_So_D.wav,"video_1,audio_1,text_1,keys_1",
+4,M21,Fearful,Song,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_W14_F_Sp_K_N1.mp4,../User/Stimuli/A_W14_F_Sp_K_-5.wav,"video_1,audio_1,text_1,keys_1",
+5,F14,Angry,Song,Kid,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_M21_H_Sp_K_N1.mp4,../User/Stimuli/A_M21_H_Sp_K.wav,"video_1,audio_1,text_1,keys_1",
+6,M21,Neutral,Song,Kid,High,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_W14_H_So_D_N1.mp4,../User/Stimuli/A_W14_H_So_D_-5.wav,"video_1,audio_1,text_1,keys_1",
+7,F14,Happy,Song,Dog,High,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_M21_N_So_K_N1.mp4,../User/Stimuli/A_M21_N_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
+8,F14,Neutral,Speech,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""text"": ""cvbn"",
+  ""duration"": 2000
+}",../User/Stimuli/V_W14_N_Sp_D_N1.mp4,../User/Stimuli/A_W14_N_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
+,,,,,,,,,,,,,

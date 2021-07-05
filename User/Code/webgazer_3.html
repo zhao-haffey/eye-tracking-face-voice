@@ -191,7 +191,6 @@ var save_scripts = Object.keys(parent.parent.project_json.storage_scripts).map(f
 * work out the location of the images
 */
 
-console.log("hi");
 if(calibrations.indexOf("calibrations") !== -1){
   calibrations = 13;
 }
@@ -815,7 +814,6 @@ function endValidation() {
  ************************************/
 var t_trial_start;
 function prepareTrial() {
-  console.log("reached here");
   status = "prepare";
   $('.stimuli').hide();
   data_current = {
@@ -841,7 +839,6 @@ function startTrial() {
 
 var heat;
 function endTrial() {
-  console.log("ending trial");
   $("#stimuli_div").html("");
   clearTimeout(t);
   cam.recording = 0;
@@ -852,10 +849,8 @@ function endTrial() {
   saveData();
 
   if (trial_no < design.blocks[block_no].trials) {
-    console.log("about to prepareTrial?");
     setTimeout("prepareTrial();", design.blocks[block_no].iti);
   } else {
-    console.log("not about to prepareTrial?");
     block_no++;
     if (block_no < design.blocks.length) {
       window.localStorage.clear();
@@ -931,17 +926,6 @@ function saveData() {
     } else {
       row.valid_trial = false;
     }
-   
-    /*
-   
-    did the participant pass? (assuming this is validation)
-   
-    */
-   
-   
-    //row.left_image  = image_pair.image_1;
-    //row.right_image = image_pair.image_2;
-   
     return row;
   });
  
@@ -1204,48 +1188,48 @@ function pursuitStart() {
 /************************************
  * STIMULI PARADIGM
  ************************************/
-var tFreeview = {};
+var tStimuli = {};
 
 
-tFreeview.stimuli = [];
+tStimuli.stimuli = [];
 
 
 
-function process_image_file(){
+function process_stimuli(){
   if(trial_order == "random"){
-    tFreeview.stimuli = shuffle(tFreeview.stimuli);
+    tStimuli.stimuli = shuffle(tStimuli.stimuli);
   }
  
  
   if(left_side == "random"){
-    for(var i = 0; i < tFreeview.stimuli.length; i++){
-      [left_image,right_image] = shuffle([tFreeview.stimuli[i].image_1,
-                                          tFreeview.stimuli[i].image_2]);
-      tFreeview.stimuli[i].image_1 = left_image;
-      tFreeview.stimuli[i].image_2 = right_image;
+    for(var i = 0; i < tStimuli.stimuli.length; i++){
+      [left_image,right_image] = shuffle([tStimuli.stimuli[i].image_1,
+                                          tStimuli.stimuli[i].image_2]);
+      tStimuli.stimuli[i].image_1 = left_image;
+      tStimuli.stimuli[i].image_2 = right_image;
     }
   } else if(left_side == "equal" | left_side == "counterbalance"){
     // select indexes to swap left and right for half the indexes
     // all indexes:
-    var indexes = Array.from({length:tFreeview.stimuli.length},(v,k)=>k);
+    var indexes = Array.from({length:tStimuli.stimuli.length},(v,k)=>k);
         indexes = shuffle(indexes);
    
     //assign the first half left to right
-    for(var i = 0; i < Math.floor(tFreeview.stimuli.length / 2); i++){          //this will only loop through half of the randomised indexes
+    for(var i = 0; i < Math.floor(tStimuli.stimuli.length / 2); i++){          //this will only loop through half of the randomised indexes
       var this_index = indexes[i];
-      var right_image = tFreeview.stimuli[this_index].image_1;
-      var left_image = tFreeview.stimuli[this_index].image_2;
-      tFreeview.stimuli[this_index].image_1 = left_image;
-      tFreeview.stimuli[this_index].image_2 = right_image;
+      var right_image = tStimuli.stimuli[this_index].image_1;
+      var left_image = tStimuli.stimuli[this_index].image_2;
+      tStimuli.stimuli[this_index].image_1 = left_image;
+      tStimuli.stimuli[this_index].image_2 = right_image;
     }
   } else if(left_side == "image_1"){
     // do nothing
   } else if(left_side == "image_2"){
-    for(var i = 0; i < Math.floor(tFreeview.stimuli.length / 2); i++){
-      var right_image = tFreeview.stimuli[i].image_1;
-      var left_image = tFreeview.stimuli[i].image_2;
-      tFreeview.stimuli[i].image_1 = left_image;
-      tFreeview.stimuli[i].image_2 = right_image;
+    for(var i = 0; i < Math.floor(tStimuli.stimuli.length / 2); i++){
+      var right_image = tStimuli.stimuli[i].image_1;
+      var left_image = tStimuli.stimuli[i].image_2;
+      tStimuli.stimuli[i].image_1 = left_image;
+      tStimuli.stimuli[i].image_2 = right_image;
     }
   } else {
     alert("there's a problem in the 'left_side' column - fix this before testing.");
@@ -1254,27 +1238,25 @@ function process_image_file(){
 
 //check if the freeview file matches one of the stimuli files
 if(typeof(parent.parent.project_json.all_stims[image_file]) !== "undefined"){
-  var freeview_contents = Papa.parse(parent.parent.project_json.all_stims[image_file]).data;
-  console.log("freeview_contents");
-  console.log(freeview_contents);
-  var freeview_clean    = freeview_contents.map(function(row){
+  var trial_contents = Papa.parse(parent.parent.project_json.all_stims[image_file]).data;
+  var trial_clean    = trial_contents.map(function(row){
     return row.filter(item => item !== null);
   });
-  tFreeview.stimuli = Papa.parse(Papa.unparse(freeview_clean),{
+  tStimuli.stimuli = Papa.parse(Papa.unparse(trial_clean),{
     header:true,
     skipEmptyLines:true
   }).data;
-  process_image_file();
+  process_stimuli();
 } else {
   if(image_file.toLowerCase().indexOf("https://") == -1){                //i.e. isn't stored on dropbox or some other remote location
     image_file = "../User/" + image_file;
   }
   $.get(image_file,function(result){
-    tFreeview.stimuli = Papa.parse(result,{
+    tStimuli.stimuli = Papa.parse(result,{
       header:true,
       skipEmptyLines:true
     }).data;
-    process_image_file();
+    process_stimuli();
   });
 }
 
@@ -1296,161 +1278,240 @@ switch(parent.parent.Project.get_vars.platform){
     break;
 }
 
+function stimuli_loaded(){
+  stimuli_no++;
+  
+  data_current.task = 'stimuli';
+  
+  cam.recording = 1;
+  status = 'fixation_flash_first_half';
+  $('#stimuli_fixation').css("color","red");
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","black");
+  }, 250);
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","red");
+  }, 500);
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","black");
+  }, 750);
+  setTimeout(function(){
+    status = 'fixation_flash_second_half';
+    $('#stimuli_fixation').css("color","red");
+  }, 1000);
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","black");
+  }, 1250);
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","red");
+  }, 1500);
+  setTimeout(function(){
+    $('#stimuli_fixation').css("color","black");
+  }, 1750);
+  setTimeout(function(){
+    $('#stimuli_fixation').hide();
+    status = 'fixation_offset';
+  }, 2000);
+  
+  
+  /*
+  * set timers here
+  */
+  console.log("stimuli_set");
+  console.log(stimuli_set);
+  
+  var these_elements = stimuli_set.elements.split(",");
+  
+  
+  these_elements.forEach(function(this_element){
+    var element_json = JSON.parse(stimuli_set[this_element]);
+    
+    /*
+    * add other properties from other relevant columns
+    */
+    var other_properties = Object.keys(stimuli_set).filter(item => item.indexOf(this_element + ".") == 0);
+    
+    other_properties.forEach(function(item){
+      element_json[item.split(".")[1]] = stimuli_set[item];
+    });
+    
+    if(element_json.type == "keys"){
+      
+    }
+
+
+    /*
+    * deal with elements that are triggered by the end of audio or videos
+    */
+    if(typeof(element_json.onset) !== "number" && element_json.onset.indexOf(".ended") !== -1){
+      trigger_element = element_json.onset.split(".")[0];
+      //alert("trigger_element = " + trigger_element);
+      $("#" + trigger_element).on("ended", function(){
+        //alert("this_element " + this_element);
+        $("#" + this_element).show();
+        $("#" + this_element).trigger("play");
+      });
+    } else {
+      setTimeout(function(){
+        $("#" + this_element).show();
+        $("#" + this_element).trigger("play");
+        
+      }, 2000 + element_json.onset);
+    }
+
+    if(element_json.duration == "end"){
+      $("#" + this_element).on('ended', function(){
+        $("#" + this_element).hide()
+      });
+    } else {
+      setTimeout(function(){
+        $("#" + this_element).hide();
+      }, 2000 + element_json.onset + element_json.duration);
+
+    }
+    
+    
+    
+  });
+  
+  
+  
+  
+  
+  
+  
+  /*
+  setTimeout(function(){
+    
+    //all_fixation_rts.push;
+    
+    $(".stimuli_img").show();
+    $(".stimuli_video").show();
+    $("video").trigger("play");
+    $("audio").trigger("play");
+    setTimeout(function(){
+      status = 'stimulus_offset'; 
+      endTrial();
+    },stim_duration);
+    
+  },2500);
+  */
+}
+
+var stimuli_set;
+
 function stimuliStart() {
   gaze_phase = "stimuli";
-  function stimuli_loaded(stimuli, locations){
-    
-    
-    
-    stimuli_no++;
-    
-    data_current.task = 'stimuli';
-    /*
-    data_current.x = $('#stimuli_img_left').css('left');
-    data_current.y = "0%";
-    data_current.condition = 'view_' + left_image + '_' + right_image;
-    */
- 
-    cam.recording = 1;
-    status = 'fixation_flash_first_half';
-    $('#stimuli_fixation').css("color","red");
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","black");
-    }, 250);
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","red");
-    }, 500);
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","black");
-    }, 750);
-    setTimeout(function(){
-      status = 'fixation_flash_second_half';
-      $('#stimuli_fixation').css("color","red");
-    }, 1000);
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","black");
-    }, 1250);
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","red");
-    }, 1500);
-    setTimeout(function(){
-      $('#stimuli_fixation').css("color","black");
-    }, 1750);
-    setTimeout(function(){
-      $('#stimuli_fixation').hide();
-      status = 'fixation_offset';
-    }, 2000);
-    setTimeout(function(){
-      
-      //all_fixation_rts.push;
-      
-      $(".stimuli_img").show();
-      $(".stimuli_video").show();
-      $("video").trigger("play");
-      $("audio").trigger("play");
-      setTimeout(function(){
-        status = 'stimulus_offset'; 
-        endTrial();
-      },stim_duration);
-      
-    },2500);
-  }
- 
+  
   document.body.style.cursor = 'none';
-  stimuli_set = tFreeview.stimuli.shift();
+  stimuli_set = tStimuli.stimuli.shift();
   
-  /*
-  * separate stimuli
-  */
-  audio_set = Object.keys(stimuli_set).filter(column => column.indexOf("audio_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
-  image_set = Object.keys(stimuli_set).filter(column => column.indexOf("image_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
-  video_set = Object.keys(stimuli_set).filter(column => column.indexOf("video_") !==-1 && column.split("_").length == 2 && stimuli_set[column] !== "");
-  
-  /*
-  * draw audio stimuli
-  */
   stimuli_src_loaded = 0;
-  stimuli_src_length = audio_set.length + image_set.length + video_set.length;
-  audio_set.forEach(function(item){
-    var this_item = $("<audio>");
-        this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
-                 .prop("id", item + "_element");
-    $("#stimuli_div").append(this_item);
-    $("#" + item + "_element").on("canplay canplaythrough",function(){
-      stimuli_src_loaded = stimuli_src_loaded + 1;
-      if(stimuli_src_loaded == stimuli_src_length){
-        stimuli_loaded();
-      }
-    });
-  });
- 
-  /*
-  * draw images
-  */
+
+  
+  [audio_set, image_set, video_set, text_set] = Array(4).fill([]);
+  var these_elements = stimuli_set.elements.split(",");
+  these_elements.forEach(function(this_element){
+    var element_json = JSON.parse(stimuli_set[this_element]);
     
-  image_set.forEach(function(item){
-    var this_item = $("<img>");
-        this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
+    /*
+    * add other properties from other relevant columns
+    */
+    var other_properties = Object.keys(stimuli_set).filter(item => item.indexOf(this_element + ".") == 0);
+    
+    other_properties.forEach(function(item){
+      element_json[item.split(".")[1]] = stimuli_set[item];
+    });
+    
+    
+    switch(element_json.type){
+      
+      case "audio":
+        var this_item = $("<audio>");
+        this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
+          .prop("id", this_element);
+        $("#stimuli_div").append(this_item);
+        $("#" + this_element).on("canplay canplaythrough",function(){
+          stimuli_src_loaded = stimuli_src_loaded + 1;
+          
+          if(these_elements.length == stimuli_src_loaded){
+            stimuli_loaded();
+          }
+        });
+        break;
+      case "image":
+        var this_item = $("<img>");
+        this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
           .addClass("stimuli")
           .addClass("stimuli_img")
-          .css("margin-left",   stimuli_set[item + "_x"])
-          .css("top",    stimuli_set[item + "_y"])
-          .css("width",  stimuli_set[item + "_width"])
-          .css("height", stimuli_set[item + "_height"])
+          .css("margin-left",   element_json.x)
+          .css("top",    element_json.y)
+          .css("width",  element_json.width)
+          .css("height", element_json.height)
           .css("display", "none")
-          .prop("id", item + "_element");
-    $("#stimuli_div").append(this_item);
-    $("#" + item + "_element").on("load",function(){
-      stimuli_src_loaded = stimuli_src_loaded + 1;
-      if(stimuli_src_loaded == stimuli_src_length){
-        stimuli_loaded();
-      }
-    });
-  });
-  
-  /*
-  * draw videos
-  */
-  /*
-  
-  <video width="320" height="240" controls>
-    <source src="movie.mp4" type="video/mp4">
-    <source src="movie.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-  </video>
-  */
-  
-  video_set.forEach(function(item){
-    var this_item = $("<video>");
-    var this_source = $("<source>");
-        this_source.prop("src", home_dir + stimuli_set[item].replace("../User","/User"));
-    
-        this_item.prop("src", home_dir + stimuli_set[item].replace("../User","/User"))
+          .prop("id", this_element);
+        $("#stimuli_div").append(this_item);
+        $("#" + this_element).on("load",function(){
+          
+          stimuli_src_loaded = stimuli_src_loaded + 1;
+          if(these_elements.length == stimuli_src_length){
+            stimuli_loaded();
+          }
+        });
+        break;
+      case "keys":
+        stimuli_src_loaded = stimuli_src_loaded + 1;
+        if(these_elements.length == stimuli_src_loaded){
+          stimuli_loaded();
+        }
+        break;
+      case "text":
+        //alert("hi");
+        this_item = $("<div>");
+        this_item.html(element_json.text)
           .addClass("stimuli")
-          .addClass("stimuli_video")
-          .css("margin-left",   stimuli_set[item + "_x"])
-          .css("top",    stimuli_set[item + "_y"])
-          .css("width",  stimuli_set[item + "_width"])
-          .css("height", stimuli_set[item + "_height"])
+          .css("margin-left",   element_json.x)
+          .css("top",    window.innerHeight/2 + element_json.y)
+          .css("width",  element_json.width)
+          .css("height", element_json.height)
           .css("display", "none")
-          .prop("id", item + "_element");
-    this_item.append(this_source);
-    $("#stimuli_div").append(this_item);
-    console.log("howdy");
-    $("#" + item + "_element").on("loadstart",function(){
-      console.log("hardy");
-      stimuli_src_loaded = stimuli_src_loaded + 1;
-      if(stimuli_src_loaded == stimuli_src_length){
-        stimuli_loaded();
-      }
-    });
+          .prop("id", this_element);
+        $("#stimuli_div").append(this_item);
+        stimuli_src_loaded = stimuli_src_loaded + 1;
+        
+        if(these_elements.length == stimuli_src_loaded){
+          stimuli_loaded();
+        }
+        break;
+      case "video":
+        var this_item = $("<video>");
+        var this_source = $("<source>");
+            this_source.prop("src", home_dir + element_json.src.replace("../User","/User"));
+        
+            this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
+              .addClass("stimuli")
+              .addClass("stimuli_video")
+              .css("margin-left",   element_json.x)
+              .css("top",    element_json.y)
+              .css("width",  element_json.width)
+              .css("height", element_json.height)
+              .css("display", "none")
+              .prop("id", this_element);
+        this_item.append(this_source);
+        $("#stimuli_div").append(this_item);
+        $("#" + this_element).on("loadstart",function(){
+          stimuli_src_loaded = stimuli_src_loaded + 1;
+          
+          if(these_elements.length == stimuli_src_loaded){
+            stimuli_loaded();
+          }
+        });
+        
+        break;
+    }
+    
+    //if(typeof(stimuli_set[this_element + "."])
   });
-  
-  
-  
-  
-  
-  
 }
 
 
