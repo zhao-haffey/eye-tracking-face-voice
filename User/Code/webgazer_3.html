@@ -1342,29 +1342,42 @@ function stimuli_loaded(){
       element_json[item.split(".")[1]] = stimuli_set[item];
     });
     
-    if(element_json.type == "keys"){
-      $(window).bind('keypress', function(event) {
-        if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
-          $("#" + this_element + "_value").val(event.which);
-          check_end_trial(element_json);
-        }
-      });
-    }
-
 
     /*
     * deal with elements that are triggered by the end of audio or videos
     */
     if(typeof(element_json.onset) !== "number" && element_json.onset.indexOf(".ended") !== -1){
+      
       trigger_element = element_json.onset.split(".")[0];
       //alert("trigger_element = " + trigger_element);
       $("#" + trigger_element).on("ended", function(){
         //alert("this_element " + this_element);
         $("#" + this_element).show();
         $("#" + this_element).trigger("play");
+        
+        
+        if(element_json.type == "keys"){
+          $(window).bind('keypress', function(event) {
+            if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
+              $("#" + this_element + "_value").val(event.which);
+              check_end_trial(element_json);
+            }
+          });
+        }
+        
       });
     } else {
       setTimeout(function(){
+        
+        if(element_json.type == "keys"){
+          $(window).bind('keypress', function(event) {
+            if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
+              $("#" + this_element + "_value").val(event.which);
+              check_end_trial(element_json);
+            }
+          });
+        }
+        
         $("#" + this_element).show();
         $("#" + this_element).trigger("play");
         

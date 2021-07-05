@@ -39,11 +39,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -64,11 +66,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -89,11 +93,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -114,11 +120,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -139,11 +147,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -164,11 +174,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
@@ -189,11 +201,13 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""onset"": 0,
   ""duration"": ""end""
 }","{
+  ""type"": ""text"",
   ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
-  ""duration"": ""keys_1.response""
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
