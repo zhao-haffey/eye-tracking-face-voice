@@ -22,8 +22,9 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
 }","{
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
-  ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""keys"": ""cvbn"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_M21_A_Sp_D_N1.mp4,../User/Stimuli/A_M21_A_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
 2,M21,Happy,Speech,Kid,No,"{
   ""type"": ""video"",
@@ -47,7 +48,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_W14_A_So_K_N1.mp4,../User/Stimuli/A_W14_A_So_K.wav,"video_1,audio_1,text_1,keys_1",
 3,F14,Fearful,Speech,Kid,High,"{
   ""type"": ""video"",
@@ -71,7 +73,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_M21_F_So_D_N1.mp4,../User/Stimuli/A_M21_F_So_D.wav,"video_1,audio_1,text_1,keys_1",
 4,M21,Fearful,Song,Dog,No,"{
   ""type"": ""video"",
@@ -95,7 +98,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_W14_F_Sp_K_N1.mp4,../User/Stimuli/A_W14_F_Sp_K_-5.wav,"video_1,audio_1,text_1,keys_1",
 5,F14,Angry,Song,Kid,No,"{
   ""type"": ""video"",
@@ -119,7 +123,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_M21_H_Sp_K_N1.mp4,../User/Stimuli/A_M21_H_Sp_K.wav,"video_1,audio_1,text_1,keys_1",
 6,M21,Neutral,Song,Kid,High,"{
   ""type"": ""video"",
@@ -143,7 +148,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_W14_H_So_D_N1.mp4,../User/Stimuli/A_W14_H_So_D_-5.wav,"video_1,audio_1,text_1,keys_1",
 7,F14,Happy,Song,Dog,High,"{
   ""type"": ""video"",
@@ -167,7 +173,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_M21_N_So_K_N1.mp4,../User/Stimuli/A_M21_N_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
 8,F14,Neutral,Speech,Dog,No,"{
   ""type"": ""video"",
@@ -191,6 +198,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""type"": ""keys"",
   ""onset"": ""video_1.ended"",
   ""text"": ""cvbn"",
-  ""duration"": 2000
+  ""duration"": 2000,
+  ""end_trial"": ""yes""
 }",../User/Stimuli/V_W14_N_Sp_D_N1.mp4,../User/Stimuli/A_W14_N_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
 ,,,,,,,,,,,,,

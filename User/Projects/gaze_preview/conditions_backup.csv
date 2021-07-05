@@ -1,0 +1,5 @@
+name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,download_at_end,mobile,name*,
+condition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_actual_list1.csv,off,,on,,Please type in your SONA ID below:,5,on,no,condition_1,
+condition_2,this is a note,stimuli_2.csv,procedure_actual_list2.csv,off,,on,,Please type in your SONA ID below:,5,on,no,condition_2,
+condition_3,You can put more detailed notes in this field,stimuli_1.csv,procedure_actual_list3.csv,off,,on,,Please type in your SONA ID below:,5,on,no,condition_3,
+condition_4,this is a note,stimuli_2.csv,procedure_actual_list4.csv,off,,on,,Please type in your SONA ID below:,5,on,no,condition_4,

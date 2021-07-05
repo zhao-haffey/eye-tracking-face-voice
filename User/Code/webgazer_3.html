@@ -1278,6 +1278,13 @@ switch(parent.parent.Project.get_vars.platform){
     break;
 }
 
+function check_end_trial(element_json){
+  if(typeof(element_json.end_trial) !== "undefined" && element_json.end_trial.toLowerCase() == "yes"){
+    status = 'stimulus_offset'; 
+    endTrial();
+  }
+}
+
 function stimuli_loaded(){
   stimuli_no++;
   
@@ -1336,7 +1343,12 @@ function stimuli_loaded(){
     });
     
     if(element_json.type == "keys"){
-      
+      $(window).bind('keypress', function(event) {
+        if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
+          $("#" + this_element + "_value").val(event.which);
+          check_end_trial(element_json);
+        }
+      });
     }
 
 
@@ -1460,6 +1472,14 @@ function stimuliStart() {
         });
         break;
       case "keys":
+        
+        var this_item = $("<input>");
+        this_item.prop("id", this_element = "_value")
+          .css("display", "none");
+        
+        $("#stimuli_div").append(this_item);
+        
+        
         stimuli_src_loaded = stimuli_src_loaded + 1;
         if(these_elements.length == stimuli_src_loaded){
           stimuli_loaded();
