@@ -48,9 +48,6 @@ function submit_form() {
 	var data = Phase.unserialize(serialized_data);
 	var scored_data = Phase.scoring(data);
 
-	console.dir("hi there");
-
-
 	Collector_Experiment.end_trial(
 		scored_data,
 		Phase.raw_inputs,

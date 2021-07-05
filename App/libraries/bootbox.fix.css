@@ -3,10 +3,11 @@
 .close{
 	position: absolute;
 	right: 10px;
+	top: 10px;
 	background-color: transparent;
 	border-color: none;
 	font-size:25px;
-	color: white;
+	color: black;
 	border-width: 0px;
 }
 .bootbox .modal-header{

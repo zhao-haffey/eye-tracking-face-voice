@@ -77,20 +77,19 @@ Project = {
   */
   detect_context: function(){
     //turn to false to make use of eel and python
-  if(document.URL.indexOf("localhost") !== -1){
-  if(typeof(parent.dropbox_developer) !== "undefined" &&
-  parent.dropbox_developer  ==  true){
-    return "github";
-  } else {
-    return "localhost";
-  }
-  } else if(document.URL.indexOf("github.io") !== -1) { //assume it's github
-    return "github";
-  } else if(document.URL.indexOf("gitpod.io") !== -1){
-    return "gitpod";
-  } else {
-    return "server";
-  }
+    if(document.URL.indexOf("localhost") !== -1){
+    if(typeof(parent.dropbox_developer) !== "undefined" && parent.dropbox_developer  ==  true){
+      return "github";
+    } else {
+      return "localhost";
+    }
+    } else if(document.URL.indexOf("github.io") !== -1) { //assume it's github
+      return "github";
+    } else if(document.URL.indexOf("gitpod.io") !== -1){
+      return "gitpod";
+    } else {
+      return "server";
+    }
   },
   finish_phase: function(go_to_info){
     trial_end_ms = (new Date()).getTime();
@@ -819,7 +818,7 @@ function insert_start(){
 
 
   var this_proc  = project_json.parsed_proc;
-  if(Project.get_vars.platform == "preview"){
+  if(Project.get_vars.platform == "preview" || typeof(project_json.this_condition.skip_quality) !== "undefined" && project_json.this_condition.skip_quality.toLowerCase() == "yes" ){
     this_proc = add_to_start(this_proc, "quality_preview_start");
     load_quality_checks([{
       url: "Quality/PreviewStart.html",
@@ -865,7 +864,6 @@ function insert_start(){
       url: "Quality/Problems.html",
       name: "end_checks_experiment"
     }];
-
     load_quality_checks(quality_checks);
   }
 }
@@ -1364,7 +1362,7 @@ function start_restart(){
 
     bootbox.dialog({
       title:"Resume or Restart?",
-      message: "It looks like you have already started this experiment, would you like to resume or restart?",
+      message: "It looks like you have already started, would you like to resume or restart?",
       buttons: {
         local:{
           label: "Resume",
