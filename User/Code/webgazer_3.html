@@ -968,7 +968,7 @@ function sendData() {
             Papa.unparse(data[trial_no].raw)
           );
                                      
-                                     
+          /*                           
           parent.parent.online_save(parent.parent.Project.get_vars.location,
                     parent.parent.$("#participant_code").val() +
                       gaze_phase +
@@ -987,6 +987,7 @@ function sendData() {
           function(){
             parent.parent.online_data_obj.saves_ended ++;
           });
+          */
           data[trial_no] = null;
         }
       });
