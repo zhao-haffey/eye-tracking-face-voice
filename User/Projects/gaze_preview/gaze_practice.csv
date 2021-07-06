@@ -13,7 +13,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -40,7 +40,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -67,7 +67,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -94,7 +94,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -121,7 +121,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -148,7 +148,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -175,7 +175,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
@@ -202,7 +202,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": ""end""
 }","{
   ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>C = angry | V = fear | B = happy | N = neutral</h5>"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = angry | I = fear | O = happy | P = neutral</h5>"",
   ""onset"": ""video_1.ended"",
   ""x"": 0,
   ""y"": 0,
