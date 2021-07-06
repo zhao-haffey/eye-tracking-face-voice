@@ -1,4 +1,35 @@
 item,survey,max time,text,shuffle 1,code,calibrations,calibration_skip,design_type,image_file,trials,min_width,min_height,skip_instruct,left_side,
+0,,user,"<h2>Debrief </h2>
+<span style='font-size:23'>Thank you for taking part in the CAASD lab eye-tracking emotion study. Your participation is extremely valued, and will help us to better understand how we process emotional voices and facial expressions.<br>
+This study consists of two parts. In the first part, you will hear  emotional voices and see short videos, you will have to make the judgement of what emotion you perceive. We will use the webcam to track your attention, your video will not be saved, the location where you look will be saved anonymously. In the second part, we will ask you for some basic demographic details and to rate some statements that best describe you and how you feel.</span>
+<br><br>
+<br>
+<br>
+This study, conducted by Dr Fang Liu, Dr Chen Zhao, Dr Anthony Haffey, and Kiera Stevens. School of Psychology & Clinical Language Sciences, University of Reading, has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct. <br>
+If you have any questions or wish to withdraw from the study, please contact us at: caasd@reading.ac.uk
+
+<button onclick=""Phase.submit()"">Proceed</button>
+",,text,,,,,,,,,,
+0,,user,"<span style='font-size:20'>Please choose a quiet and well-lit place to take part in the study so you can concentrate, as the quality of the data is very important to us. <br /><br>
+<span style='font-size:20'>In this part, you will hear emotional voices and see facial expressions. You will have to make judgements of what emotion you perceive, as quickly and accurately as possible, by pressing the key. We will go through some practice trials to familar the procedure.
+<br>
+<br>After the calibration, please keep your head and body as still as possible, this is to ensure we have captured the your attention accurately. When there is a cross on the screen please look at the centre of the cross.<br>
+<br>
+Please use your headphones once you are ready to start. Here is a sound example, please adjust the volume to a comfortable level and <b>keep the same volume throughout the study</b>.<br /><br></span>
+<audio controls>
+  <source src=""horse.ogg"" type=""audio/ogg"">
+  <source src=""../User/Stimuli/A_W14_H_So_D_-5.wav"" type=""audio/wav"">
+  Your browser does not support the audio tag.
+</audio><br>
+<br>
+
+<span style='font-size:20'>Please note that you will be given opportunities to have breaks (about every 13 min), please only take breaks when the instruction shows on the screen, as any interruption of the study will require calibration for attention tracking.
+<br>
+
+<br>
+</span>
+<button onclick=""Phase.submit()"">Proceed</button>
+",,text,,,,,,,,,,
 0,,user,"Please look at the cross.<br />A video will follow MORE INSTRUCTIONS HERE, look at the code column in the procedure sheet to make these instructions.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
 0,,user,"<style>
 #instructions{
@@ -10,6 +41,8 @@ item,survey,max time,text,shuffle 1,code,calibrations,calibration_skip,design_ty
 }
 </style>
 
-<div id=""instructions"">Your instructions here</div>
-center the instrcutions on the screen
+<div id=""instructions"">This is the end of the practice, we will now proceed to the actual task.</div>
+Please do not move your body or head.</div>
+</div>
+
 <button onclick=""Phase.submit()"">Proceed</button>",,text,,,,,,,,,,
