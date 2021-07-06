@@ -15,7 +15,7 @@ If you have any questions or wish to withdraw from the study, please contact us 
 <br>
 <br>After the calibration, please keep your head and body as still as possible, this is to ensure we have captured your attention accurately. When there is a cross on the screen please look at the centre of the cross.<br>
 <br>
-Please use your headphones once you are ready to start. Here is a sound example, please adjust the volume to a comfortable level and <b>keep the same volume throughout the study</b>.<br /><br></span>
+Please use your headphones once you are ready to start. Here is a sound example, please adjust the volume to a comfortable level and <b>keep the same volume throughout the study</b>.<br> Note: this sound has added noise, so you should expect to hear a static-like sound <b> and </b> an emotional voice. <br /><br></span>
 <audio controls>
   <source src=""horse.ogg"" type=""audio/ogg"">
   <source src=""../User/Stimuli/A_W14_H_So_D_-5.wav"" type=""audio/wav"">
@@ -30,7 +30,7 @@ Please use your headphones once you are ready to start. Here is a sound example,
 </span>
 <button onclick=""Phase.submit()"">Proceed</button>
 ",,text,,,,,,,,,,
-0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
+0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
 0,,user,"<style>
 #instructions{
   margin:auto;
