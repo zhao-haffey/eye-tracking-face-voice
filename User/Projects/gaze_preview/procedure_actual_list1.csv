@@ -9,11 +9,11 @@ This study, conducted by Dr Fang Liu, Dr Chen Zhao, and Dr Anthony Haffey, Kiera
 If you have any questions or wish to withdraw from the study, please contact us at: caasd@reading.ac.uk
 
 ",,instruct,,,,,,,,,,,
+,,,,,instruct,,,,,,,,,,,
 0,,user,"<span style='font-size:20'>Please choose a quiet and well-lit place to take part in the study so you can concentrate, as the quality of the data is very important to us. <br /><br>
 
 Please<b> use your headphones</b> once you are ready to start. Here is a sound example, please adjust the volume to a comfortable level and <b>keep the same volume throughout the study</b>.<br /><br></span>
 <audio controls>
-  <source src=""horse.ogg"" type=""audio/ogg"">
   <source src=""../User/Stimuli/A_W14_H_So_D_-5.wav"" type=""audio/wav"">
   Your browser does not support the audio tag.
 </audio><br>
