@@ -11,9 +11,9 @@ If you have any questions or wish to withdraw from the study, please contact us 
 <button onclick=""Phase.submit()"">Proceed</button>
 ",,text,,,,,,,,,,
 0,,user,"<span style='font-size:20'>Please choose a quiet and well-lit place to take part in the study so you can concentrate, as the quality of the data is very important to us. <br /><br>
-<span style='font-size:20'>In this part, you will hear emotional voices and see facial expressions. You will have to make judgements of what emotion you perceive, as quickly and accurately as possible, by pressing the key. We will go through some practice trials to familar the procedure.
+<span style='font-size:20'>In this part, you will hear emotional voices and see facial expressions. You will have to make judgements of what emotion you perceive, as quickly and accurately as possible, by pressing the key. We will go through some practice trials to familarise the procedure.
 <br>
-<br>After the calibration, please keep your head and body as still as possible, this is to ensure we have captured the your attention accurately. When there is a cross on the screen please look at the centre of the cross.<br>
+<br>After the calibration, please keep your head and body as still as possible, this is to ensure we have captured your attention accurately. When there is a cross on the screen please look at the centre of the cross.<br>
 <br>
 Please use your headphones once you are ready to start. Here is a sound example, please adjust the volume to a comfortable level and <b>keep the same volume throughout the study</b>.<br /><br></span>
 <audio controls>
@@ -30,7 +30,7 @@ Please use your headphones once you are ready to start. Here is a sound example,
 </span>
 <button onclick=""Phase.submit()"">Proceed</button>
 ",,text,,,,,,,,,,
-0,,user,"Please look at the cross.<br />A video will follow MORE INSTRUCTIONS HERE, look at the code column in the procedure sheet to make these instructions.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
+0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
 0,,user,"<style>
 #instructions{
   margin:auto;
