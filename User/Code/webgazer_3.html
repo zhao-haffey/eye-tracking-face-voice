@@ -845,7 +845,7 @@ function endTrial() {
   cam.recording = 0;
   webgazer.pause();
   status = "end";
-  $('.stimuli').hide();
+  $('.deletable').remove();
   trial_no++;
   saveData();
 
@@ -1102,8 +1102,8 @@ function posnerStart() {
 
 
     $('#stimuli_target').css({
-        'top': pos.x,
-        'left': pos.y
+      'top':  pos.x,
+      'left': pos.y
     });
 
 
@@ -1329,8 +1329,6 @@ function stimuli_loaded(){
   /*
   * set timers here
   */
-  console.log("stimuli_set");
-  console.log(stimuli_set);
   
   var these_elements = stimuli_set.elements.split(",");
   
@@ -1358,13 +1356,14 @@ function stimuli_loaded(){
       $("#" + trigger_element).on("ended", function(){
         //alert("this_element " + this_element);
         $("#" + this_element).show();
+        status += "-" + this_element;
         $("#" + this_element).trigger("play");
         
         
         if(element_json.type == "keys"){
           $(window).bind('keypress', function(event) {
             if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
-              $("#" + this_element + "_value").val(event.which);
+              $("#" + this_element + "_value_"  + trial_no).val(String.fromCharCode(event.charCode));
               check_end_trial(element_json);
             }
           });
@@ -1373,11 +1372,11 @@ function stimuli_loaded(){
       });
     } else {
       setTimeout(function(){
-        
+        status += "-" + this_element;
         if(element_json.type == "keys"){
           $(window).bind('keypress', function(event) {
             if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
-              $("#" + this_element + "_value").val(event.which);
+              $("#" + this_element + "_value_" + trial_no).val(event.which);
               check_end_trial(element_json);
             }
           });
@@ -1391,43 +1390,19 @@ function stimuli_loaded(){
 
     if(element_json.duration == "end"){
       $("#" + this_element).on('ended', function(){
+        status = status.replace("-" + this_element,"");
         $("#" + this_element).hide();
         check_end_trial(element_json);
       });
     } else {
       setTimeout(function(){
         $("#" + this_element).hide();
+        status = status.replace("-" + this_element,"");
         //check_end_trial(element_json);
       }, 2000 + element_json.onset + element_json.duration);
 
     }
-    
-    
-    
   });
-  
-  
-  
-  
-  
-  
-  
-  /*
-  setTimeout(function(){
-    
-    //all_fixation_rts.push;
-    
-    $(".stimuli_img").show();
-    $(".stimuli_video").show();
-    $("video").trigger("play");
-    $("audio").trigger("play");
-    setTimeout(function(){
-      status = 'stimulus_offset'; 
-      endTrial();
-    },stim_duration);
-    
-  },2500);
-  */
 }
 
 var stimuli_set;
@@ -1461,6 +1436,7 @@ function stimuliStart() {
       case "audio":
         var this_item = $("<audio>");
         this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
+          .addClass("deletable")
           .prop("id", this_element);
         $("#stimuli_div").append(this_item);
         $("#" + this_element).on("canplay canplaythrough",function(){
@@ -1474,6 +1450,7 @@ function stimuliStart() {
       case "image":
         var this_item = $("<img>");
         this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
+          .addClass("deletable")
           .addClass("stimuli")
           .addClass("stimuli_img")
           .css("margin-left",   element_json.x)
@@ -1494,10 +1471,11 @@ function stimuliStart() {
       case "keys":
         
         var this_item = $("<input>");
-        this_item.prop("id", this_element = "_value")
+        this_item.prop("id", this_element + "_value_"  + trial_no)
+          .prop("name", this_element + "_value_" + trial_no)
           .css("display", "none");
         
-        $("#stimuli_div").append(this_item);
+        $("body").append(this_item);
         
         
         stimuli_src_loaded = stimuli_src_loaded + 1;
@@ -1510,6 +1488,7 @@ function stimuliStart() {
         this_item = $("<div>");
         this_item.html(element_json.text)
           .addClass("stimuli")
+          .addClass("deletable")
           .css("margin-left",   element_json.x)
           .css("top",    window.innerHeight/2 + element_json.y)
           .css("width",  element_json.width)
@@ -1531,6 +1510,7 @@ function stimuliStart() {
             this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
               .addClass("stimuli")
               .addClass("stimuli_video")
+              .addClass("deletable")
               .css("margin-left",   element_json.x)
               .css("top",    element_json.y)
               .css("width",  element_json.width)
