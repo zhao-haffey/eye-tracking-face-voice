@@ -839,6 +839,7 @@ function startTrial() {
 
 var heat;
 function endTrial() {
+  $(window).unbind("keypress");
   $("#stimuli_div").html("");
   clearTimeout(t);
   cam.recording = 0;
@@ -1263,6 +1264,7 @@ if(typeof(parent.parent.project_json.all_stims[image_file]) !== "undefined"){
 
 stimuli_src_loaded = 0;
 var stimuli_src_length;
+var active_keys = {};
 
 /*
 * Some code to make this work on installed version of Collector
@@ -1279,6 +1281,8 @@ switch(parent.parent.Project.get_vars.platform){
 }
 
 function check_end_trial(element_json){
+  console.log("element_json");
+  console.log(element_json);
   if(typeof(element_json.end_trial) !== "undefined" && element_json.end_trial.toLowerCase() == "yes"){
     status = 'stimulus_offset'; 
     endTrial();
@@ -1386,11 +1390,13 @@ function stimuli_loaded(){
 
     if(element_json.duration == "end"){
       $("#" + this_element).on('ended', function(){
-        $("#" + this_element).hide()
+        $("#" + this_element).hide();
+        check_end_trial(element_json);
       });
     } else {
       setTimeout(function(){
         $("#" + this_element).hide();
+        //check_end_trial(element_json);
       }, 2000 + element_json.onset + element_json.duration);
 
     }
