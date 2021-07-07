@@ -8,13 +8,13 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="libraries/webgazer/css/jquery-ui.css" type="text/css" rel="stylesheet">
-    <link href="libraries/webgazer/css/jquery.mobile-1.4.5.css" type="text/css" rel="stylesheet">
-    <link href="libraries/webgazer/css/tolcam.css" type="text/css" rel="stylesheet">
-    <script src="libraries/webgazer/js/jquery-1.12.3.min.js"></script>
-    <script src="libraries/webgazer/js/jquery-ui.js"></script>
-    <script src="libraries/webgazer/js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="libraries/webgazer/js/simpleheat.js"></script>
+  <link   href="libraries/webgazer/css/jquery-ui.css" type="text/css" rel="stylesheet">
+  <link   href="libraries/webgazer/css/jquery.mobile-1.4.5.css" type="text/css" rel="stylesheet">
+  <link   href="libraries/webgazer/css/tolcam.css" type="text/css" rel="stylesheet">
+  <script src="libraries/webgazer/js/jquery-1.12.3.min.js"></script>
+  <script src="libraries/webgazer/js/jquery-ui.js"></script>
+  <script src="libraries/webgazer/js/jquery.mobile-1.4.2.min.js"></script>
+  <script src="libraries/webgazer/js/simpleheat.js"></script>
 </head>
 <style>
 .stimuli_img, .stimuli_video{
@@ -103,7 +103,7 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
   <div id="stimulus" class="stimuli">
     <img src="libraries/webgazer/imgs/talking.jpg" />
   </div>
-  <div id="stimuli_div"></div> 
+  <div id="stimuli_div"></div>
   <div id="stimuli_dot" class="stimuli"></div>
   <div id="stimuli_bar" class="stimuli"></div>
   <div id="stimuli_fixation" class="stimuli">+</div>
@@ -172,8 +172,8 @@ Phase.set_timer(function(){
 */
 
 var calibrations     = "{{calibrations}}";
-var image_file       = "{{image_file}}"; 
-var design_type      = "{{design_type}}"; 
+var image_file       = "{{image_file}}";
+var design_type      = "{{design_type}}";
 var calibration_skip = "{{calibration_skip}}";
 var image_height     = "{{image_height}}";
 var image_width      = "{{image_width}}";
@@ -311,7 +311,7 @@ eyetrack_designs = {
     'instruction_duration': 5000
   },
   pursuit: {
-    'type': 'pursuit', 
+    'type': 'pursuit',
     'trials': 24,
     'iti': 500,
     'instruction': 'A black dot will appear. Please <br />look at it. When it turns <span style="color: #dd494b;">red</span>,<br /> Please follow its movement with your eyes.<br /><br />Do not move your head, <br />only use your eyes.',
@@ -898,7 +898,7 @@ function saveData() {
       });
      
       break;
-    case "freeview":
+    case "stimuli":
       sub_trial_no = stimuli_no;
       break;
      
@@ -921,6 +921,13 @@ function saveData() {
     row.window_height = window.innerHeight;
     row.participant   = parent.parent.$("#participant_code").val(),
     row.trial_no      = sub_trial_no;
+   
+    if(typeof(stimuli_set) !== "undefined"){
+      Object.keys(stimuli_set).forEach(function(stimuli_key){
+        row[stimuli_key] = stimuli_set[stimuli_key];
+      });
+    }
+   
    
     if(valid_rows > 19){
       row.valid_trial = true;
@@ -968,7 +975,7 @@ function sendData() {
             Papa.unparse(data[trial_no].raw)
           );
                                      
-          /*                           
+          /*                          
           parent.parent.online_save(parent.parent.Project.get_vars.location,
                     parent.parent.$("#participant_code").val() +
                       gaze_phase +
@@ -1006,7 +1013,7 @@ function sendData() {
             sub_trial_no,
           parent.parent.$("#completion_code").val(),
           parent.parent.$("#prehashed_code").val(),
-          
+         
           /*
           * encrypt the data here
           */
@@ -1136,21 +1143,21 @@ var tPursuit = {};
 function pursuitStart() {
   $('#stimuli_fixation').hide();
   var pos_possible = shuffle([
-      {x: "20%", y: "20%", tx: "80%", ty: "20%"},
-      {x: "20%", y: "20%", tx: "20%", ty: "80%"},
-      {x: "20%", y: "20%", tx: "80%", ty: "80%"},
+    {x: "20%", y: "20%", tx: "80%", ty: "20%"},
+    {x: "20%", y: "20%", tx: "20%", ty: "80%"},
+    {x: "20%", y: "20%", tx: "80%", ty: "80%"},
 
-      {x: "80%", y: "20%", tx: "20%", ty: "20%"},
-      {x: "80%", y: "20%", tx: "20%", ty: "80%"},
-      {x: "80%", y: "20%", tx: "80%", ty: "80%"},
+    {x: "80%", y: "20%", tx: "20%", ty: "20%"},
+    {x: "80%", y: "20%", tx: "20%", ty: "80%"},
+    {x: "80%", y: "20%", tx: "80%", ty: "80%"},
 
-      {x: "20%", y: "80%", tx: "20%", ty: "20%"},
-      {x: "20%", y: "80%", tx: "80%", ty: "20%"},
-      {x: "20%", y: "80%", tx: "80%", ty: "80%"},
+    {x: "20%", y: "80%", tx: "20%", ty: "20%"},
+    {x: "20%", y: "80%", tx: "80%", ty: "20%"},
+    {x: "20%", y: "80%", tx: "80%", ty: "80%"},
 
-      {x: "80%", y: "80%", tx: "20%", ty: "20%"},
-      {x: "80%", y: "80%", tx: "80%", ty: "20%"},
-      {x: "80%", y: "80%", tx: "20%", ty: "80%"}
+    {x: "80%", y: "80%", tx: "20%", ty: "20%"},
+    {x: "80%", y: "80%", tx: "80%", ty: "20%"},
+    {x: "80%", y: "80%", tx: "20%", ty: "80%"}
   ]);
   var pos = pos_possible[0];
   $s = $('#stimuli_dot');
@@ -1282,19 +1289,17 @@ switch(parent.parent.Project.get_vars.platform){
 }
 
 function check_end_trial(element_json){
-  console.log("element_json");
-  console.log(element_json);
   if(typeof(element_json.end_trial) !== "undefined" && element_json.end_trial.toLowerCase() == "yes"){
-    status = 'stimulus_offset'; 
+    status = 'stimulus_offset';
     endTrial();
   }
 }
 
 function stimuli_loaded(){
   stimuli_no++;
-  
+ 
   data_current.task = 'stimuli';
-  
+ 
   cam.recording = 1;
   status = 'fixation_flash_first_half';
   $('#stimuli_fixation').css("color","red");
@@ -1324,33 +1329,33 @@ function stimuli_loaded(){
     $('#stimuli_fixation').hide();
     status = 'fixation_offset';
   }, 2000);
-  
-  
+ 
+ 
   /*
   * set timers here
   */
-  
+ 
   var these_elements = stimuli_set.elements.split(",");
-  
-  
+ 
+ 
   these_elements.forEach(function(this_element){
     var element_json = JSON.parse(stimuli_set[this_element]);
-    
+   
     /*
     * add other properties from other relevant columns
     */
     var other_properties = Object.keys(stimuli_set).filter(item => item.indexOf(this_element + ".") == 0);
-    
+   
     other_properties.forEach(function(item){
       element_json[item.split(".")[1]] = stimuli_set[item];
     });
-    
+   
 
     /*
     * deal with elements that are triggered by the end of audio or videos
     */
     if(typeof(element_json.onset) !== "number" && element_json.onset.indexOf(".ended") !== -1){
-      
+     
       trigger_element = element_json.onset.split(".")[0];
       //alert("trigger_element = " + trigger_element);
       $("#" + trigger_element).on("ended", function(){
@@ -1359,19 +1364,14 @@ function stimuli_loaded(){
         $("#" + this_element).show();
         status += "-" + this_element;
         $("#" + this_element).trigger("play");
-        
-        
+       
+       
         if(element_json.type == "keys"){
           $(window).bind('keypress', function(event) {
-            if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
-              $("#" + this_element + "_value_"  + trial_no).val(String.fromCharCode(event.charCode));
-              $("#" + this_element + "_value_rt_"  + trial_no).val((new Date()).getTime() - baseline_time);
-              
-              check_end_trial(element_json);
-            }
+            keyboard_response(element_json, event, baseline_time, this_element);
           });
         }
-        
+       
       });
     } else {
       setTimeout(function(){
@@ -1379,17 +1379,20 @@ function stimuli_loaded(){
         status += "-" + this_element;
         if(element_json.type == "keys"){
           $(window).bind('keypress', function(event) {
+            keyboard_response(element_json, event, baseline_time, this_element);
+            /*
             if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
               $("#" + this_element + "_value_" + trial_no).val(event.which);
               $("#" + this_element + "_value_rt_"  + trial_no).val((new Date()).getTime() - baseline_time);
               check_end_trial(element_json);
             }
+            */
           });
         }
-        
+       
         $("#" + this_element).show();
         $("#" + this_element).trigger("play");
-        
+       
       }, 2000 + element_json.onset);
     }
 
@@ -1410,34 +1413,47 @@ function stimuli_loaded(){
   });
 }
 
+function keyboard_response(element_json, event, baseline_time, this_element){
+  element_json.keys    = element_json.keys.split("|");
+  element_json.answers = element_json.answers.split("|");
+  if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
+    var key_response = String.fromCharCode(event.charCode);
+    var key_answer   = element_json.answers[element_json.keys.indexOf(key_response)];
+    $("#" + this_element + "_value_"  + trial_no).val(key_response);
+    $("#" + this_element + "_answer_"  + trial_no).val(key_answer);
+    $("#" + this_element + "_value_rt_"  + trial_no).val((new Date()).getTime() - baseline_time);
+    check_end_trial(element_json);
+  }
+}
+
 var stimuli_set;
 
 function stimuliStart() {
   gaze_phase = "stimuli";
-  
+ 
   document.body.style.cursor = 'none';
   stimuli_set = tStimuli.stimuli.shift();
-  
+ 
   stimuli_src_loaded = 0;
 
-  
+ 
   [audio_set, image_set, video_set, text_set] = Array(4).fill([]);
   var these_elements = stimuli_set.elements.split(",");
   these_elements.forEach(function(this_element){
     var element_json = JSON.parse(stimuli_set[this_element]);
-    
+   
     /*
     * add other properties from other relevant columns
     */
     var other_properties = Object.keys(stimuli_set).filter(item => item.indexOf(this_element + ".") == 0);
-    
+   
     other_properties.forEach(function(item){
       element_json[item.split(".")[1]] = stimuli_set[item];
     });
-    
-    
+   
+   
     switch(element_json.type){
-      
+     
       case "audio":
         var this_item = $("<audio>");
         this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
@@ -1446,7 +1462,7 @@ function stimuliStart() {
         $("#stimuli_div").append(this_item);
         $("#" + this_element).on("canplay canplaythrough",function(){
           stimuli_src_loaded = stimuli_src_loaded + 1;
-          
+         
           if(these_elements.length == stimuli_src_loaded){
             stimuli_loaded();
           }
@@ -1466,7 +1482,7 @@ function stimuliStart() {
           .prop("id", this_element);
         $("#stimuli_div").append(this_item);
         $("#" + this_element).on("load",function(){
-          
+         
           stimuli_src_loaded = stimuli_src_loaded + 1;
           if(these_elements.length == stimuli_src_length){
             stimuli_loaded();
@@ -1474,21 +1490,27 @@ function stimuliStart() {
         });
         break;
       case "keys":
-        
+       
         var response_item = $("<input>");
         response_item.prop("id", this_element + "_value_"  + trial_no)
           .prop("name", this_element + "_value_" + trial_no)
           .css("display", "none");
-          
+         
         var rt_item = $("<input>");
         rt_item.prop("id", this_element + "_value_rt_"  + trial_no)
           .prop("name", this_element + "_value_rt_" + trial_no)
           .css("display", "none");
-        
+          
+        var answer_item = $("<input>");
+        answer_item.prop("id", this_element + "_answer_"  + trial_no)
+          .prop("name", this_element + "_answer_" + trial_no)
+          .css("display", "none");
+       
         $("body").append(response_item);
         $("body").append(rt_item);
-        
-        
+        $("body").append(answer_item);
+       
+       
         stimuli_src_loaded = stimuli_src_loaded + 1;
         if(these_elements.length == stimuli_src_loaded){
           stimuli_loaded();
@@ -1508,7 +1530,7 @@ function stimuliStart() {
           .prop("id", this_element);
         $("#stimuli_div").append(this_item);
         stimuli_src_loaded = stimuli_src_loaded + 1;
-        
+       
         if(these_elements.length == stimuli_src_loaded){
           stimuli_loaded();
         }
@@ -1517,7 +1539,7 @@ function stimuliStart() {
         var this_item = $("<video>");
         var this_source = $("<source>");
             this_source.prop("src", home_dir + element_json.src.replace("../User","/User"));
-        
+       
             this_item.prop("src", home_dir + element_json.src.replace("../User","/User"))
               .addClass("stimuli")
               .addClass("stimuli_video")
@@ -1532,15 +1554,15 @@ function stimuliStart() {
         $("#stimuli_div").append(this_item);
         $("#" + this_element).on("loadstart",function(){
           stimuli_src_loaded = stimuli_src_loaded + 1;
-          
+         
           if(these_elements.length == stimuli_src_loaded){
             stimuli_loaded();
           }
         });
-        
+       
         break;
     }
-    
+   
     //if(typeof(stimuli_set[this_element + "."])
   });
 }
