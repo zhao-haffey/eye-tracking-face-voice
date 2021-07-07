@@ -1354,6 +1354,7 @@ function stimuli_loaded(){
       trigger_element = element_json.onset.split(".")[0];
       //alert("trigger_element = " + trigger_element);
       $("#" + trigger_element).on("ended", function(){
+        var baseline_time = (new Date()).getTime();
         //alert("this_element " + this_element);
         $("#" + this_element).show();
         status += "-" + this_element;
@@ -1364,6 +1365,8 @@ function stimuli_loaded(){
           $(window).bind('keypress', function(event) {
             if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
               $("#" + this_element + "_value_"  + trial_no).val(String.fromCharCode(event.charCode));
+              $("#" + this_element + "_value_rt_"  + trial_no).val((new Date()).getTime() - baseline_time);
+              
               check_end_trial(element_json);
             }
           });
@@ -1372,11 +1375,13 @@ function stimuli_loaded(){
       });
     } else {
       setTimeout(function(){
+        var baseline_time = (new Date()).getTime();
         status += "-" + this_element;
         if(element_json.type == "keys"){
           $(window).bind('keypress', function(event) {
             if(element_json.keys.indexOf(String.fromCharCode(event.charCode)) !== -1){
               $("#" + this_element + "_value_" + trial_no).val(event.which);
+              $("#" + this_element + "_value_rt_"  + trial_no).val((new Date()).getTime() - baseline_time);
               check_end_trial(element_json);
             }
           });
@@ -1470,12 +1475,18 @@ function stimuliStart() {
         break;
       case "keys":
         
-        var this_item = $("<input>");
-        this_item.prop("id", this_element + "_value_"  + trial_no)
+        var response_item = $("<input>");
+        response_item.prop("id", this_element + "_value_"  + trial_no)
           .prop("name", this_element + "_value_" + trial_no)
           .css("display", "none");
+          
+        var rt_item = $("<input>");
+        rt_item.prop("id", this_element + "_value_rt_"  + trial_no)
+          .prop("name", this_element + "_value_rt_" + trial_no)
+          .css("display", "none");
         
-        $("body").append(this_item);
+        $("body").append(response_item);
+        $("body").append(rt_item);
         
         
         stimuli_src_loaded = stimuli_src_loaded + 1;
