@@ -31,7 +31,7 @@ Please use your headphones once you are ready to start. Here is a sound example,
 </span>
 <button onclick=""Phase.submit()"">Proceed</button>
 ",,text,,,,,,,,,,
-0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice.csv,8,1100px,400px,off,image_1,
+0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,no,stimuli,gaze_practice.csv,4,1100px,400px,off,image_1,
 0,,user,"<style><br>
 #instructions{<br>
   margin:auto;<br>
@@ -47,7 +47,7 @@ Please do not move your body or head.</div><br>
 </div><br>
 <br>
 <button onclick=""Phase.submit()"">Proceed</button>",,text,,,,,,,,,,
-0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,no,stimuli,gaze_actual_list1a.csv,8,1100px,400px,off,image_1,
+0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,no,stimuli,gaze_actual_list1a.csv,80,1100px,400px,off,image_1,
 0,,user,"<style>
 #instructions{
   margin:auto;
@@ -62,7 +62,7 @@ Please do not move your body or head.</div><br>
 
 
 <button onclick=""Phase.submit()"">Proceed</button>",,text,,,,,,,,,,
-0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,no,stimuli,gaze_actual_list1b.csv,8,1100px,400px,off,image_1,
+0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,no,stimuli,gaze_actual_list1b.csv,80,1100px,400px,off,image_1,
 0,,user,"<style><br>
 #instructions{<br>
   margin:auto;<br>
