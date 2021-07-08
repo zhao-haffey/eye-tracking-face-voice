@@ -1,5 +1,33 @@
 trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1,keys_1,video_1.src,audio_1.src,elements,
-81,W8,Neutral,Speech,Kid,Baseline,"{
+81,W6,Fearful,Speech,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_W6_F_Sp_D_N1.mp4,../User/Stimuli/A_W6_F_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
+82,W8,Neutral,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -23,55 +51,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_W8_N_Sp_K.mp4,,"video_1,text_1,keys_1",
-82,M7,Fearful,Speech,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_F_Sp_K.mp4,,"video_1,text_1,keys_1",
-83,M9,Angry,Speech,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M9_A_Sp_K.mp4,,"video_1,text_1,keys_1",
-84,M7,Neutral,Song,Dog,No,"{
+83,M7,Neutral,Song,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -99,7 +79,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_N_So_D_N1.mp4,../User/Stimuli/A_M7_N_So_D.wav,"video_1,audio_1,text_1,keys_1",
-85,W6,Happy,Song,Kid,Baseline,"{
+84,W6,Happy,Song,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -123,7 +103,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_W6_H_So_K.mp4,,"video_1,text_1,keys_1",
-86,M9,Neutral,Song,Dog,Medium,"{
+85,M9,Neutral,Song,Dog,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -151,6 +131,30 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_N_So_D_N1.mp4,../User/Stimuli/A_M9_N_So_D_0.wav,"video_1,audio_1,text_1,keys_1",
+86,M7,Fearful,Speech,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M7_F_Sp_K.mp4,,"video_1,text_1,keys_1",
 87,M7,Neutral,Speech,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -207,7 +211,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_A_Sp_K_N1.mp4,../User/Stimuli/A_W6_A_Sp_K_-5.wav,"video_1,audio_1,text_1,keys_1",
-89,W6,Happy,Speech,Kid,Medium,"{
+89,M9,Angry,Speech,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M9_A_Sp_K.mp4,,"video_1,text_1,keys_1",
+90,W6,Happy,Speech,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -235,91 +263,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_H_Sp_K_N1.mp4,../User/Stimuli/A_W6_H_Sp_K_0.wav,"video_1,audio_1,text_1,keys_1",
-90,W8,Neutral,Speech,Dog,No,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W8_N_Sp_D_N1.mp4,../User/Stimuli/A_W8_N_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
-91,M7,Happy,Song,Kid,Medium,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_M7_H_So_K_N1.mp4,../User/Stimuli/A_M7_H_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-92,M9,Fearful,Song,Dog,No,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_M9_F_So_D_N1.mp4,../User/Stimuli/A_M9_F_So_D.wav,"video_1,audio_1,text_1,keys_1",
-93,M7,Angry,Speech,Dog,Baseline,"{
+91,W8,Fearful,Song,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -342,64 +286,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_A_Sp_D.mp4,,"video_1,text_1,keys_1",
-94,M9,Happy,Song,Dog,Medium,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_M9_H_So_K_N1.mp4,../User/Stimuli/A_M9_H_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-95,M9,Angry,Song,Dog,No,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_M9_A_So_K_N1.mp4,../User/Stimuli/A_M9_A_So_K.wav,"video_1,audio_1,text_1,keys_1",
-96,M9,Neutral,Song,Dog,No,"{
+}",../User/Stimuli/AV_W8_F_So_D.mp4,,"video_1,text_1,keys_1",
+92,M9,Neutral,Song,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -427,7 +315,243 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_N_So_D_N1.mp4,../User/Stimuli/A_M9_N_So_D.wav,"video_1,audio_1,text_1,keys_1",
-97,W6,Angry,Song,Dog,High,"{
+93,M7,Happy,Song,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M7_H_So_D.mp4,,"video_1,text_1,keys_1",
+94,W8,Neutral,Speech,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_W8_N_Sp_D_N1.mp4,../User/Stimuli/A_W8_N_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
+95,M9,Fearful,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M9_F_Sp_D.mp4,,"video_1,text_1,keys_1",
+96,M7,Happy,Song,Kid,Medium,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_M7_H_So_K_N1.mp4,../User/Stimuli/A_M7_H_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
+97,M9,Fearful,Song,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_M9_F_So_D_N1.mp4,../User/Stimuli/A_M9_F_So_D.wav,"video_1,audio_1,text_1,keys_1",
+98,M7,Angry,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M7_A_Sp_D.mp4,,"video_1,text_1,keys_1",
+99,M9,Happy,Song,Dog,Medium,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_M9_H_So_K_N1.mp4,../User/Stimuli/A_M9_H_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
+100,M7,Fearful,Song,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M7_F_So_D.mp4,,"video_1,text_1,keys_1",
+101,M9,Angry,Song,Dog,No,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_M9_A_So_K_N1.mp4,../User/Stimuli/A_M9_A_So_K.wav,"video_1,audio_1,text_1,keys_1",
+102,W6,Angry,Song,Dog,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -455,103 +579,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_A_So_D_N1.mp4,../User/Stimuli/A_W6_A_So_D_-5.wav,"video_1,audio_1,text_1,keys_1",
-98,W6,Angry,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W6_A_Sp_D.mp4,,"video_1,text_1,keys_1",
-99,M9,Fearful,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M9_F_Sp_D.mp4,,"video_1,text_1,keys_1",
-100,M7,Happy,Song,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_H_So_D.mp4,,"video_1,text_1,keys_1",
-101,W8,Fearful,Song,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_F_So_D.mp4,,"video_1,text_1,keys_1",
-102,M9,Happy,Song,Dog,Baseline,"{
+103,M9,Happy,Song,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -575,30 +603,6 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_M9_H_So_D.mp4,,"video_1,text_1,keys_1",
-103,M7,Fearful,Song,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_F_So_D.mp4,,"video_1,text_1,keys_1",
 104,W8,Happy,Speech,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -655,7 +659,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_H_Sp_D_N1.mp4,../User/Stimuli/A_M9_H_Sp_D_0.wav,"video_1,audio_1,text_1,keys_1",
-106,M9,Angry,Speech,Dog,No,"{
+106,W6,Angry,Song,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W6_A_So_K.mp4,,"video_1,text_1,keys_1",
+107,M9,Angry,Speech,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -683,7 +711,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_A_Sp_D_N1.mp4,../User/Stimuli/A_M9_A_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
-107,W6,Angry,Song,Kid,Baseline,"{
+108,W8,Angry,Speech,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -706,8 +734,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W6_A_So_K.mp4,,"video_1,text_1,keys_1",
-108,W6,Happy,Song,Dog,Medium,"{
+}",../User/Stimuli/AV_W8_A_Sp_D.mp4,,"video_1,text_1,keys_1",
+109,W6,Happy,Song,Dog,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -735,30 +763,6 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_H_So_D_N1.mp4,../User/Stimuli/A_W6_H_So_D_0.wav,"video_1,audio_1,text_1,keys_1",
-109,W6,Fearful,Speech,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W6_F_Sp_K.mp4,,"video_1,text_1,keys_1",
 110,M9,Happy,Song,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -1075,31 +1079,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_M9_F_So_D.mp4,,"video_1,text_1,keys_1",
-122,W8,Angry,Song,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_A_So_K.mp4,,"video_1,text_1,keys_1",
-123,M9,Fearful,Song,Dog,Medium,"{
+122,M9,Fearful,Song,Dog,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1127,6 +1107,30 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_F_So_D_N1.mp4,../User/Stimuli/A_M9_F_So_D_0.wav,"video_1,audio_1,text_1,keys_1",
+123,M7,Neutral,Song,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M7_N_So_K.mp4,,"video_1,text_1,keys_1",
 124,W6,Neutral,Song,Kid,High,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -1235,7 +1239,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W8_F_Sp_D_N1.mp4,../User/Stimuli/A_W8_F_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
-128,W6,Fearful,Song,Kid,Medium,"{
+128,W6,Neutral,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W6_N_Sp_D.mp4,,"video_1,text_1,keys_1",
+129,W6,Fearful,Song,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1263,7 +1291,35 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_F_So_K_N1.mp4,../User/Stimuli/A_W6_F_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-129,M9,Neutral,Speech,Kid,Medium,"{
+130,W8,Neutral,Song,Kid,Medium,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}","{
+  ""type"": ""audio"",
+  ""onset"": 0,
+  ""duration"": ""end""
+}","{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/V_W8_N_So_K_N1.mp4,../User/Stimuli/A_W8_N_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
+131,M9,Neutral,Speech,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1291,103 +1347,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_N_Sp_K_N1.mp4,../User/Stimuli/A_M9_N_Sp_K_0.wav,"video_1,audio_1,text_1,keys_1",
-130,W6,Happy,Song,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W6_H_So_D.mp4,,"video_1,text_1,keys_1",
-131,M7,Neutral,Song,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_N_So_K.mp4,,"video_1,text_1,keys_1",
-132,M9,Neutral,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M9_N_Sp_D.mp4,,"video_1,text_1,keys_1",
-133,W8,Angry,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_A_Sp_D.mp4,,"video_1,text_1,keys_1",
-134,W6,Angry,Song,Dog,Baseline,"{
+132,W6,Angry,Song,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1411,7 +1371,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_W6_A_So_D.mp4,,"video_1,text_1,keys_1",
-135,M7,Angry,Song,Kid,High,"{
+133,M7,Angry,Song,Kid,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1439,7 +1399,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_A_So_K_N1.mp4,../User/Stimuli/A_M7_A_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
-136,W8,Fearful,Song,Kid,High,"{
+134,W8,Fearful,Song,Kid,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1467,7 +1427,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W8_F_So_K_N1.mp4,../User/Stimuli/A_W8_F_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
-137,M7,Neutral,Speech,Kid,Baseline,"{
+135,M7,Neutral,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1491,7 +1451,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_M7_N_Sp_K.mp4,,"video_1,text_1,keys_1",
-138,W6,Angry,Speech,Kid,No,"{
+136,W6,Angry,Speech,Kid,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1519,7 +1479,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_A_Sp_K_N1.mp4,../User/Stimuli/A_W6_A_Sp_K.wav,"video_1,audio_1,text_1,keys_1",
-139,M7,Fearful,Song,Dog,No,"{
+137,W8,Angry,Song,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W8_A_So_K.mp4,,"video_1,text_1,keys_1",
+138,M7,Fearful,Song,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1547,7 +1531,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_F_So_D_N1.mp4,../User/Stimuli/A_M7_F_So_D.wav,"video_1,audio_1,text_1,keys_1",
-140,W6,Fearful,Speech,Dog,No,"{
+139,W6,Happy,Song,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W6_H_So_D.mp4,,"video_1,text_1,keys_1",
+140,W8,Neutral,Speech,Dog,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1574,7 +1582,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W6_F_Sp_D_N1.mp4,../User/Stimuli/A_W6_F_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
+}",../User/Stimuli/V_W8_N_Sp_D_N1.mp4,../User/Stimuli/A_W8_N_Sp_D_0.wav,"video_1,audio_1,text_1,keys_1",
 141,W6,Neutral,Song,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -1631,7 +1639,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_F_So_D_N1.mp4,../User/Stimuli/A_M7_F_So_D_0.wav,"video_1,audio_1,text_1,keys_1",
-143,M7,Neutral,Speech,Kid,High,"{
+143,W6,Angry,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W6_A_Sp_D.mp4,,"video_1,text_1,keys_1",
+144,M7,Neutral,Speech,Kid,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1659,7 +1691,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_N_Sp_K_N1.mp4,../User/Stimuli/A_M7_N_Sp_K_-5.wav,"video_1,audio_1,text_1,keys_1",
-144,M9,Fearful,Speech,Kid,Medium,"{
+145,M9,Fearful,Speech,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1687,7 +1719,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_F_Sp_K_N1.mp4,../User/Stimuli/A_M9_F_Sp_K_0.wav,"video_1,audio_1,text_1,keys_1",
-145,W6,Happy,Speech,Kid,Baseline,"{
+146,W6,Happy,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1711,7 +1743,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_W6_H_Sp_K.mp4,,"video_1,text_1,keys_1",
-146,W8,Neutral,Speech,Dog,High,"{
+147,W8,Neutral,Speech,Dog,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1739,7 +1771,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W8_N_Sp_D_N1.mp4,../User/Stimuli/A_W8_N_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
-147,W8,Fearful,Speech,Dog,Baseline,"{
+148,M7,Happy,Speech,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1762,112 +1794,8 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_F_Sp_D.mp4,,"video_1,text_1,keys_1",
-148,W8,Neutral,Speech,Dog,Medium,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W8_N_Sp_D_N1.mp4,../User/Stimuli/A_W8_N_Sp_D_0.wav,"video_1,audio_1,text_1,keys_1",
-149,W6,Neutral,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W6_N_Sp_D.mp4,,"video_1,text_1,keys_1",
-150,W8,Neutral,Song,Kid,Medium,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}","{
-  ""type"": ""audio"",
-  ""onset"": 0,
-  ""duration"": ""end""
-}","{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W8_N_So_K_N1.mp4,../User/Stimuli/A_W8_N_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-151,W8,Neutral,Song,Kid,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_N_So_K.mp4,,"video_1,text_1,keys_1",
-152,M9,Angry,Song,Kid,Medium,"{
+}",../User/Stimuli/AV_M7_H_Sp_D.mp4,,"video_1,text_1,keys_1",
+149,M9,Angry,Song,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1895,7 +1823,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M9_A_So_K_N1.mp4,../User/Stimuli/A_M9_A_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-153,W6,Fearful,Speech,Dog,High,"{
+150,W8,Fearful,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W8_F_Sp_D.mp4,,"video_1,text_1,keys_1",
+151,W6,Fearful,Speech,Dog,High,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1923,7 +1875,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_F_Sp_D_N1.mp4,../User/Stimuli/A_W6_F_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
-154,M7,Happy,Song,Kid,No,"{
+152,M7,Happy,Song,Kid,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1951,31 +1903,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_H_So_K_N1.mp4,../User/Stimuli/A_M7_H_So_K.wav,"video_1,audio_1,text_1,keys_1",
-155,M7,Happy,Speech,Dog,Baseline,"{
-  ""type"": ""video"",
-  ""height"": 590,
-  ""width"": 885,
-  ""onset"": 0,
-  ""duration"": ""end"",
-  ""x"" : 0,
-  ""y"" : 0
-}",,"{
-  ""type"": ""text"",
-  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
-  ""onset"": ""video_1.ended"",
-  ""x"": 0,
-  ""y"": 0,
-  ""duration"": ""keys_1.response"",
-  ""width"": ""500px""
-}","{
-  ""type"": ""keys"",
-  ""onset"": ""video_1.ended"",
-  ""keys"": ""u|i|o|p"",
-  ""duration"": 2000,
-  ""end_trial"": ""yes"",
-  ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_H_Sp_D.mp4,,"video_1,text_1,keys_1",
-156,W6,Angry,Speech,Kid,Baseline,"{
+153,W6,Angry,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -1999,7 +1927,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/AV_W6_A_Sp_K.mp4,,"video_1,text_1,keys_1",
-157,W8,Fearful,Song,Kid,Medium,"{
+154,W8,Fearful,Song,Kid,Medium,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -2027,7 +1955,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W8_F_So_K_N1.mp4,../User/Stimuli/A_W8_F_So_K_0.wav,"video_1,audio_1,text_1,keys_1",
-158,W6,Fearful,Song,Kid,No,"{
+155,M9,Neutral,Speech,Dog,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_M9_N_Sp_D.mp4,,"video_1,text_1,keys_1",
+156,W6,Fearful,Song,Kid,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -2055,7 +2007,31 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_W6_F_So_K_N1.mp4,../User/Stimuli/A_W6_F_So_K.wav,"video_1,audio_1,text_1,keys_1",
-159,M7,Angry,Speech,Dog,No,"{
+157,W8,Neutral,Song,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W8_N_So_K.mp4,,"video_1,text_1,keys_1",
+158,M7,Angry,Speech,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
   ""width"": 885,
@@ -2083,6 +2059,30 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
 }",../User/Stimuli/V_M7_A_Sp_D_N1.mp4,../User/Stimuli/A_M7_A_Sp_D.wav,"video_1,audio_1,text_1,keys_1",
+159,W6,Fearful,Speech,Kid,Baseline,"{
+  ""type"": ""video"",
+  ""height"": 590,
+  ""width"": 885,
+  ""onset"": 0,
+  ""duration"": ""end"",
+  ""x"" : 0,
+  ""y"" : 0
+}",,"{
+  ""type"": ""text"",
+  ""text"": ""<h5>Please only use your free hand to select the emotions as follows:</h5><h5>U = Angry | I = Fear | O = Happy | P = Neutral</h5>"",
+  ""onset"": ""video_1.ended"",
+  ""x"": 0,
+  ""y"": 0,
+  ""duration"": ""keys_1.response"",
+  ""width"": ""500px""
+}","{
+  ""type"": ""keys"",
+  ""onset"": ""video_1.ended"",
+  ""keys"": ""u|i|o|p"",
+  ""duration"": 2000,
+  ""end_trial"": ""yes"",
+  ""answers"":""angry|fear|happy|neutral""
+}",../User/Stimuli/AV_W6_F_Sp_K.mp4,,"video_1,text_1,keys_1",
 160,M9,Neutral,Speech,Kid,No,"{
   ""type"": ""video"",
   ""height"": 590,
