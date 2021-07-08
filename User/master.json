@@ -6653,12 +6653,7 @@
     }
   },
   "data": {
-    "servers": {
-      "https://nt906822.webs.act.reading.ac.uk/collector/ValidateUser.php": {
-        "registration_url": "https://nt906822.webs.act.reading.ac.uk/collector/Register_Cat_0.php",
-        "storage_url": "https://nt906822.webs.act.reading.ac.uk/collector/StoreData_Cat_0.php"
-      }
-    }
+    "servers": {}
   },
   "code": {
     "user": {
@@ -14285,11 +14280,11 @@
   "keys": {
     "archived": [
       {
-        "public_key": "yYLD+CG+TipoFO1Jej3g0akHjc9jZNkgJvwqkSFUeSw="
+        "public_key": "BUYebrF7D44zUqVy4YI8DSO7immcACCiRTjSYs9fmBE="
       }
     ],
-    "public_key": "zVK2ltkruxctEBIxfqnnngOM5yQk21bJ7kORP4K+jSo=",
-    "encrypted_private_key": "U2FsdGVkX1+zn9w9bY73Lmlj19ZtvRHjL2uMd4Vj84zdzyNSSCj8IwTvbVkMXQNj79YmTLFW5VmWSizTeaijpg=="
+    "public_key": "MiWanD+agOxPh6o5QESNYLqaxoP2ujlQtIh0wCDHkRM=",
+    "encrypted_private_key": "U2FsdGVkX19LBK5WxDcEe/hxm+iEwtPU9Fi+Wkq+oFZDeSU0LK6zyVTdsDtn5We8eYIDv6YMaaWogU4CN2jhkw=="
   },
   "pathway_mgmt": {
     "pathways": {}
