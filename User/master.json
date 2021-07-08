@@ -6653,7 +6653,12 @@
     }
   },
   "data": {
-    "servers": {}
+    "servers": {
+      "https://nt906822.webs.act.reading.ac.uk/collector/ValidateUser.php": {
+        "registration_url": "https://nt906822.webs.act.reading.ac.uk/collector/Register_Cat_0.php",
+        "storage_url": "https://nt906822.webs.act.reading.ac.uk/collector/StoreData_Cat_0.php"
+      }
+    }
   },
   "code": {
     "user": {
