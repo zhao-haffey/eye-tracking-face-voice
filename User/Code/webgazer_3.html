@@ -1008,10 +1008,7 @@ function sendData() {
             file_name,
             parent.parent.$("#completion_code").val(),
             parent.parent.$("#prehashed_code").val(),
-            
-            
-            Papa.unparse(data[trial_no].raw),          //the data  
-            
+            Papa.unparse(data[trial_no].raw),
             /*
             JSON.stringify(
               parent.parent.encrypt(
@@ -1242,9 +1239,11 @@ function process_stimuli(){
       tStimuli.stimuli[i].image_2 = right_image;
     }
   } else {
-    alert("there's a problem in the 'left_side' column - fix this before testing.");
+    //alert("there's a problem in the 'left_side' column - fix this before testing.");
   }
 };
+
+
 
 //check if the freeview file matches one of the stimuli files
 if(typeof(parent.parent.project_json.all_stims[image_file]) !== "undefined"){
