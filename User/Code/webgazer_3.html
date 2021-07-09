@@ -1002,31 +1002,32 @@ function sendData() {
     default:
       data.forEach(function(trial,trial_no){
         if (trial !== null){
-         parent.parent.online_save(parent.parent.Project.get_vars.location,
-          parent.parent.$("#participant_code").val() +
-            "-" + gaze_phase +
-            "-trial-" +
-            parent.parent.project_json.trial_no +
-            "-" +
-            trial_no +
-            "-" +
-            sub_trial_no,
-          parent.parent.$("#completion_code").val(),
-          parent.parent.$("#prehashed_code").val(),
+          parent.parent.online_save(
+            parent.parent.Project.get_vars.location,
+            parent.parent.$("#participant_code").val() +
+              "-" + gaze_phase +
+              "-trial-" +
+              parent.parent.project_json.trial_no +
+              "-" +
+              trial_no +
+              "-" +
+              sub_trial_no,
+            parent.parent.$("#completion_code").val(),
+            parent.parent.$("#prehashed_code").val(),
          
-          /*
-          * encrypt the data here
-          */
-          parent.parent.encrypt(
-            parent.parent.project_json.public_key,
-            Papa.unparse(data[trial_no].raw)          //the data  
-          ),
-          save_scripts,
-          function(){
-            parent.parent.online_data_obj.saves_ended ++;
-          });
-          data[trial_no] = null;
-        }
+            /*
+            * encrypt the data here
+            */
+            parent.parent.encrypt(
+              parent.parent.project_json.public_key,
+              Papa.unparse(data[trial_no].raw)          //the data  
+            ),
+            parent.parent.project_json.storage_scripts,
+            function(){
+              parent.parent.online_data_obj.saves_ended ++;
+            });
+            data[trial_no] = null;
+          }
       });
        
         break;
