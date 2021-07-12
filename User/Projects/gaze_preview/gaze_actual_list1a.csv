@@ -26,7 +26,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W8_N_So_K_Nsmall.mp4,../User/Stimuli/A_W8_N_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
+}",../User/Stimuli/V_W8_N_So_K_N.mp4,../User/Stimuli/A_W8_N_So_K_-5.wav,"video_1,audio_1,text_1,keys_1",
 2,M7,Neutral,Speech,Dog,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -50,7 +50,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_M7_N_Sp_Dsmall.mp4,,"video_1,text_1,keys_1",
+}",../User/Stimuli/AV_M7_N_Sp_D.mp4,,"video_1,text_1,keys_1",
 3,W8,Angry,Song,Dog,No,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -78,7 +78,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W8_A_So_D_Nsmall.mp4,../User/Stimuli/A_W8_A_So_D.wav,"video_1,audio_1,text_1,keys_1",
+}",../User/Stimuli/V_W8_A_So_D_N.mp4,../User/Stimuli/A_W8_A_So_D.wav,"video_1,audio_1,text_1,keys_1",
 4,W6,Neutral,Speech,Dog,High,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -106,7 +106,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/V_W6_N_Sp_D_Nsmall.mp4,../User/Stimuli/A_W6_N_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
+}",../User/Stimuli/V_W6_N_Sp_D_N.mp4,../User/Stimuli/A_W6_N_Sp_D_-5.wav,"video_1,audio_1,text_1,keys_1",
 5,W8,Happy,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
@@ -130,7 +130,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""angry|fear|happy|neutral""
-}",../User/Stimuli/AV_W8_H_Sp_Ksmall.mp4,,"video_1,text_1,keys_1",
+}",../User/Stimuli/AV_W8_H_Sp_K.mp4,,"video_1,text_1,keys_1",
 6,M7,Happy,Song,Kid,High,"{
   ""type"": ""video"",
   ""height"": 590,
