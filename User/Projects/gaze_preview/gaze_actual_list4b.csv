@@ -1238,7 +1238,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""neutral|angry|fear|happy""
-}",../User/Stimuli/AV_M7_A_Sp_K1.mp4,,"video_1,text_1,keys_1",
+}",../User/Stimuli/AV_M7_A_Sp_k1.mp4,,"video_1,text_1,keys_1",
 128,W8,Happy,Speech,Dog,High,"{
   ""type"": ""video"",
   ""height"": 590,

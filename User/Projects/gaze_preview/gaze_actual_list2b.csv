@@ -898,7 +898,7 @@ trial,actor,emotion,channel,sentence,auditory_noise_level,video_1,audio_1,text_1
   ""duration"": 2000,
   ""end_trial"": ""yes"",
   ""answers"":""fear|happy|neutral|angry""
-}",../User/Stimuli/AV_M7_A_Sp_K1.mp4,,"video_1,text_1,keys_1",114,W8,Happy,
+}",../User/Stimuli/AV_M7_A_Sp_k1.mp4,,"video_1,text_1,keys_1",114,W8,Happy,
 115,M9,Angry,Speech,Kid,Baseline,"{
   ""type"": ""video"",
   ""height"": 590,
