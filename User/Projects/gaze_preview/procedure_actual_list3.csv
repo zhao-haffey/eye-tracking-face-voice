@@ -24,13 +24,14 @@ Please use your headphones once you are ready to start. Here is a sound example,
 </audio><br>
 <br>
 
-<span style='font-size:20'>Please note that you will be given opportunities to have breaks (about every 13 min), please only take breaks when the instruction shows on the screen, as any interruption of the study will require calibration for attention tracking.
+<span style='font-size:20'>Please note that you will be given opportunities to have breaks, please only take breaks when the instruction shows on the screen, as any interruption of the study will require calibration for attention tracking.
 <br>
+<br>
+Now we will start a short practice (there is no calibration dot for practice). 
 
 <br>
 </span>
-<button onclick=""Phase.submit()"">Proceed</button>
-",,text,,,,,,,,,,
+<button onclick=""Phase.submit()"">Proceed</button>",,text,,,,,,,,,,
 0,,user,"Please look at the cross.<br />A video will follow.<br /><br />Do not move your head, <br />only use your eyes.",off,webgazer_3,13,yes,stimuli,gaze_practice3.csv,4,1100px,400px,off,image_1,
 0,,user,"<style><br>
 #instructions{<br>
@@ -42,7 +43,7 @@ Please use your headphones once you are ready to start. Here is a sound example,
 }<br>
 </style><br>
 <br>
-<div id=""instructions"">This is the end of the practice, we will now proceed to the actual task.<br>
+<div id=""instructions"">This is the end of the practice, we will now proceed to the task.<br>
 Please do not move your body or head.</div><br>
 </div><br>
 <br>
