@@ -1,6 +1,19 @@
 project_json = {};
 
 /*
+* track how often the person switches in and out of the screen
+*/
+var blur_events = "";
+window.addEventListener("focus", function(event) {
+  alert("hi");
+  blur_events += "window gained focus;";
+}, false);
+window.addEventListener("blur", function(event) {
+  alert("bye");
+  blur_events += "window lost focus;";
+}, false);
+
+/*
 * Objects
 */
 
@@ -119,17 +132,37 @@ Project = {
 
     var objs = [project_json.this_trial, trial_inputs, this_proc, this_stim],
     response_data =  objs.reduce(function (r, o) {
-        Object.keys(o).forEach(function (k) {
-            r[k] = o[k];
-        });
-        return r;
+      Object.keys(o).forEach(function (k) {
+        r[k] = o[k];
+      });
+      return r;
     }, {});
 
-    response_data["post_"+project_json.post_no+"_trial_window_inner_width"]  = window.innerWidth;
-    response_data["post_"+project_json.post_no+"_trial_window_inner_height"] = window.innerHeight;
-    response_data["post_"+project_json.post_no+"_trial_end_ms"]              = trial_end_ms;
-    response_data["post_"+project_json.post_no+"_rt_ms"]                     = trial_end_ms - response_data["post_"+project_json.post_no+"_trial_start_ms"];
-    response_data["post_"+project_json.post_no+"_trial_end_date"]            = new Date(parseInt(trial_end_ms, 10)).toString('MM/dd/yy HH:mm:ss');
+    var post_string = "post_" + project_json.post_no;
+    /*
+    * detect if the user is focused on the screen
+    */
+    response_data[post_string + "blur_focus"] = blur_events;
+    blur_events = "";
+
+
+    /*
+    * detect if the user is in fullscreen or not
+    */
+    response_data[post_string + "_screen_height"] = screen.height;
+    response_data[post_string + "_screen_width"] = screen.width;
+
+    if( window.innerHeight == screen.height) {
+      response_data[post_string + "_fullscreen"]  = true;
+    } else {
+      response_data[post_string + "_fullscreen"]  = false;
+    }
+
+    response_data[post_string + "_window_inner_width"]  = window.innerWidth;
+    response_data[post_string + "_window_inner_height"] = window.innerHeight;
+    response_data[post_string + "_trial_end_ms"] = trial_end_ms;
+    response_data[post_string + "_rt_ms"]        = trial_end_ms - response_data[post_string + "_trial_start_ms"];
+    response_data[post_string + "_trial_end_date"] = new Date(parseInt(trial_end_ms, 10)).toString('MM/dd/yy HH:mm:ss');
     response_data.platform = window.navigator.platform;
     response_data.username = $("#participant_code").val();
 
@@ -241,58 +274,56 @@ Project = {
 
   generate_trial: function(trial_no,post_no){
     if(typeof(project_json.parsed_proc[trial_no]) == "undefined"){
-  return false;
-  }
-
-  post_no       = post_no == 0 ? "" : "post "+post_no+" ";
-  this_proc      = project_json.parsed_proc[trial_no];
-  this_trialtype = project_json.code[this_proc[post_no+"code"]];
-
-  //look through all variables and replace with the value
-
-  this_trialtype =  "<scr" + "ipt> Phase = {}; Phase.trial_no = '"+trial_no+"'; Phase.post_no ='"+post_no+"' </scr" + "ipt>" + "<scr" + "ipt src = 'PhaseFunctions.js' ></scr" + "ipt>" + this_trialtype ; //; trial_script +
-
-
-  this_trialtype = this_trialtype.replace("[trial_no]",trial_no);
-  this_trialtype = this_trialtype.replace("[post_no]",post_no);
-
-  if(this_proc.item.toString() !== "0"){
-
-    this_stim = project_json.parsed_stim[this_proc.item];
-
-    variable_list = Object.keys(this_proc).concat(Object.keys(this_stim));
-  } else {
-    variable_list = Object.keys(this_proc);
-  }
-  variable_list = variable_list.filter(String);
-
-  //list everything between {{ and }} and transform them into lowercase
-  split_trialtype = this_trialtype.split("{{");
-  split_trialtype = split_trialtype.map(function(split_part){
-    if(split_part.indexOf("}}") !== -1){
-      more_split_part = split_part.split("}}");
-      more_split_part[0] = more_split_part[0].toLowerCase();
-      split_part = more_split_part.join("}}");
+      return false;
     }
-    return split_part;
-  });
-  this_trialtype = split_trialtype.join("{{");
 
-  variable_list.forEach(function(variable,this_index){
-  if(typeof(this_proc[variable]) !== "undefined"){
-  variable_val = this_proc[variable];
-  } else if(typeof(this_stim) !== "undefined" && typeof(this_stim[variable]) !== "undefined"){
-  variable_val = this_stim[variable];
-  } else {
-  if(typeof(this_stim) !== "undefined"){
+    post_no       = post_no == 0 ? "" : "post "+post_no+" ";
+    this_proc      = project_json.parsed_proc[trial_no];
+    this_phase = project_json.code[this_proc[post_no+"code"]];
+
+    //look through all variables and replace with the value
+
+    this_phase =  "<scr" + "ipt> Phase = {}; Phase.trial_no = '"+trial_no+"'; Phase.post_no ='"+post_no+"' </scr" + "ipt>" + "<scr" + "ipt src = 'PhaseFunctions.js' ></scr" + "ipt>" + this_phase ; //; trial_script +
+
+
+    this_phase = this_phase.replace("[trial_no]",trial_no);
+    this_phase = this_phase.replace("[post_no]",post_no);
+
+    if(this_proc.item.toString() !== "0"){
+      this_stim = project_json.parsed_stim[this_proc.item];
+      variable_list =   Object.keys(this_proc).concat(Object.keys(this_stim));
+    } else {
+      variable_list = Object.keys(this_proc);
+    }
+    variable_list = variable_list.filter(String);
+
+    //list everything between {{ and }} and transform them into lowercase
+    split_trialtype = this_phase.split("{{");
+    split_trialtype = split_trialtype.map(function(split_part){
+      if(split_part.indexOf("}}") !== -1){
+        more_split_part = split_part.split("}}");
+        more_split_part[0] = more_split_part[0].toLowerCase();
+        split_part = more_split_part.join("}}");
+      }
+      return split_part;
+    });
+    this_phase = split_trialtype.join("{{");
+
+    variable_list.forEach(function(variable,this_index){
+      if(typeof(this_proc[variable]) !== "undefined"){
+        variable_val = this_proc[variable];
+      } else if(typeof(this_stim) !== "undefined" &&  typeof(this_stim[variable]) !== "undefined"){
+        variable_val = this_stim[variable];
+      } else {
+        if(typeof(this_stim) !== "undefined"){
           console.dir("Not sure whether this means there's a bug or not");
           //bootbox.alert("serious bug, please contact researcher about missing variable");
         }
-  }
-  this_trialtype = this_trialtype.replaceAll("{{" + variable + "}}", variable_val);
-  });
+      }
+      this_phase = this_phase.replaceAll("{{" + variable + "}}", variable_val);
+    });
     // in case the user forgets
-    this_trialtype = this_trialtype.replaceAll("www.dropbox","dl.dropbox");
+    this_phase = this_phase.replaceAll("www.dropbox","dl.dropbox");
 
     /*
     * Need to detect whether localhost and on mac
@@ -313,7 +344,7 @@ Project = {
           org:  org_repo[0],
           repo: org_repo[1]
         });
-        this_trialtype = this_trialtype.replaceAll(
+        this_phase = this_phase.replaceAll(
           "../User/",
           home_dir + "/User/"
         );
@@ -325,12 +356,12 @@ Project = {
           org:  org_repo[0],
           repo: org_repo[1]
         });
-      this_trialtype = this_trialtype.replaceAll(
+      this_phase = this_phase.replaceAll(
         "../User/",
         home_dir + "/User/"
       );
     }
-    return this_trialtype;
+    return this_phase;
   },
 
   go_to: function(new_trial_no,proc_no){
@@ -422,10 +453,11 @@ Project = {
   } else {
     post_val = "post "+project_json.post_no + " ";
   }
+  var max_time;
   if(typeof(project_json.parsed_proc[project_json.trial_no][post_val + "max time"]) == "undefined"){
     max_time = "user";
   } else {
-    var max_time = project_json
+    max_time = project_json
       .parsed_proc
       [project_json.trial_no]
       [post_val + "max time"];
@@ -456,7 +488,7 @@ Project = {
   }
   }
   }
-}
+};
 
 
 /*
@@ -467,8 +499,8 @@ function buffer_phases(){
   var this_buffer = project_json.this_condition.buffer;
   var trial_no    = project_json.trial_no;
   for(var index = trial_no; index < trial_no + this_buffer; index++){
-  write_phase_iframe(index);
-  };
+    write_phase_iframe(index);
+  }
   if(trial_no >= project_json.parsed_proc.length){
   $("#project_div").html("<h1>You have already completed this experiment</h1>");
   }
@@ -642,13 +674,14 @@ function final_trial(){
             setTimeout(function(){
   if(typeof(project_json.this_condition.forward_at_end) !== "undefined" &&
   project_json.this_condition.forward_at_end  !== ""){
-  bootbox.alert("The next phase of your experiment is <a class='btn btn-primary' style='margin:2px' href='"+ project_json.this_condition.forward_at_end +"' target='_blank'>here</a> - please continue there.");
+    bootbox.alert("The next phase of your experiment is <a class='btn btn-primary' style='margin:2px' href='"+ project_json.this_condition.forward_at_end +"' target='_blank'>here</a> - please continue there.");
   }
-              if(project_json.this_condition.download_at_end !== "off"){
-                var download_at_end_html = " If you'd like to download your raw data <span id='download_json'>click here</span></h1>";
-              } else {
-                var download_at_end_html = "";
-              }
+  var download_at_end_html;
+  if(project_json.this_condition.download_at_end !== "off"){
+    download_at_end_html = " If you'd like to download your raw data <span id='download_json'>click here</span></h1>";
+  } else {
+    download_at_end_html = "";
+  }
               $("#project_div").html("<h1>Thank you for participating." + download_at_end_html);
               $("#download_json").on("click",function(){
                 precrypted_data(project_json,"What do you want to save this file as?");
@@ -685,7 +718,7 @@ function final_trial(){
       window.localStorage.removeItem("username");
       window.localStorage.removeItem("completion_code");
       window.localStorage.removeItem("prehashed_code");
-      break
+      break;
   }
 }
 
@@ -724,8 +757,8 @@ function get_gets() {
   Project.get_vars = prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
 
   // maybe the following is left over from the simulator?
-  if(typeof(Project.get_vars["name"]) !== "undefined"){
-    exp_condition = Project.get_vars["name"];
+  if(typeof(Project.get_vars.name) !== "undefined"){
+    exp_condition = Project.get_vars.name;
   } else {
     exp_condition = "";
   }
@@ -762,7 +795,7 @@ function get_htmls(){
     $.get(this_html.path, function(this_code){
       Project.html_code[this_html.name] = this_code;
       if(html_list.length > 0){
-        loop_htmls(html_list)
+        loop_htmls(html_list);
       } else {
         Project.activate_pipe();
       }
@@ -778,7 +811,7 @@ function insert_end_checks(){
     max_time: "",
     text: "",
     "code": "end_checks_experiment"
-  }
+  };
   var shuffle_levels = Object.keys(project_json.parsed_proc[0]).filter(item => item.indexOf("shuffle") !== -1);
   shuffle_levels.forEach(function(shuffle_level){
     this_proc_end[shuffle_level] = "off";
@@ -787,20 +820,21 @@ function insert_end_checks(){
   this_proc = this_proc.push(this_proc_end);
   Project.activate_pipe();
 }
+
 function insert_start(){
 
   function add_to_start(current_procedure, code){
-    var this_trialtype_info = {
+    var this_phase_info = {
       item:0,
       max_time:"",
       text:"",
       "code": code
-    }
+    };
     var shuffle_levels = Object.keys(project_json.parsed_proc[0]).filter(item => item.indexOf("shuffle") !== -1);
     shuffle_levels.forEach(function(shuffle_level){
-      this_trialtype_info[shuffle_level] = "off";
+      this_phase_info[shuffle_level] = "off";
     });
-    current_procedure.unshift(this_trialtype_info);
+    current_procedure.unshift(this_phase_info);
     return current_procedure;
   }
 
@@ -828,7 +862,17 @@ function insert_start(){
     /*
     * These quality checks are in reverse order
     */
-    this_proc = add_to_start(this_proc, "quality_calibration_zoom");
+
+    if(
+      typeof(project_json.this_condition.zoom_check) !== "undefined" &&
+      project_json.this_condition.zoom_check.toLowerCase() == "no"
+    ){
+      //skip this
+    } else {
+      this_proc = add_to_start(this_proc, "quality_calibration_zoom");
+    }
+
+
     this_proc = add_to_start(this_proc, "quality_details_warning");
 
     if(
@@ -864,11 +908,10 @@ function insert_start(){
       url: "Quality/Problems.html",
       name: "end_checks_experiment"
     }];
+
     load_quality_checks(quality_checks);
   }
 }
-
-
 
 function parse_sheets(){
   var proc_sheet_name = project_json.this_condition.procedure
@@ -876,7 +919,7 @@ function parse_sheets(){
       .replace(".csv","") + ".csv";
   var stim_sheet_name = project_json.this_condition.stimuli
       .toLowerCase()
-      .replace(".csv","") + ".csv"
+      .replace(".csv","") + ".csv";
   proc_stim_loaded = [];
 
   switch(Project.get_vars.platform){
@@ -1086,7 +1129,7 @@ function precrypted_data(decrypted_data,message){
     Object.keys(row).forEach(function(item){
       if(response_headers.indexOf(item) == -1){
         response_headers.push(item);
-      };
+      }
     });
   });
   this_condition    = decrypted_data.this_condition;
@@ -1125,41 +1168,43 @@ function process_welcome(){
     /*
     * skip participant id? (and thus start_message)
     */
-
+    var pp_id_setting;
     if(Project.get_vars.platform == "preview"){
-      var pp_id_setting = "random";
+      pp_id_setting = "random";
     } else {
-      var pp_id_setting = project_json.this_condition.participant_id;
+      pp_id_setting = project_json.this_condition.participant_id;
     }
 
-  if(pp_id_setting == "off"){                                // put in a participant ID that is clearly not unique (e.g. "notUnique").
-  $("#participant_code").val("notUnique");
-  post_welcome("notUnique","skip");                       //"skip" means that it will automatically accept non unique ids
-  } else if(pp_id_setting == "random"){
-      var this_code = Math.random().toString(36).substr(2, 16)
-  $("#participant_code").val(this_code);
-      post_welcome(this_code,"random");
-  } else if(pp_id_setting  == "on"){
-  $("#loading_project_json").fadeOut(500);
-  $("#researcher_message").fadeIn(2000);
-  $("#participant_id_div").show(1000);
-  }  else {
-  bootbox.alert("It's not clear if the researcher wants you to give them a user id - please contact them before proceeding.");
-  }
+    // put in a participant ID that is clearly not unique (e.g. "notUnique").
+    if(pp_id_setting == "off"){
+      $("#participant_code").val("notUnique");
+      //"skip" means that it will automatically accept non unique ids
+      post_welcome("notUnique","skip");
+    } else if(pp_id_setting == "random"){
+        var this_code = Math.random().toString(36).substr(2, 16);
+    $("#participant_code").val(this_code);
+        post_welcome(this_code,"random");
+    } else if(pp_id_setting  == "on"){
+    $("#loading_project_json").fadeOut(500);
+    $("#researcher_message").fadeIn(2000);
+    $("#participant_id_div").show(1000);
+    }  else {
+    bootbox.alert("It's not clear if the researcher wants you to give them a user id - please contact them before proceeding.");
+    }
 
-  if(project_json.this_condition.start_message !== ""){
-  $("#researcher_message").html(project_json.this_condition.start_message);
-  } else {
-  def_start_msg = "<h1 class='text-primary'> Collector</h1>"+
-        "<br><br>" +
-        "<h4>It's very important to read the following before starting!</h1>" +
-        "<div class='text-danger'>If you complete multiple Collector experiments at the same time, your completion codes may be messed up. Please do not do this!</div>" +
-        "<br>" +
-        "<div class='text-danger'>If you participate in this experiment, your progress in it will be stored on your local machine to avoid you losing your progress if the window or tab closes or freezes. This data will be cleared from your computer once you have completed the task. <b>However, if you do not want this website to store your progress on your computer, DO NOT PROCEED.</b></div>"+
-  "<br>" +
-  "<div class='text-danger'>If the experiment freezes, try pressing <b>CTRL-S</b> to save your data so far. </div>";
-  $("#researcher_message").html(def_start_msg);
-  }
+    if(project_json.this_condition.start_message !== ""){
+    $("#researcher_message").html(project_json.this_condition.start_message);
+    } else {
+    def_start_msg = "<h1 class='text-primary'> Collector</h1>"+
+          "<br><br>" +
+          "<h4>It's very important to read the following before starting!</h1>" +
+          "<div class='text-danger'>If you complete multiple Collector experiments at the same time, your completion codes may be messed up. Please do not do this!</div>" +
+          "<br>" +
+          "<div class='text-danger'>If you participate in this experiment, your progress in it will be stored on your local machine to avoid you losing your progress if the window or tab closes or freezes. This data will be cleared from your computer once you have completed the task. <b>However, if you do not want this website to store your progress on your computer, DO NOT PROCEED.</b></div>"+
+    "<br>" +
+    "<div class='text-danger'>If the experiment freezes, try pressing <b>CTRL-S</b> to save your data so far. </div>";
+    $("#researcher_message").html(def_start_msg);
+    }
   }
 }
 
@@ -1261,14 +1306,18 @@ function shuffle_start_exp(){
   var shuffle_block_names = [project_json.parsed_proc[0][shuffle_level]];
   var shuffle_block_rows  = [[project_json.parsed_proc[0]]];
 
-  for(var i = 1; i < project_json.parsed_proc.length; i++){
-  if(project_json.parsed_proc[i][shuffle_level] !== project_json.parsed_proc[i-1][shuffle_level] ||
-   project_json.parsed_proc[i][shuffle_level] == "off"){
-  shuffle_block_names.push(project_json.parsed_proc[i][shuffle_level]);
-  shuffle_block_rows.push([project_json.parsed_proc[i]]);
-  } else {
-  shuffle_block_rows[shuffle_block_rows.length-1].push(project_json.parsed_proc[i]);
-  }
+  for(let i = 1; i < project_json.parsed_proc.length; i++){
+    if(project_json.parsed_proc[i][shuffle_level] !== project_json.parsed_proc[i-1][shuffle_level] ||
+     project_json.parsed_proc[i][shuffle_level] == "off"){
+      shuffle_block_names.push(
+        project_json.parsed_proc[i][shuffle_level]
+      );
+      shuffle_block_rows.push(
+        [project_json.parsed_proc[i]]
+      );
+    } else {
+      shuffle_block_rows[shuffle_block_rows.length-1].push(project_json.parsed_proc[i]);
+    }
   }
   var shuffled_block_names = JSON.parse(JSON.stringify(shuffle_block_names));
 
@@ -1289,7 +1338,9 @@ function shuffle_start_exp(){
   });
   });
 
-  shuffled_unique_shuffle_block_names = unique_shuffle_block_names.sort(function(){return 0.5-Math.random()});
+  shuffled_unique_shuffle_block_names = unique_shuffle_block_names.sort(function(){
+    return 0.5-Math.random();
+  });
 
   unique_shuffle_block_names.forEach(function(this_name,name_no){
   shuffled_block_names.forEach(function(item,item_no){
@@ -1493,15 +1544,15 @@ function start_project(){
 function write_phase_iframe(index){
 
   if(typeof(project_json.parsed_proc[index]) == "undefined"){
-  return null;
+    return null;
   }
 
   var phase_iframe = $("<iframe>");
 
       phase_iframe.addClass("phase_iframe")
-                  .attr("frameBorder", "0")
-                  .attr("id", "trial" + index)
-                  .attr("scrolling", "no");
+        .attr("frameBorder", "0")
+        .attr("id", "trial" + index)
+        .attr("scrolling", "no");
 
   $("#project_div").append(phase_iframe);
 
@@ -1518,16 +1569,15 @@ function write_phase_iframe(index){
 
   // write an iframe with the required number of sub_iframes
   for(var i = 0; i < phase_events.length; i++){
-  if(this_proc[phase_events[i]] !== ""){
+    if(this_proc[phase_events[i]] !== ""){
       var post_iframe = $("<iframe>");
           post_iframe.addClass("post_iframe")
-                     .attr("frameBorder", "0")
-                     .attr("id", "post" + i)
-                     .css("height", "100%")
-                     .css("width", "100%")
-
+            .attr("frameBorder", "0")
+            .attr("id", "post" + i)
+            .css("height", "100%")
+            .css("width", "100%");
       phase_iframe_code += post_iframe[0].outerHTML;
-  }
+    }
   }
   doc = document
     .getElementById('trial'+index)
@@ -1542,7 +1592,7 @@ function write_phase_iframe(index){
   }
   doc.close();
 
-  for(var i = 0; i < phase_events.length; i++){
+  for(let i = 0; i < phase_events.length; i++){
   var phase_content = Project.generate_trial(index,i);
         phase_content += "<button style='opacity:0; filter: alpha(opacity=0)' id='zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'></button>";
 
@@ -1558,19 +1608,19 @@ function write_phase_iframe(index){
     * New attempt to check if images have loaded succesfully
     */
     var img_check_code =  '<scr' + 'ipt src="libraries/collector/StimuliChecks.js"></scr' + 'ipt>';
-
+    var timer_code;
     if(typeof(this_proc["max time"]) !== "undefined" &&
        this_proc["max time"] !== "user" &&
        this_proc["max time"] !== ""){
-      var timer_code = Project.html_code["Timer"];
-      if(typeof(this_proc["timer_style"]) !== "undefined" && this_proc["timer_style"] !== ""){
+      timer_code = Project.html_code.Timer;
+      if(typeof(this_proc.timer_style) !== "undefined" && this_proc.timer_style !== ""){
         timer_code = timer_code.replace(
           "#collector_trial_timer{",
-          "#collector_trial_timer{" + this_proc["timer_style"] + ";"
-        )
+          "#collector_trial_timer{" + this_proc.timer_style + ";"
+        );
       }
     } else {
-      var timer_code = "";
+      timer_code = "";
     }
     doc.document.write(
       libraries +
@@ -1585,37 +1635,39 @@ function write_phase_iframe(index){
 
   var no_images = (phase_content.match(/<img/g) || []).length;
   project_json.uninitiated_stims.push(no_images);
-  project_json.uninitiated_stims_sum = project_json.uninitiated_stims.reduce(function(acc,val){return acc + val });
+  project_json.uninitiated_stims_sum = project_json.uninitiated_stims.reduce(function(acc,val){
+    return acc + val;
+  });
 
   if(typeof(stim_interval) == "undefined"){
-  //need code here to deal with "buffering" when there are no images.
-  stim_interval = setInterval(function(){
-  project_json.initiated_stims = 0;
-  for(var j = project_json.trial_no; j < project_json.trial_no + project_json.this_condition.buffer; j++){
-  if($("#trial"+j).contents().children().find("iframe").contents().children().find("img").prop("complete")){
-  //if($("#trial"+j).contents().find('img').prop('complete') == true){
-  project_json.initiated_stims += $("#trial"+j).contents().children().find("iframe").contents().children().find("img").length;
-  }
-  }
-  var completion = 100-project_json.initiated_stims/project_json.uninitiated_stims_sum;
-  $("#stim_listing").css("width",completion+"%");
-  if(completion == 100 | project_json.uninitiated_stims_sum == 0){
-  clearInterval(stim_interval);
-  $("#loading_div").hide();
-  $("#stim_progress").fadeOut(1000);
-  if($("#calibrate_div").is(':visible') == false){
-  $("#project_div").fadeIn(500);
-  }
-  if(project_json.wait_to_proc){
-  bootbox.alert("It looks like you have closed the window midway through an experiment. Please press OK when you are ready to resume the experiment!", function(){
-  Project.start_post();
-  });
-  } else {
-  Project.start_post();
-  }
-  }
-  },10);
-  }
+    //need code here to deal with "buffering" when there are no images.
+    stim_interval = setInterval(function(){
+    project_json.initiated_stims = 0;
+    for(var j = project_json.trial_no; j < project_json.trial_no + project_json.this_condition.buffer; j++){
+    if($("#trial"+j).contents().children().find("iframe").contents().children().find("img").prop("complete")){
+      //if($("#trial"+j).contents().find('img').prop('complete') == true){
+      project_json.initiated_stims += $("#trial"+j).contents().children().find("iframe").contents().children().find("img").length;
+      }
+    }
+    var completion = 100-project_json.initiated_stims/project_json.uninitiated_stims_sum;
+    $("#stim_listing").css("width",completion+"%");
+    if(completion == 100 | project_json.uninitiated_stims_sum == 0){
+    clearInterval(stim_interval);
+    $("#loading_div").hide();
+    $("#stim_progress").fadeOut(1000);
+    if($("#calibrate_div").is(':visible') == false){
+      $("#project_div").fadeIn(500);
+    }
+    if(project_json.wait_to_proc){
+      bootbox.alert("It looks like you have closed the window midway through an experiment. Please press OK when you are ready to resume the experiment!", function(){
+        Project.start_post();
+      });
+    } else {
+      Project.start_post();
+    }
+      }
+      },10);
+    }
   }
 }
 
