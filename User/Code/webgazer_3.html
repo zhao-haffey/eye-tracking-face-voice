@@ -119,10 +119,21 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
   <input type="hidden" name="window_inner_height" id="window_inner_height"/>
   <input type="hidden" name="window_inner_width"  id="window_inner_width"/>
   <input type="hidden" name="fixation_rts"        id="fixation_rts"/>
- 
+  <input type="hidden" name="window_switches"     id="window_switches"/>
 </body>
 </html>
 <script>
+window.addEventListener('blur', function(){ 
+  var focus_val = $('#window_switches').val();
+  $('#window_switches').val(focus_val + 'leave-' + (new Date()).getTime() + ';');
+}); 
+
+window.addEventListener('focus', function(){ 
+  var focus_val = $('#window_switches').val();
+  $('#window_switches').val(focus_val + 'focus-' + (new Date()).getTime() + ';')
+});
+
+
 
 /*
 * Haffey variables
@@ -921,6 +932,15 @@ function saveData() {
     row.window_height = window.innerHeight;
     row.participant   = parent.parent.$("#participant_code").val(),
     row.trial_no      = sub_trial_no;
+    
+    if(window.innerHeight == screen.height){
+      row.fullscreen = true;
+    } else {
+      row.fullscreen = false;
+    }
+
+    //switching window...
+    row.window_switches = $("#window_switches").val();
    
     if(typeof(stimuli_set) !== "undefined"){
       Object.keys(stimuli_set).forEach(function(stimuli_key){
@@ -936,6 +956,7 @@ function saveData() {
     }
     return row;
   });
+  $("#window_switches").val("");
  
   data.push(data_current);
   data_current = {};

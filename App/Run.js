@@ -1,19 +1,6 @@
 project_json = {};
 
 /*
-* track how often the person switches in and out of the screen
-*/
-var blur_events = "";
-window.addEventListener("focus", function(event) {
-  alert("hi");
-  blur_events += "window gained focus;";
-}, false);
-window.addEventListener("blur", function(event) {
-  alert("bye");
-  blur_events += "window lost focus;";
-}, false);
-
-/*
 * Objects
 */
 
@@ -25,8 +12,6 @@ online_data_obj = {
   run_save:function(){
     var this_save = online_data_obj.save_queue.pop();
     this_save();
-    console.dir("this_save");
-    console.dir(this_save);
     if(online_data_obj.save_queue.length > 0){         //keep going until all saves done.
       online_data_obj.run_save();
     }
@@ -139,11 +124,6 @@ Project = {
     }, {});
 
     var post_string = "post_" + project_json.post_no;
-    /*
-    * detect if the user is focused on the screen
-    */
-    response_data[post_string + "blur_focus"] = blur_events;
-    blur_events = "";
 
 
     /*
@@ -151,6 +131,7 @@ Project = {
     */
     response_data[post_string + "_screen_height"] = screen.height;
     response_data[post_string + "_screen_width"] = screen.width;
+
 
     if( window.innerHeight == screen.height) {
       response_data[post_string + "_fullscreen"]  = true;
@@ -277,11 +258,29 @@ Project = {
       return false;
     }
 
-    post_no       = post_no == 0 ? "" : "post "+post_no+" ";
-    this_proc      = project_json.parsed_proc[trial_no];
+    post_no    = post_no == 0 ? "" : "post "+post_no+" ";
+    this_proc  = project_json.parsed_proc[trial_no];
     this_phase = project_json.code[this_proc[post_no+"code"]];
 
     //look through all variables and replace with the value
+
+
+    /*
+    * Create input to store the number of focus and blur events for the window, and store these using javascript
+    */
+    this_phase += $("<input>")
+      .attr("name", "window_switch")
+      .css("display", "none")
+      .prop("id", "window_switch")[0].outerHTML +
+    $("<script>")
+      .html("window.addEventListener('blur', function(){ var focus_val = $('#window_switch').val();  $('#window_switch').val(focus_val + 'leave-' + (new Date()).getTime() + ';')}); window.addEventListener('focus', function(){ var focus_val = $('#window_switch').val(); $('#window_switch').val(focus_val + 'focus-' + (new Date()).getTime() + ';')}); ")[0].outerHTML;
+
+/*
+project_json.this_trial["post_"+project_json.post_no+"_trial_start_ms"] = (new Date()).getTime();
+*/
+
+//baseline_time
+
 
     this_phase =  "<scr" + "ipt> Phase = {}; Phase.trial_no = '"+trial_no+"'; Phase.post_no ='"+post_no+"' </scr" + "ipt>" + "<scr" + "ipt src = 'PhaseFunctions.js' ></scr" + "ipt>" + this_phase ; //; trial_script +
 
@@ -1547,20 +1546,18 @@ function write_phase_iframe(index){
     return null;
   }
 
-  var phase_iframe = $("<iframe>");
-
-      phase_iframe.addClass("phase_iframe")
+  var phase_iframe = $("<iframe>")
+        .addClass("phase_iframe")
         .attr("frameBorder", "0")
         .attr("id", "trial" + index)
         .attr("scrolling", "no");
 
   $("#project_div").append(phase_iframe);
 
-
   this_proc = project_json.parsed_proc[index];
 
   var post_code =  Object.keys(this_proc).filter(function(key) {
-  return /code/.test(key);
+    return /code/.test(key);
   });
   phase_events = post_code.filter(function(post_phase){
     return this_proc[post_phase] !== "";
@@ -1570,8 +1567,8 @@ function write_phase_iframe(index){
   // write an iframe with the required number of sub_iframes
   for(var i = 0; i < phase_events.length; i++){
     if(this_proc[phase_events[i]] !== ""){
-      var post_iframe = $("<iframe>");
-          post_iframe.addClass("post_iframe")
+      var post_iframe = $("<iframe>")
+            .addClass("post_iframe")
             .attr("frameBorder", "0")
             .attr("id", "post" + i)
             .css("height", "100%")
@@ -1612,60 +1609,60 @@ function write_phase_iframe(index){
     if(typeof(this_proc["max time"]) !== "undefined" &&
        this_proc["max time"] !== "user" &&
        this_proc["max time"] !== ""){
-      timer_code = Project.html_code.Timer;
-      if(typeof(this_proc.timer_style) !== "undefined" && this_proc.timer_style !== ""){
-        timer_code = timer_code.replace(
-          "#collector_trial_timer{",
-          "#collector_trial_timer{" + this_proc.timer_style + ";"
-        );
+        timer_code = Project.html_code.Timer;
+        if(typeof(this_proc.timer_style) !== "undefined" && this_proc.timer_style !== ""){
+          timer_code = timer_code.replace(
+            "#collector_trial_timer{",
+            "#collector_trial_timer{" + this_proc.timer_style + ";"
+          );
+        }
+      } else {
+        timer_code = "";
       }
-    } else {
-      timer_code = "";
-    }
-    doc.document.write(
-      libraries +
-      phase_content +
-      timer_code +
-      img_check_code
-    );
-  doc.document.close();
+      doc.document.write(
+        libraries +
+        phase_content +
+        timer_code +
+        img_check_code
+      );
+    doc.document.close();
 
-    //autoscroll to top of iframe (in case the trial runs over)
-    doc.scrollTo(0,0);
+      //autoscroll to top of iframe (in case the trial runs over)
+      doc.scrollTo(0,0);
 
-  var no_images = (phase_content.match(/<img/g) || []).length;
-  project_json.uninitiated_stims.push(no_images);
-  project_json.uninitiated_stims_sum = project_json.uninitiated_stims.reduce(function(acc,val){
-    return acc + val;
-  });
+    var no_images = (phase_content.match(/<img/g) || []).length;
+    project_json.uninitiated_stims.push(no_images);
+    project_json.uninitiated_stims_sum = project_json.uninitiated_stims.reduce(function(acc,val){
+      return acc + val;
+    });
 
-  if(typeof(stim_interval) == "undefined"){
-    //need code here to deal with "buffering" when there are no images.
-    stim_interval = setInterval(function(){
-    project_json.initiated_stims = 0;
-    for(var j = project_json.trial_no; j < project_json.trial_no + project_json.this_condition.buffer; j++){
-    if($("#trial"+j).contents().children().find("iframe").contents().children().find("img").prop("complete")){
-      //if($("#trial"+j).contents().find('img').prop('complete') == true){
-      project_json.initiated_stims += $("#trial"+j).contents().children().find("iframe").contents().children().find("img").length;
-      }
-    }
-    var completion = 100-project_json.initiated_stims/project_json.uninitiated_stims_sum;
-    $("#stim_listing").css("width",completion+"%");
-    if(completion == 100 | project_json.uninitiated_stims_sum == 0){
-    clearInterval(stim_interval);
-    $("#loading_div").hide();
-    $("#stim_progress").fadeOut(1000);
-    if($("#calibrate_div").is(':visible') == false){
-      $("#project_div").fadeIn(500);
-    }
-    if(project_json.wait_to_proc){
-      bootbox.alert("It looks like you have closed the window midway through an experiment. Please press OK when you are ready to resume the experiment!", function(){
-        Project.start_post();
-      });
-    } else {
-      Project.start_post();
-    }
-      }
+    if(typeof(stim_interval) == "undefined"){
+      //need code here to deal with "buffering" when there are no images.
+      stim_interval = setInterval(function(){
+        project_json.initiated_stims = 0;
+        for(var j = project_json.trial_no; j < project_json.trial_no + project_json.this_condition.buffer; j++){
+          if($("#trial"+j).contents().children().find("iframe").contents().children().find("img").prop("complete")){
+        //if($("#trial"+j).contents().find('img').prop('complete') == true){
+            project_json.initiated_stims += $("#trial"+j).contents().children().find("iframe").contents().children().find("img").length;
+          }
+        }
+        var completion = 100-project_json.initiated_stims/project_json.uninitiated_stims_sum;
+        $("#stim_listing").css("width",completion+"%");
+        if(completion == 100 | project_json.uninitiated_stims_sum == 0){
+          clearInterval(stim_interval);
+          $("#loading_div").hide();
+          $("#stim_progress").fadeOut(1000);
+          if($("#calibrate_div").is(':visible') == false){
+            $("#project_div").fadeIn(500);
+          }
+          if(project_json.wait_to_proc){
+            bootbox.alert("It looks like you have closed the window midway through an experiment. Please press OK when you are ready to resume the experiment!", function(){
+              Project.start_post();
+            });
+          } else {
+            Project.start_post();
+          }
+        }
       },10);
     }
   }
