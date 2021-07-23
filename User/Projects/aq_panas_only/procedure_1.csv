@@ -1,0 +1,4 @@
+item,code,max time,text,shuffle 1,survey,
+0,survey,user,This is the start of a new experiment.,off,autism_quotient.csv,
+0,survey,user,PANAS,off,panas.csv,
+0,instruct,user,The End.,off,,
