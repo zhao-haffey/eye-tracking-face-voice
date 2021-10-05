@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+
+  /*
+  * Collector Survey 3.1.0
+  */
+
+  Author: Dr. Anthony Haffey
+
+  Collector: Cat release
+  A program for running experiments on the web
+  Copyright 2012-2018 Mikey Garcia & Nate Kornell
+
+  This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+  Kitten/Cat release (2019-2021) author: Dr. Anthony Haffey
+
+  (team@someopen.solutions)
+-->
+<style>
+  body {
+    background-color: #5f9ea0;
+    width: 100%;
+    height: 100%;
+  }
+  td {
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  /*
+*	elements by id
+*/
+
+  #content {
+    width: 95%;
+  }
+  #proceed_button {
+    position: fixed;
+    display: none;
+    bottom: 0px;
+    left: 50%;
+    overflow: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 5px;
+    border-width: 3px;
+  }
+  #survey_outline {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    overflow: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    min-width: 900px;
+    max-width: 9000px;
+    border-radius: 20px;
+    border-color: #006688;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+  }
+  #survey_tabs {
+    padding: 20px;
+  }
+  #this_survey_id {
+    padding: 20px;
+    display: none;
+  }
+
+  /*
+*	elements by class
+*/
+  .feedback_span_multiple {
+    display: none;
+    margin: 10px;
+  }
+  .feedback_span_single {
+    display: none;
+    padding: 10px;
+  }
+  .likert_table td {
+    padding: 1px;
+    text-align: center;
+  }
+  .likert_table td:hover {
+    color: blue;
+  }
+  .score_total {
+    display: none;
+  }
+  .show_tab {
+    margin: 5px;
+  }
+  .survey_btn {
+    white-space: normal;
+    word-wrap: initial;
+  }
+  .table_break {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+  }
+
+  /*
+* by Bora Alp Arat at https://stackoverflow.com/questions/21684101/css-vertical-scrollbar-padding-left-right-in-ul-possible
+*/
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+  }
+  ::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color: rgba(0, 102, 153, 0.5);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+      inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+  }
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+</style>
+<div id="everything">
+  <div id="survey_outline"></div>
+  <button id="proceed_button" class="btn bg-white btn-outline-primary">
+    Proceed
+  </button>
+</div>
+<span id="scales_span"></span>
+<script>
+  /*
+   * Load survey
+   */
+  current_survey = "{{survey}}";
+
+  console.log("current_survey");
+  console.log(current_survey);
+</script>
+<script src="../Default/DefaultPhaseTypes/survey.js"></script>

@@ -1,4 +1,4 @@
-item,survey,max time,text,shuffle 1,code,calibrations,calibration_skip,design_type,image_file,trials,min_width,min_height,skip_instruct,left_side,
+item,survey,max_time,text,shuffle_1,phasetype,calibrations,calibration_skip,design_type,image_file,trials,min_width,min_height,skip_instruct,left_side,
 0,,user,"<h2>Debrief </h2>
 <span style='font-size:23'>Thank you for taking part in the CAASD lab eye-tracking emotion study. Your participation is extremely valued, and will help us to better understand how we process emotional voices and facial expressions.<br>
 This study consists of two parts. In the first part, you will hear  emotional voices and see short videos, you will have to make the judgement of what emotion you perceive. We will use the webcam to track your attention, your video will not be saved, the location where you look will be saved anonymously. In the second part, we will ask you for some basic demographic details and to rate some statements that best describe you and how you feel.</span>

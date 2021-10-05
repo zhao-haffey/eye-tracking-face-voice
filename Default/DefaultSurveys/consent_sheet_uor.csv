@@ -1,0 +1,47 @@
+item_name,text,type,answers,values,optional,side_by_side,question_width,
+Instructions1,"<h2>University of Reading</h2><br>
+<div align=""right"">School of Psychology and Clinical Language Sciences<br>
+Whiteknights<br>
+Reading RG6 6AL</div>
+<br>
+<table class=""table"">
+  <tr>
+    <td><b>Investigator(s):</b></td>
+    <td><b>Email:</b></td>
+    <td><b>Telephone:</b></td>
+  </tr>
+  <tr>
+    <td>Investigator 1</td>
+    <td>Investigator1@reading.ac.uk</td>
+    <td>-phone_number-</td>
+  </tr>
+  <tr>
+    <td>Investigator 2</td>
+    <td>Investigator2@reading.ac.uk</td>
+    <td>-phone_number-</td>
+  </tr>
+  <tr>
+    <td><b>Researcher(s):</b></td>
+  </tr>
+  <tr>
+    <td>Researcher 1</td>
+    <td>Researcher1@reading.ac.uk</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Researcher 2</td>
+    <td>Researcher2@reading.ac.uk</td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>Title of Study: [Study title]</h2>
+<h1>Consent Form</h1>",instruct,,,,,,
+uor_consent_1,I understand that my participation in this study is voluntary and that I may withdraw any time without giving any reason.,checkbox,Agree,1,No,yes,70%,
+uor_consent_2,I have read the information sheet about this study and the procedure of the study has been explained to me.,checkbox,Agree,1,No,yes,70%
+uor_consent_3,I have been given the opportunity to ask any questions that I may have about the study and these have been answered to my satisfaction.,checkbox,Agree,1,No,yes,70%,
+uor_consent_4,"I understand that the data collected from me in this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.",checkbox,Agree,1,No,yes,70%,
+uor_consent_5,I am happy to be contacted about future studies (optional),checkbox,Agree,1,No,yes,70%,
+uor_consent_6,First name,text,Agree,1,No,yes,70%,
+uor_consent_7,Last name,text,Agree,1,No,yes,70%,
+,,,,,,,,

@@ -1,0 +1,37 @@
+<script>
+  var branches = "{{text}}".split("|");
+  var branch_obj = [];
+  var weight_total = 0;
+  branches.forEach(function (branch_info) {
+    [row_no, row_freq] = branch_info.split("x");
+    branch_obj.push({
+      row_no: row_no,
+      freq: row_freq,
+      select_min: weight_total,
+      select_max: weight_total + parseFloat(row_freq) - 1,
+    });
+    weight_total += parseFloat(row_freq);
+  });
+
+  console.log("branch_obj");
+  console.log(branch_obj);
+
+  console.log("weight_total");
+  console.log(weight_total);
+
+  var select_no = Math.floor(Math.random() * weight_total);
+
+  console.log("select_no");
+  console.log(select_no);
+
+  var selected_row = branch_obj.filter(function (row) {
+    return row.select_min <= select_no && row.select_max >= select_no;
+  })[0];
+
+  console.dir("selected_row");
+  console.dir(selected_row);
+
+  Phase.set_timer(function () {
+    Phase.go_to(selected_row.row_no);
+  }, 100);
+</script>

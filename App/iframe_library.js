@@ -18,11 +18,22 @@
 		Kitten/Cat release (2019-2021) author: Dr. Anthony Haffey (team@someopen.solutions)
 */
 
-var libraries = '<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />' +
-    '<scr' + 'ipt src="libraries/jquery.min.js"></scr' + 'ipt>' +
-		'<scr' + 'ipt src="libraries/popper.min.js"></scr' + 'ipt>'+
-		'<link rel="stylesheet" href="libraries/bootstrapCollector.css">' +
-    '<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">' +
-		'<scr' + 'ipt src="libraries/bootstrap.min.js"></scr' + 'ipt>'+
-    '<scr' + 'ipt src="libraries/bootbox.min.js"></scr' + 'ipt>'+
-		'<scr' + 'ipt src="libraries/papaparse.min.js"></scr' + 'ipt>';
+var libraries =
+  '<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />' +
+  "<scr" +
+  'ipt src="libraries/jquery.min.js"></scr' +
+  "ipt>" +
+  "<scr" +
+  'ipt src="libraries/popper.min.js"></scr' +
+  "ipt>" +
+  '<link rel="stylesheet" href="libraries/bootstrapCollector.css">' +
+  '<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">' +
+  "<scr" +
+  'ipt src="libraries/bootstrap.min.js"></scr' +
+  "ipt>" +
+  "<scr" +
+  'ipt src="libraries/bootbox.min.js"></scr' +
+  "ipt>" +
+  "<scr" +
+  'ipt src="libraries/papaparse.min.js"></scr' +
+  "ipt>";

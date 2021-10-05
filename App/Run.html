@@ -19,14 +19,16 @@
 		Kitten/Cat release (2019-21) author: Dr. Anthony Haffey (team@someopen.solutions)
 -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta charset="utf-8" />
+  <meta
+    http-equiv="Cache-Control"
+    content="no-cache, no-store, must-revalidate"
+  />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" type="image/x-icon" href="../logos/cat.png"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="../logos/cat.png" />
 </head>
-
 
 <script src="libraries/jquery.min.js"></script>
 <script src="libraries/tweetnacl.js"></script>
@@ -37,69 +39,85 @@
 <script src="libraries/popper.min.js"></script>
 <script src="libraries/bootbox.min.js"></script>
 
-<link rel="stylesheet" href="libraries/bootstrapCollector.css">
-<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
+<link rel="stylesheet" href="libraries/bootstrapCollector.css" />
+<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css" />
 <script src="libraries/bootstrap.min.js"></script>
-<script src="libraries/collector/Collector.js"></script>
-<script src="libraries/collector/OnlineTriggers.js"></script>
-<script src="libraries/collector/CollectorEncrypt.js"></script>
 <script src="libraries/collector/BrowserCheck.js"></script>
+<script src="libraries/collector/Collector.js"></script>
+<script src="libraries/collector/CollectorEncrypt.js"></script>
 <script src="libraries/collector/MobileCheck.js"></script>
+<script src="libraries/collector/OnlineTriggers.js"></script>
 
 <div id="welcome_html"></div>
 
 <script>
-$("#welcome_html").load("Welcome.html");
+  $("#welcome_html").load("Welcome.html");
 </script>
 
-
 <style>
-.phase_iframe{
-  visibility:hidden;
-	overflow:hidden;
-	width:0%;
-	height:0%;
-	margin-left: auto;
-	margin-right: auto;
-}
-#project_div{
-	display: none;
-	width  : 100%;
-	margin : auto;
-}
-#download_json{
-	color:green;
-}
-#post_welcome{
-	display:none;
-}
+  .phase_iframe {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0%;
+    height: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #project_div {
+    display: none;
+    width: 100%;
+    margin: auto;
+  }
+  #download_json {
+    color: green;
+  }
+  #post_welcome {
+    display: none;
+  }
 </style>
 
-
-
 <div id="post_welcome">
-	<div class="progress" style="height: 1px; position:fixed;">
-		<div id="experiment_progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
-	</div>
+  <div class="progress" style="height: 1px; position: fixed">
+    <div
+      id="experiment_progress"
+      class="progress-bar progress-bar-striped progress-bar-animated"
+      role="progressbar"
+      aria-valuenow="0"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 0%"
+    ></div>
+  </div>
 
-	<div id="loading_div">Preparing encryption of data</div>
-	<div id="stim_progress" class="progress">
-		<div id="stim_listing" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
-	</div>
-  <div id="beginning_checks" style="display:none">
-    External keyboards generally do not work. Please do not try to use an external keyboard.<br><br>
-		Sometimes it may take a page a while to load. Please wait, and <b>DO NOT REFRESH THE PAGE</b>.<br><br>
-		Please click "Understood" to show that you have understood these instructions. <br><br>
-		<input type="button" value="Understood" id="proc_button">
-	</div>
-  <div id = "calibrate_div"></div>
-	<div id = "project_div" scrolling="no"></div>
+  <!--
+  <div id="stim_progress" class="progress">
+    <div
+      id="stim_listing"
+      class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+      role="progressbar"
+      aria-valuenow="0"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 0%"
+    ></div>
+  </div>
+  -->
+  <div id="beginning_checks" style="display: none">
+    External keyboards generally do not work. Please do not try to use an
+    external keyboard.<br /><br />
+    Sometimes it may take a page a while to load. Please wait, and
+    <b>DO NOT REFRESH THE PAGE</b>.<br /><br />
+    Please click "Understood" to show that you have understood these
+    instructions. <br /><br />
+    <input type="button" value="Understood" id="proc_button" />
+  </div>
+  <div id="calibrate_div"></div>
+  <div id="project_div" scrolling="no"></div>
 </div>
 
 <div id="participant_country"></div>
 <script src="iframe_library.js"></script>
 <script src="PhaseFunctions.js"></script>
-
 
 <!-- will look into making the following libraries local in the future -->
 
@@ -107,11 +125,9 @@ $("#welcome_html").load("Welcome.html");
 <script src="libraries/worldLow.js"></script>
 <script src="libraries/ammap_theme_light.js"></script>
 
-
-
-<input type="hidden" id="completion_code" name="completion_code"/>
-<input type="hidden" id="prehashed_code" name="prehashed_code"/>
+<input type="hidden" id="completion_code" name="completion_code" />
+<input type="hidden" id="prehashed_code" name="prehashed_code" />
 <script src="Run.js"></script>
 <script>
-Project.activate_pipe();
+  Project.activate_pipe();
 </script>

@@ -1,4 +1,4 @@
-item,survey,name,max time,text,shuffle 1,weight,freeview_image_file,code,calibration_skip,calibrations,design_type,calibration_skip*,image_height,image_width,save_script,stim_duration,trials,left_position,right_position,min_width,min_height,skip_instruct,backup_script_location,left_side,
+item,survey,name,max_time,text,shuffle_1,weight,freeview_image_file,phasetype,calibration_skip,calibrations,design_type,calibration_skip*,image_height,image_width,save_script,stim_duration,trials,left_position,right_position,min_width,min_height,skip_instruct,backup_script_location,left_side,
 0,,DRINKERS ONLY,,"This study asks questions about your alcoholic drinking habits. Please ONLY press ""proceed"" if you drink alcohol",,,,instruct,,,,,,,,,,,,,,,,,
 0,info_jf1.csv,information,user,,off,1,,survey,,,,,,,,,,,,,,,,,
 0,consent_jf1.csv,consent,user,,off,1,,survey,,,,,,,,,,,,,,,,,

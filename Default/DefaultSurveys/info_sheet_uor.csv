@@ -1,0 +1,59 @@
+item_name,text,type,answers,values,optional,side_by_side
+Instructions1,"<h2>University of Reading</h2><br>
+<div align=""right"">School of Psychology and Clinical Language Sciences<br>
+Whiteknights<br>
+Reading RG6 6AL</div>
+<br>
+<table class=""table"">
+  <tr>
+    <td><b>Investigator(s):</b></td>
+    <td><b>Email:</b></td>
+    <td><b>Telephone:</b></td>
+  </tr>
+  <tr>
+    <td>Investigator 1</td>
+    <td>Investigator1@reading.ac.uk</td>
+    <td>-phone_number-</td>
+  </tr>
+  <tr>
+    <td>Investigator 2</td>
+    <td>Investigator2@reading.ac.uk</td>
+    <td>-phone_number-</td>
+  </tr>
+  <tr>
+    <td><b>Researcher(s):</b></td>
+  </tr>
+  <tr>
+    <td>Researcher 1</td>
+    <td>Researcher1@reading.ac.uk</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Researcher 2</td>
+    <td>Researcher2@reading.ac.uk</td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>Title of Study: [Study title]</h2>
+<h1>PARTICIPANT INFORMATION SHEET </h1>
+
+We would be grateful if you could assist us by participating in our online study [BRIEF STUDY DESCRIPTION]. <br>
+<br>
+In the experiment you will be presented with [DESCRIPTION OF STIMULI AND PROCEDURE]. The experiment should take no longer than [MAXIMUM TIME EXPECTED]. [DESCRIPTION OF ELIGIBILITY AND EXCLUSION CRITERIA].<br>
+<br>
+Your data will be kept confidential and securely stored, with only an anonymous number identifying it. Data collected from this study will be preserved and made available in anonymised form, so that data can be re-used by others.<br>
+<br>
+[DESCRIPTION OF RISKS e.g. We foresee few risks during the experiment, but you will be presented with some negative images, which may evoke an emotional response. Thus, the study may include a mild risk of anxiety, sadness or other emotional reactions. However, those stimuli are widely observed in our daily life. If you are concerned about the images in the study then you may discontinue your participation at any time.]<br>
+<br>
+Taking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions that you may have about this study at any point.<br>
+<br>
+[INFORMATION ABOUT COMPENSATION - HOW MUCH AND HOW IT WILL BE DELIVERED e.g. You will receive 0.5 credits through SONA. You will receive a £5 Amazon voucher by email. You will receive £2.50 through Prolific.]<br>
+<br>
+This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct ([SREC OR UREC NUMBER]).<br>
+<br>
+If you have any questions or concerns about the research, please feel free to contact Investigator1.<br>
+<br>
+Email: Investigator1, Tel: +44-(0)118-378-XXXX.<br>
+<br>
+Thank you for your help.",instruct,,,,
