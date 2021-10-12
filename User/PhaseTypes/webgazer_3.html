@@ -127,6 +127,15 @@ Updates by Anthony Haffey (a.haffey@reading.ac.uk) 2020-21 to make this a task t
 
 
 <script>
+
+/*
+ * Collector needs to:
+ - identify and store the video length
+ - store the video start time
+ - store the video end time
+ */
+
+
 window.addEventListener('blur', function(){ 
   var focus_val = $('#window_switches').val();
   $('#window_switches').val(focus_val + 'leave-' + (new Date()).getTime() + ';');
@@ -396,7 +405,7 @@ function initializeWebgazer() {
             var cp = d;
             var dist = Math.sqrt(((cp.x - cx) * (cp.x - cx)) + ((cp.y - cy) * (cp.y - cy)));
             var c = $('#calibration_cnt').html();
-            data_current.raw.push({'time': clock, 'x': cp.x, 'y': cp.y, 'cx': cx, 'cy': cy, 'dist': dist, 'c': c});
+            data_current.raw.push({'time': clock, 'date_time': (new Date()).getTime(), 'x': cp.x, 'y': cp.y, 'cx': cx, 'cy': cy, 'dist': dist, 'c': c});
         }
 
 
@@ -405,7 +414,7 @@ function initializeWebgazer() {
             var dist = parseInt(Math.sqrt(((d.x - validation_current.x) * (d.x - validation_current.x)) + ((d.y - validation_current.y) * (d.y - validation_current.y))));
             var c = parseInt($('#calibration_cnt').html());
             if (dist < validation.distance) {
-                data_current.raw.push({'time': clock, 'x': d.x, 'y': d.y, 'vx': validation_current.x, 'vy': validation_current.y, 'dist': dist, 'c': c, 'valid': 1});
+                data_current.raw.push({'time': clock, 'date_time': (new Date()).getTime(), 'x': d.x, 'y': d.y, 'vx': validation_current.x, 'vy': validation_current.y, 'dist': dist, 'c': c, 'valid': 1});
                 if (c < calibration.duration) {
                     $('#calibration_cnt').html(++c);
                 } else {
@@ -417,7 +426,7 @@ function initializeWebgazer() {
                     setTimeout("validate();", 500);
                 }
             } else {
-                data_current.raw.push({'time': clock, 'x': d.x, 'y': d.y, 'vx': validation_current.x, 'vy': validation_current.y, 'dist': dist, 'c': c, 'valid': 0});
+                data_current.raw.push({'time': clock, 'date_time': (new Date()).getTime(), 'x': d.x, 'y': d.y, 'vx': validation_current.x, 'vy': validation_current.y, 'dist': dist, 'c': c, 'valid': 0});
             }
         }
 
@@ -430,7 +439,7 @@ function initializeWebgazer() {
               var tx = parseInt(Math.round($sd.offset().left));
               var ty = parseInt(Math.round($sd.offset().top));
           }
-          var this_row = {'time': clock, 'x': d.x, 'y': d.y, 'tx': tx, 'ty': ty, 'status': status}
+          var this_row = {'time': clock, 'date_time': (new Date()).getTime(), 'x': d.x, 'y': d.y, 'tx': tx, 'ty': ty, 'status': status}
           //console.log(data.trials[trial_no].raw.length + ' ' + d.x + ' ' + d.y);
           /*
           * Store all the video frames
@@ -947,6 +956,14 @@ function saveData() {
     row.participant   = parent.parent.$("#participant_code").val(),
     row.trial_no      = sub_trial_no;
     
+    /*
+     * add video info if the video exists - this is to help with calculating which frame the participant was looking at
+     */
+    row.video_duration = video_duration;
+    row.video_start_time = video_start_time;
+    row.video_end_time = video_end_time;
+
+    
     if(window.innerHeight == screen.height){
       row.fullscreen = true;
     } else {
@@ -970,6 +987,11 @@ function saveData() {
     }
     return row;
   });
+  
+  video_duration = "tbc";
+  video_start_time = "tbc";
+  video_end_time = "tbc";
+
   $("#window_switches").val("");
  
   data.push(data_current);
@@ -1235,7 +1257,9 @@ var tStimuli = {};
 
 tStimuli.stimuli = [];
 
-
+var video_start_time = "tbc";
+var video_end_time = "tbc";
+var video_duration = "tbc";
 
 function process_stimuli(){
   if(trial_order == "random"){
@@ -1396,11 +1420,21 @@ function stimuli_loaded(){
      
       trigger_element = element_json.onset.split(".")[0];
       //alert("trigger_element = " + trigger_element);
+      
+      
+      
       $("#" + trigger_element).on("ended", function(){
         var baseline_time = (new Date()).getTime();
         //alert("this_element " + this_element);
         $("#" + this_element).show();
         status += "-" + this_element;
+        
+        
+        
+        /*
+         * what does this play do? Is this correct
+         */
+        
         $("#" + this_element).trigger("play");
        
        
@@ -1429,6 +1463,14 @@ function stimuli_loaded(){
         }
        
         $("#" + this_element).show();
+        
+        /*
+         * Collector needs to:
+         - identify and store the video length
+         - store the video start time
+         - store the video end time
+         */
+        video_start_time = (new Date()).getTime();
         $("#" + this_element).trigger("play");
         
         active_videos[this_element] = VideoFrame({
@@ -1446,6 +1488,17 @@ function stimuli_loaded(){
 
     if(element_json.duration == "end"){
       $("#" + this_element).on('ended', function(){
+        
+        /*
+         * Collector needs to:
+         - identify and store the video length
+         - store the video start time
+         - store the video end time
+         */
+        video_end_time = (new Date()).getTime();
+        video_duration = $("#" + this_element)[0].duration;
+        
+        
         status = status.replace("-" + this_element,"");
         $("#" + this_element).hide();
         check_end_trial(element_json);
